@@ -3,10 +3,8 @@ import * as React from "react"
 import { CustomCard, CardContent } from "@/components/ui/custom-card"
 import {
     Carousel,
-    CarouselContent,
+    CarouselContent, CarouselDots,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 
 export function BannerCarousel() {
@@ -25,8 +23,7 @@ export function BannerCarousel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselDots />
         </Carousel>
     )
 }
