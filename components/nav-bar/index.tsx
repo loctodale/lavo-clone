@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import {NavigationItem} from "@/components/nav-bar/nav-item";
 import {Search} from "lucide-react";
+import {SearchItem} from "@/components/nav-bar/search-item";
 
 const NavBar = () => {
     return (
@@ -12,7 +13,8 @@ const NavBar = () => {
                 </div>
                 <NavigationItem />
                 <div className={"header-right flex items-center justify-between gap-1"}>
-                    <Search size={18} className={"font-bold"}  />
+                    {/*<Search size={18} className={"font-bold"}  />*/}
+                    <SearchItem />
                     <Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />
                     <Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />
                 </div>

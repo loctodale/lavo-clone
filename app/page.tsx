@@ -9,15 +9,21 @@ import TopItems from "@/components/top-items";
 import TopCategory from "@/components/top-category";
 import AboutUs from "@/components/about-us";
 import HotNews from "@/components/hot-news";
+import NewVideo from "@/components/new-video";
+import ProductCount from "@/components/product-count";
+import Branding from "@/components/branding";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full py-[5.5rem]">
+    <main className="min-h-screen w-full pt-[5.5rem]">
         <BannerCarousel />
         <TopItems />
         <TopCategory />
         <AboutUs />
         <HotNews />
+        <NewVideo />
+        <ProductCount />
+        <Branding />
     </main>
   );
 }

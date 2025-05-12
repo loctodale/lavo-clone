@@ -10,9 +10,9 @@ const HotNews = () => {
                 <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem]"}>Tin tức <span className={"text-[#fdc254]"}>mới nhất</span></h2>
             </div>
             <div className={"flex items-center justify-center mt-[2.5rem] gap-4 "}>
-                <Button className={"uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Hoạt động</Button>
-                <Button className={"uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Kinh nghiệm hay</Button>
-                <Button className={"uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Xu hướng tóc</Button>
+                <Button className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Hoạt động</Button>
+                <Button className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Kinh nghiệm hay</Button>
+                <Button className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"} variant={"outline"}>Xu hướng tóc</Button>
             </div>
             <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-[16rem]">
                 {mockDataNews.map((data, index) => (
