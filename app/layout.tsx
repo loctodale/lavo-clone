@@ -21,7 +21,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased max-w-screen overflow-x-hidden ">
       <NavBar />
         {children}
       <Footer/>

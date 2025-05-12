@@ -7,7 +7,6 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import React from "react";
 
@@ -51,31 +50,31 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationItem() {
     return (
-        <NavigationMenu>
-            <NavigationMenuList>
-                <NavigationMenuItem >
-                    <NavigationMenuLink className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase"} href={"/"}>Trang chủ</NavigationMenuLink>
+        <NavigationMenu className="w-full">
+            <NavigationMenuList className="flex flex-col md:flex-row gap-2 md:gap-0">
+                <NavigationMenuItem>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Trang chủ</NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase"} href={"/"}>Giới thiệu</NavigationMenuLink>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Giới thiệu</NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"py-10 hover:bg-transparent focus:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase"}>Thương hiệu</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent focus:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Thương hiệu</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid gap-3 p-6 w-[37.5rem] md:w-[43.5rem] lg:w-[50rem] lg:grid-cols-[.75fr_1fr]">
+                        <ul className="grid gap-2 p-4 w-[37.5rem] md:w-[43.5rem] lg:w-[50rem] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
                                         <Icons.logo className="h-6 w-6" />
-                                        <div className="mb-2 mt-4 text-lg font-medium">
+                                        <div className="mb-1 mt-2 text-base font-medium">
                                             shadcn/ui
                                         </div>
-                                        <p className="text-sm leading-tight text-muted-foreground">
+                                        <p className="text-xs leading-tight text-muted-foreground">
                                             Beautifully designed components that you can copy and
                                             paste into your apps. Accessible. Customizable. Open
                                             Source.
@@ -97,9 +96,9 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase"}>Sản phẩm</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Sản phẩm</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[37.5rem] gap-3 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem] ">
+                        <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">
                             {components.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -114,17 +113,17 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase"} href={"/"}>Gentleman</NavigationMenuLink>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Gentleman</NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase"} href={"/"}>Dịch vụ ODM</NavigationMenuLink>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Dịch vụ ODM</NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase"}>Tin tức</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Tin tức</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[37.5rem] gap-3 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem] ">
+                        <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">
                             {components.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -139,9 +138,9 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"hover:bg-transparent text-[1rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase"}>Kỹ thuật</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Kỹ thuật</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[37.5rem] gap-3 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem] ">
+                        <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">
                             {components.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -169,13 +168,13 @@ const ListItem = React.forwardRef<
                 <a
                     ref={ref}
                     className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                        "block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                         className
                     )}
                     {...props}
                 >
                     <div className="text-sm font-medium leading-none">{title}</div>
-                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                    <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
                         {children}
                     </p>
                 </a>
