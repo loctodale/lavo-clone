@@ -14,14 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className={"w-screen h-full overflow-x-hidden"} lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased max-w-screen overflow-x-hidden ">
+      <body className="antialiased w-screen overflow-x-hidden ">
       <NavBar />
         {children}
       <Footer/>

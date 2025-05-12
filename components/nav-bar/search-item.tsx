@@ -19,7 +19,7 @@ export function SearchItem() {
             <DialogTrigger asChild>
                 <Search size={18} className={"font-bold hover:cursor-pointer"}  />
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px] overflow-y-scroll max-h-screen ">
+            <DialogContent className="w-full sm:max-w-[20vw] overflow-y-scroll max-h-screen ">
                 <DialogHeader>
                     <DialogTitle>Nhập từ khoá của bạn</DialogTitle>
                 </DialogHeader>

@@ -4,19 +4,28 @@ import Image from "next/image";
 
 const TopCategory = () => {
     return (
-        <div className={"w-full h-full py-[6.25rem] bg-[url(/background-category.jpg)] bg-no-repeat bg-cover"}>
-            {/*<div className={"mx-[16rem] w-full h-full"}></div>*/}
-            <div className={"h-full mx-[16rem]"}>
-                <div className={"flex flex-col items-center justify-center pb-[40px] bg-[url(/line.png)] bg-bottom bg-no-repeat"}>
-                    <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem]"}>Dòng sản phẩm <span className={"text-[#fdc254]"}> nổi bật</span></h2>
-                    <p className={"font-[400] text-[#172345]"}>Giải pháp của chúng tôi được thiết kế riêng cho từng cá nhân hiểu từng nhu cầu cụ thể</p>
+        <div className="w-full h-full py-[6.25rem] bg-[url(/background-category.jpg)] bg-no-repeat bg-cover">
+            <div className="h-full px-4 md:px-16 xl:px-[16rem]">
+                <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center">
+                    <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
+                        Dòng sản phẩm <span className="text-[#fdc254]">nổi bật</span>
+                    </h2>
+                    <p className="font-[400] text-[#172345] max-w-2xl">
+                        Giải pháp của chúng tôi được thiết kế riêng cho từng cá nhân hiểu từng nhu cầu cụ thể
+                    </p>
                 </div>
 
-                <div className={"flex items-center justify-center gap-4 mt-[4rem]"}>
-                    <Image className={"scale-100 hover:scale-110 ease-in duration-200"} width={320} height={450} src={"/mpros.jpg"} alt={"image-holder"} />
-                    <Image className={"scale-100 hover:scale-110 ease-in duration-200"} width={320} height={450} src={"/mpros.jpg"} alt={"image-holder"} />
-                    <Image className={"scale-100 hover:scale-110 ease-in duration-200"} width={320} height={450} src={"/mpros.jpg"} alt={"image-holder"} />
-                    <Image className={"scale-100 hover:scale-110 ease-in duration-200"} width={320} height={450} src={"/mpros.jpg"} alt={"image-holder"} />
+                <div className="flex flex-wrap justify-center gap-4 mt-12">
+                    {[...Array(4)].map((_, i) => (
+                        <Image
+                            key={i}
+                            className="scale-100 hover:scale-105 ease-in duration-200 w-full sm:w-[45%] md:w-[22%] max-w-[320px] h-auto"
+                            width={320}
+                            height={450}
+                            src="/mpros.jpg"
+                            alt={`image-holder-${i}`}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
