@@ -11,12 +11,14 @@ const Footer = () => {
     <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between">
       {/* Location */}
       <div className="flex flex-col gap-2 w-full lg:w-1/4">
-        <Image className="mb-4" width={150} height={150} src="/branding-logo.png" alt="logo" />
-        <h3 className="font-bold">Địa chỉ: <span className="font-normal">11 Nguyễn Sơn, P. Phú Thạnh, <br /> Q. Tân Phú, TP.HCM</span></h3>
-        <h3 className="font-bold">Điện thoại: <span className="font-normal">028 3973 5599 – 028 3973 6699</span></h3>
-        <h3 className="font-bold">HOTLINE: <span className="font-normal">1900 77 99 26</span></h3>
-        <h3 className="font-bold">Fax: <span className="font-normal">028 3973 5959</span></h3>
-        <h3 className="font-bold">Email: <span className="font-normal">lavo@lavo.com.vn</span></h3>
+        <div className={"relative w-full h-full"}>
+          <Image className={"absolute bottom-[-2rem] left-[-2rem]"} width={200} height={50} src="/assets/logo.png" alt="logo" />
+        </div>
+        <h3 className="font-bold">Địa chỉ: <span className="font-normal">34 ĐÀO DUY ANH, PHƯỜNG 9, <br /> QUẬN PHÚ NHUẬN, TPHCM</span></h3>
+        <h3 className="font-bold">Điện thoại: <span className="font-normal">(02)838424372</span></h3>
+        <h3 className="font-bold">HOTLINE: <span className="font-normal">0919797414</span></h3>
+        <h3 className="font-bold">Fax: <span className="font-normal">028-38424372</span></h3>
+        <h3 className="font-bold">Email: <span className="font-normal">CAODAT.COSMETICS@GMAIL.COM</span></h3>
       </div>
       {/* Register Notification */}
       <div className="w-full lg:w-1/4 mt-8 lg:mt-0">

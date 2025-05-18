@@ -1,0 +1,1639 @@
+import {Product} from "@/types/product";
+import {Category} from "@/types/category";
+
+export const mockProducts: Product[] = [
+    {
+        "name": "HAIRPLEXX Caviar Set",
+        "fullName": "Bộ phục hồi chuyên sâu chống lão hóa CAVIAR",
+        "description": "là giải pháp chăm sóc tóc cao cấp dành cho mái tóc hư tổn, khô xơ do tác động của hóa chất và nhiệt độ. Sản phẩm kết hợp giữa Protein và chiết xuất trứng cá muối, giúp tái tạo cấu trúc tóc từ sâu bên trong, khôi phục độ đàn hồi và sức sống cho sợi tóc. Với công thức chuyên biệt, bộ sản phẩm giúp tăng cường độ ẩm, làm mềm mượt, phục hồi liên kết bị đứt gãy và ngăn ngừa tình trạng tóc yếu, gãy rụng. Bộ sản phẩm bao gồm hấp tóc/huyết thanh (280ml + 2x10ml) và serum (50ml).",
+        "advantage": [
+            "Công thức giàu dưỡng chất từ Protein và trứng cá muối, giúp cải thiện tình trạng tóc khô xơ, chẻ ngọn, đồng thời phục hồi các liên kết bên trong sợi tóc, giúp tóc chắc khỏe, mềm mại hơn.",
+            "Cung cấp các dưỡng chất thiết yếu giúp cân bằng độ ẩm, bảo vệ tóc khỏi tác động môi trường và duy trì độ bóng tự nhiên."
+        ],
+        "howToUse": [
+            "Pha huyết thanh theo tỷ lệ 5ml với 50ml nước.",
+            "Có thể hấp nóng hoặc ủ nguội trong 15-20 phút để dưỡng chất thẩm thấu sâu vào tóc.",
+            "Xả sạch tóc sau khi hấp.",
+            "Lấy một lượng serum vừa đủ thoa đều lên tóc để bổ sung độ ẩm, giúp tóc bóng khỏe và suôn mượt."
+        ],
+        "note": "",
+        "size": 350,
+        "brand": "HAIRPLEXX",
+        "slug": "bo-phuc-hoi-chuyen-sau-chong-lao-hoa-caviar",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/hairplexx/1.png"
+    },
+    {
+        "name": "KARSILK Argan Oil",
+        "fullName": "Tinh dầu Argan Karsilk – Phục hồi & Bảo vệ tóc toàn diện",
+        "description": "kết hợp Argan Oil, Keratin và Vitamin E, giúp phục hồi tóc hư tổn, tăng độ đàn hồi và bảo vệ tóc khỏi tác nhân gây hại. Công thức thẩm thấu nhanh, không bết dính, mang lại mái tóc chắc khỏe, mềm mại và óng ả.",
+        "advantage": [
+            "Cung cấp Keratin giúp tóc chắc khỏe, giảm gãy rụng.",
+            "Phục hồi tóc khô xơ, chẻ ngọn và hư tổn do hóa chất.",
+            "Cấp ẩm sâu, giúp tóc mềm mượt, vào nếp tự nhiên.",
+            "Bảo vệ tóc khỏi nhiệt từ máy sấy, uốn, duỗi và tác động môi trường.",
+            "Tăng độ bóng, giảm xù rối, phù hợp cho mọi loại tóc."
+        ],
+        "howToUse": [
+            "Lấy 2-3 giọt tinh dầu, xoa đều trong lòng bàn tay, vuốt nhẹ lên tóc, đặc biệt phần ngọn.",
+            "Dùng trước khi sấy hoặc tạo kiểu để bảo vệ tóc tốt hơn.",
+            "Có thể sử dụng hàng ngày để duy trì mái tóc khỏe đẹp."
+        ],
+        "note": "",
+        "size": 0,
+        "brand": "KARSILK",
+        "slug": "tinh-dau-argan-karsilk-phuc-hoi-bao-ve-toc-toan-dien",
+        "category": "Hair Oil & Serum",
+        image: "/assets/products/karsilk/2.png"
+    },
+    {
+        "name": "KARSILK Keratin Hair Mask",
+        "fullName": "Karsilk Keratin Hair Mask – Mặt nạ ủ tóc phục hồi chuyên sâu",
+        "description": "là giải pháp phục hồi tóc hư tổn chuyên sâu, đặc biệt dành cho tóc khô xơ, gãy rụng hoặc chịu tác động từ hóa chất và nhiệt độ cao. Với công thức giàu Keratin, kết hợp với dưỡng chất tự nhiên, sản phẩm giúp tái tạo cấu trúc tóc, cung cấp độ ẩm cần thiết và bảo vệ tóc trước các tác nhân gây hại. Thành phần chính bao gồm Keratin thủy phân và Dầu Argan.",
+        "advantage": [
+            "Bổ sung Keratin: Khôi phục và củng cố các liên kết tóc, giúp tóc chắc khỏe từ bên trong.",
+            "Dưỡng ẩm sâu: Cấp nước và dưỡng chất thiết yếu giúp tóc mềm mại, bóng mượt.",
+            "Giảm khô xơ, gãy rụng: Hạn chế tình trạng chẻ ngọn, phục hồi độ đàn hồi tự nhiên.",
+            "Bảo vệ tóc: Hạn chế tác hại từ nhiệt độ cao và hóa chất tạo kiểu."
+        ],
+        "howToUse": [
+            "Sau khi gội sạch, thoa một lượng vừa đủ lên thân và ngọn tóc."
+        ],
+        "note": "",
+        "size": 0,
+        "brand": "KARSILK",
+        "slug": "karsilk-keratin-hair-mask-mat-na-u-toc-phuc-hoi-chuyen-sau",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/karsilk/3.png"
+    },
+    {
+        "name": "SLIDER Strengthen Repair Conditioner (800ml)",
+        "fullName": "Dầu Xả Phục Hồi SLIDER STRENGTHEN REPAIR CONDITIONER",
+        "description": "với công thức chứa Keratin và Collagen, giúp thẩm thấu sâu vào lõi tóc, phục hồi hư tổn, cung cấp dưỡng chất thiết yếu và khóa ẩm hiệu quả. Sản phẩm giúp tóc chắc khỏe, mềm mượt và óng ả, đồng thời cải thiện độ đàn hồi, ngay cả ở phần ngọn tóc.",
+        "advantage": [
+            "Phục hồi và nuôi dưỡng tóc hư tổn từ sâu bên trong.",
+            "Dưỡng ẩm và giữ nước giúp tóc luôn mềm mượt, bóng khỏe.",
+            "Hỗ trợ bảo vệ tóc khỏi tác động của nhiệt và hóa chất.",
+            "Cải thiện độ đàn hồi, giúp tóc vào nếp tự nhiên."
+        ],
+        "howToUse": [
+            "Lấy một lượng dầu xả vừa đủ, thoa đều lên tóc sau khi gội sạch.",
+            "Xịt nhẹ nước ấm và massage nhẹ nhàng để dưỡng chất thẩm thấu.",
+            "Xả sạch bằng nước ấm.",
+            "Lặp lại nếu cần để đạt hiệu quả tối ưu."
+        ],
+        "note": "Tránh để sản phẩm tiếp xúc trực tiếp với mắt. Nếu bị dính vào mắt, rửa ngay với nước sạch. Để xa tầm tay trẻ em.",
+        "size": 800,
+        "brand": "SLIDER",
+        "slug": "dau-xa-phuc-hoi-slider-strengthen-repair-conditioner",
+        "category": "Conditioner",
+        image: "/assets/products/slider/1.png"
+    },
+    {
+        "name": "SLIDER Nourish Repair Shampoo (800ml)",
+        "fullName": "Dầu gội phục hồi tóc hư tổn SLIDER Nourish Repair Shampoo",
+        "description": "với công thức đặc biệt chứa Keratin, Collagen và tinh dầu Argan, giúp nuôi dưỡng sâu từ bên trong, phục hồi lõi tóc bị khô xơ, đồng thời bảo vệ và cấp ẩm hiệu quả. Sản phẩm giúp tóc chắc khỏe, đàn hồi, mềm mượt và bóng sáng tự nhiên.",
+        "advantage": [
+            "Phục hồi và nuôi dưỡng tóc hư tổn, giúp tóc khỏe mạnh từ gốc đến ngọn.",
+            "Cấp ẩm sâu, giảm tình trạng khô xơ, gãy rụng.",
+            "Làm sạch da đầu nhẹ nhàng, giúp tóc suôn mượt và dễ vào nếp.",
+            "Bảo vệ tóc khỏi các tác động từ môi trường và hóa chất tạo kiểu."
+        ],
+        "howToUse": [
+            "Làm ướt tóc bằng nước ấm.",
+            "Lấy một lượng dầu gội vừa đủ ra tay, thoa đều lên tóc.",
+            "Massage nhẹ nhàng từ 3 - 5 phút để tạo bọt và giúp dưỡng chất thẩm thấu.",
+            "Xả sạch bằng nước.",
+            "Gội lần hai nếu cần để đạt hiệu quả tối ưu.",
+            "Kết hợp với dầu xả cùng dòng để có kết quả tốt nhất."
+        ],
+        "note": "Tránh để sản phẩm tiếp xúc trực tiếp với mắt. Nếu dính vào mắt, rửa ngay với nước sạch. Để xa tầm tay trẻ em.",
+        "size": 800,
+        "brand": "SLIDER",
+        "slug": "dau-goi-phuc-hoi-toc-hu-ton-slider-nourish-repair-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/slider/2.png"
+    },
+    {
+        "name": "SLIDER Anti Dandruff Shampoo (800ml)",
+        "fullName": "Dầu Gội Trị Gàu & Chống Nhờn SLIDER ANTI DANDRUFF SHAMPOO",
+        "description": "ứng dụng công thức tiên tiến với Keratin thủy phân, Collagen, Vitamin B5 và khoáng chất, giúp làm sạch da đầu hiệu quả, loại bỏ gàu và bã nhờn, đồng thời cung cấp dưỡng chất thiết yếu cho tóc. Sản phẩm hỗ trợ cải thiện cấu trúc tóc, giúp tóc chắc khỏe và da đầu luôn trong trạng thái cân bằng.",
+        "advantage": [
+            "Làm sạch sâu, loại bỏ gàu và dầu thừa trên da đầu.",
+            "Cân bằng độ ẩm, giúp da đầu thông thoáng, không bết dính.",
+            "Cung cấp dưỡng chất cần thiết, cải thiện cấu trúc tóc.",
+            "Hỗ trợ giảm kích ứng da đầu, mang lại cảm giác sảng khoái."
+        ],
+        "howToUse": [
+            "Làm ướt tóc bằng nước ấm.",
+            "Lấy một lượng dầu gội vừa đủ, thoa đều lên tóc và da đầu.",
+            "Massage nhẹ nhàng để sản phẩm thẩm thấu và tạo bọt.",
+            "Xả sạch bằng nước.",
+            "Lặp lại nếu cần để đạt hiệu quả tối ưu."
+        ],
+        "note": "Tránh để sản phẩm tiếp xúc trực tiếp với mắt. Nếu dính vào mắt, rửa ngay với nước sạch. Để xa tầm tay trẻ em.",
+        "size": 800,
+        "brand": "SLIDER",
+        "slug": "dau-goi-tri-gau-chong-nhon-slider-anti-dandruff-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/slider/3.png"
+    },
+    {
+        "name": "SLIDER Anti Hair Loss Shampoo (800ml)",
+        "fullName": "Dầu Gội Ngăn Ngừa & Chống Rụng Tóc SLIDER ANTI HAIR LOSS SHAMPOO",
+        "description": "ứng dụng công thức tiên tiến với Keratin thủy phân, Collagen, Vitamin, khoáng chất và chiết xuất thảo dược quý, giúp kích thích tuần hoàn máu trên da đầu, nuôi dưỡng nang tóc và phục hồi lõi tóc. Sản phẩm hỗ trợ kiểm soát dầu thừa, thúc đẩy quá trình trao đổi chất của các nang tóc bị tắc, giúp tóc chắc khỏe và giảm rụng hiệu quả.",
+        "advantage": [
+            "Kích thích lưu thông máu, nuôi dưỡng nang tóc, hỗ trợ mọc tóc mới.",
+            "Giảm tình trạng rụng tóc, phục hồi tóc yếu và hư tổn.",
+            "Kiểm soát dầu thừa trên da đầu, giúp da đầu thông thoáng.",
+            "Cải thiện độ đàn hồi, giúp tóc mềm mượt và bóng khỏe."
+        ],
+        "howToUse": [
+            "Làm ướt tóc bằng nước ấm.",
+            "Lấy một lượng dầu gội vừa đủ, thoa đều lên tóc và da đầu.",
+            "Massage nhẹ nhàng từ 3 - 5 phút để dưỡng chất thẩm thấu.",
+            "Xả sạch bằng nước.",
+            "Gội lần hai nếu cần để đạt hiệu quả tốt nhất.",
+            "Kết hợp với dầu xả cùng dòng để tăng cường hiệu quả chăm sóc tóc."
+        ],
+        "note": "Tránh để sản phẩm tiếp xúc trực tiếp với mắt. Nếu dính vào mắt, rửa ngay với nước sạch. Để xa tầm tay trẻ em.",
+        "size": 800,
+        "brand": "SLIDER",
+        "slug": "dau-goi-ngan-ngua-chong-rung-toc-slider-anti-hair-loss-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/slider/4.png"
+    },
+    {
+        "name": "SLIDER Silky Hair Straight Cream (Normal Hair)",
+        "fullName": "Kem Duỗi Tóc SLIDER SILKY HAIR STRAIGHT CREAM (Dành Cho Tóc Khỏe)",
+        "description": "là kem duỗi và uốn tóc chuyên dụng, phù hợp với mọi loại tóc. Công thức giàu Collagen thủy phân giúp bảo vệ cấu trúc tóc, giảm thiểu hư tổn trong quá trình tạo kiểu. Sản phẩm không chỉ giúp tóc duỗi thẳng mượt hoặc uốn bồng bềnh mà còn bổ sung dưỡng chất, giữ độ ẩm tự nhiên, giúp tóc bóng khỏe, mềm mại và đàn hồi lâu dài.",
+        "advantage": [
+            "Duỗi thẳng tóc tự nhiên, suôn mượt mà không gây khô xơ.",
+            "Hỗ trợ uốn xoăn giữ nếp bền lâu, tạo độ bồng bềnh.",
+            "Bảo vệ và cân bằng cấu trúc tóc, hạn chế hư tổn trong quá trình xử lý hóa chất.",
+            "Giữ độ ẩm, dưỡng tóc mềm mượt, sáng bóng sau khi tạo kiểu."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô tóc khoảng 80%.",
+            "Nếu tóc hư tổn, thoa lớp dưỡng phục hồi trước khi sử dụng.",
+            "Thoa đều kem duỗi/uốn cách chân tóc 2-3cm.",
+            "Chờ từ 10-15 phút, kiểm tra độ đàn hồi của tóc rồi xả sạch bằng nước ấm.",
+            "Sấy khô tóc, dùng máy là để cố định nếp tóc.",
+            "Thoa kem dưỡng tóc ép/uốn, ủ khoảng 15 phút, sau đó xả sạch và sấy khô."
+        ],
+        "note": "Tránh tiếp xúc trực tiếp với da đầu và mắt. Nếu dính vào mắt, rửa ngay với nước sạch và liên hệ bác sĩ nếu cần. Để xa tầm tay trẻ em.",
+        "size": 1000,
+        "brand": "SLIDER",
+        "slug": "kem-duoi-toc-slider-silky-hair-straight-cream-danh-cho-toc-khoe",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/slider/5.png"
+    },
+    {
+        "name": "SLIDER Silky Hair Straight Cream (Damaged/Bleached Hair)",
+        "fullName": "Kem Duỗi Tóc SLIDER SILKY HAIR STRAIGHT CREAM (Dành Cho Tóc Hư Tổn & Tóc Đã Qua Tẩy)",
+        "description": "là kem duỗi/uốn chuyên biệt dành cho tóc hư tổn và tóc đã qua tẩy. Công thức giàu Collagen thủy phân giúp bảo vệ lớp biểu bì tóc, cung cấp độ ẩm và dưỡng chất cần thiết để phục hồi tóc từ bên trong. Sản phẩm giúp tóc thẳng mượt tự nhiên hoặc uốn bồng bềnh mà không gây khô xơ, giữ nếp lâu dài và bảo vệ tóc khỏi hư tổn do hóa chất.",
+        "advantage": [
+            "Duỗi thẳng tóc hư tổn và tóc đã tẩy, tạo độ mượt mà và bóng khỏe.",
+            "Hỗ trợ uốn xoăn, giúp giữ nếp lâu và tạo độ đàn hồi tự nhiên.",
+            "Bảo vệ và phục hồi cấu trúc tóc, hạn chế hư tổn trong quá trình sử dụng hóa chất.",
+            "Dưỡng tóc mềm mượt, sáng bóng, duy trì độ ẩm cần thiết."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô tóc khoảng 80%.",
+            "Nếu tóc yếu, thoa sản phẩm dưỡng phục hồi trước khi dùng kem duỗi/uốn.",
+            "Thoa đều kem số 1, cách chân tóc 2-3cm.",
+            "Ủ tóc từ 10-15 phút, kiểm tra độ đàn hồi của tóc, sau đó xả sạch bằng nước ấm.",
+            "Sấy khô tóc, sử dụng máy là để cố định kiểu tóc.",
+            "Thoa kem dưỡng tóc ép/uốn, ủ trong 15 phút, sau đó xả sạch và sấy khô.",
+            "Có thể là lại nếu cần thiết."
+        ],
+        "note": "Tránh tiếp xúc trực tiếp với da đầu và mắt. Nếu dính vào mắt, rửa ngay với nước sạch và liên hệ bác sĩ nếu cần. Để xa tầm tay trẻ em.",
+        "size": 1000,
+        "brand": "SLIDER",
+        "slug": "kem-duoi-toc-slider-silky-hair-straight-cream-danh-cho-toc-hu-ton-toc-da-qua-tay",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/slider/6.png"
+    },
+    {
+        "name": "SLIDER Silky Hair Straight Neutralizer",
+        "fullName": "Kem Dập Dưỡng Tóc Duỗi SLIDER SILKY HAIR STRAIGHT NEUTRALIZER – Bảo Vệ & Cân Bằng Cấu Trúc Tóc",
+        "description": "là bước dưỡng phục hồi và cố định tóc sau khi duỗi/uốn, giúp bảo vệ và cân bằng cấu trúc tóc [17]. Công thức giàu Collagen thủy phân giúp tóc mềm mại, bóng khỏe, ngăn ngừa hư tổn do tác động của hóa chất và nhiệt độ cao [17].",
+        "advantage": [
+            "Cố định nếp tóc sau quá trình duỗi/uốn, giúp mái tóc giữ được độ thẳng mượt hoặc bồng bềnh lâu dài [18].",
+            "Bảo vệ tóc khỏi tác động nhiệt và hóa chất, giảm thiểu gãy rụng [18].",
+            "Giữ ẩm và phục hồi tóc, giúp tóc mềm mại, óng mượt tự nhiên [18]."
+        ],
+        "howToUse": [
+            "Phân tích tình trạng tóc & da đầu trước khi sử dụng [18].",
+            "Gội đầu, sấy khô tóc khoảng 80% [18].",
+            "Nếu tóc yếu, thoa sản phẩm dưỡng phục hồi trước khi dùng kem duỗi/uốn [18].",
+            "Thoa đều kem dập dưỡng cách chân tóc 2-3 cm, để trong 10-15 phút, kiểm tra độ đàn hồi rồi xả sạch với nước ấm [18].",
+            "Sấy khô tóc, sử dụng máy là hoặc cuốn lô uốn nóng theo kiểu mong muốn [19].",
+            "Thoa đều nước dưỡng/uốn hoặc kem dưỡng tóc ép, để tóc hấp thụ trong 15 phút, sau đó xả sạch và sấy khô [19].",
+            "Để đạt hiệu quả tốt nhất, không gội đầu trong 2-3 ngày sau khi sử dụng sản phẩm [19]."
+        ],
+        "note": "Tránh tiếp xúc trực tiếp với da đầu và mắt [19]. Nếu dính vào mắt, rửa ngay với nước sạch và liên hệ bác sĩ nếu cần [19]. Để xa tầm tay trẻ em [19]. Thực hiện đúng hướng dẫn để tránh kích ứng da đầu hoặc tóc hư tổn [19].",
+        "size": 1000,
+        "brand": "SLIDER",
+        "slug": "kem-dap-duong-toc-duoi-slider-silky-hair-straight-neutralizer-bao-ve-can-bang-cau-truc-toc",
+        "category": "Hair Oil & Serum",
+        "image": "/assets/products/slider/7.png"
+    },
+    {
+        "name": "SLIDER Silky Hair Curly Neutralizer",
+        "fullName": "Nước Dập Dưỡng Tóc Uốn SLIDER SILKY HAIR CURLY NEUTRALIZER – Giữ Nếp & Bảo Vệ Sóng Uốn",
+        "description": "là bước dập dưỡng giúp cố định nếp tóc uốn, bảo vệ và giữ độ bồng bềnh, đàn hồi cho lọn tóc [19]. Công thức đặc biệt với Collagen thủy phân giúp tóc mềm mại, óng mượt tự nhiên, đồng thời cân bằng cấu trúc tóc sau quá trình xử lý hóa chất [19].",
+        "advantage": [
+            "Cố định sóng uốn, giữ nếp lâu dài mà không làm khô tóc [20].",
+            "Cân bằng cấu trúc tóc, giảm hư tổn do hóa chất [20].",
+            "Bổ sung dưỡng chất, giúp tóc mềm mại, bồng bềnh, tự nhiên [20]."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô 80% [20].",
+            "Đối với tóc yếu, thoa đều dưỡng phục hồi trước khi dùng thuốc uốn [20].",
+            "Chải đều thuốc mềm uốn số 1 cách chân tóc 2-3cm, để trong 10-15 phút, kiểm tra độ đàn hồi rồi xả sạch bằng nước ấm [20].",
+            "Sấy khô tóc, cuộn trục uốn nóng rồi đặt vào máy uốn [21].",
+            "Thoa đều nước dập dưỡng tóc uốn, giữ trên tóc 15 phút, sau đó xả sạch và tạo kiểu [21]."
+        ],
+        "note": "Tránh tiếp xúc trực tiếp với da đầu và mắt [21]. Nếu dính vào mắt, rửa ngay với nước sạch và liên hệ bác sĩ nếu cần [21]. Để xa tầm tay trẻ em [21]. Thực hiện đúng hướng dẫn để tránh kích ứng da đầu hoặc tóc hư tổn [21].",
+        "size": 1000,
+        "brand": "SLIDER",
+        "slug": "nuoc-dap-duong-toc-uon-slider-silky-hair-curly-neutralizer-giu-nep-bao-ve-song-uon",
+        "category": "Perm & Straightening Products",
+        "image": "/assets/products/slider/8.png"
+    },
+    {
+        "name": "SLIDER Repair Hair Mask",
+        "fullName": "KEM HẤP PHỤC HỒI CHUYÊN SÂU SLIDER REPAIR HAIR MASK – Phục Hồi & Nuôi Dưỡng Tóc Hư Tổn",
+        "description": "là kem hấp phục hồi chuyên sâu với Keratin & Collagen, giúp tái tạo tóc hư tổn do hóa chất, nhiệt độ cao và tác động môi trường [21]. Công thức giàu Vitamin & dưỡng chất giúp tóc mềm mượt, đàn hồi, giảm xơ rối và tăng cường độ bóng tự nhiên [21].",
+        "advantage": [
+            "Phục hồi tóc hư tổn, cải thiện cấu trúc tóc yếu, gãy rụng [22].",
+            "Cung cấp độ ẩm sâu, giúp tóc mềm mại, bồng bềnh và không bết dính [22].",
+            "Giữ màu & bảo vệ tóc, phù hợp với tóc nhuộm và tóc sau xử lý hóa chất [22].",
+            "Tăng cường độ đàn hồi & chắc khỏe, hạn chế xơ rối và chẻ ngọn [22]."
+        ],
+        "howToUse": [
+            "Dùng thay dầu xả: Sau khi gội đầu, thoa một lượng vừa đủ lên tóc, massage nhẹ nhàng, để 3-5 phút rồi xả sạch [22].",
+            "Ủ nóng: Bôi đều kem hấp lên tóc, quấn khăn hoặc sử dụng máy hấp tóc trong 10-15 phút, sau đó xả sạch với nước [22].",
+            "Ủ nguội: Bôi lên tóc, ủ 15-20 phút, sau đó xả sạch [22]."
+        ],
+        "note": "Không bôi trực tiếp vào da đầu [23]. Sử dụng 2-3 lần/tuần để đạt hiệu quả tối ưu [23]. Để xa tầm tay trẻ em [23].",
+        "size": 1000,
+        "brand": "SLIDER",
+        "slug": "kem-hap-phuc-hoi-chuyen-sau-slider-repair-hair-mask-phuc-hoi-nuoi-duong-toc-hu-ton",
+        "category": "Hair Mask & Treatment",
+        "image": "/assets/products/slider/9.png"
+    },
+    {
+        "name": "SLIDER Nourish Spray",
+        "fullName": "XỊT DƯỠNG SIÊU BÓNG SLIDER NOURISH SPRAY – BẢO VỆ & PHỤC HỒI TÓC",
+        "description": "là xịt dưỡng tóc chuyên sâu với Collagen & Keratin thủy phân siêu mịn, giúp phục hồi tóc hư tổn, bổ sung độ ẩm, bảo vệ tóc khỏi nhiệt độ cao và tác động môi trường [23]. Công thức kháng nhiệt giúp tóc luôn mềm mượt, đàn hồi và sáng bóng mà không gây bết dính [23].",
+        "advantage": [
+            "Dưỡng bóng & chống xơ rối, giúp tóc suôn mượt, mềm mại tức thì [24].",
+            "Bảo vệ tóc khỏi tia UVA/UVB, hạn chế hư tổn do ánh nắng và môi trường [24].",
+            "Giảm hư tổn do nhiệt, bảo vệ tóc khi dùng máy sấy, máy là [24].",
+            "Tạo lớp màng khóa ẩm, duy trì độ ẩm tự nhiên mà không gây bết dính [24]."
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lau khô tóc, lắc đều chai, xịt nhẹ từ gốc đến ngọn [24].",
+            "Massage nhẹ nhàng và chải đều để tinh chất thẩm thấu [24].",
+            "Không cần xả lại [24]."
+        ],
+        "note": "Lắc kỹ trước khi sử dụng [24]. Tránh xịt vào mắt [24]. Có thể dùng hàng ngày để duy trì hiệu quả dưỡng tóc [24].",
+        "size": 250,
+        "brand": "SLIDER",
+        "slug": "xit-duong-sieu-bong-slider-nourish-spray-bao-ve-phuc-hoi-toc",
+        "category": "Styling Products",
+        "image": "/assets/products/slider/10.png"
+    },
+    {
+        "name": "SLIDER Keratin - Biotin Hair Mask",
+        "fullName": "SLIDER KERATIN - BIOTIN: KEM HẤP PHỤC HỒI TÓC HƯ TỔN",
+        "description": "là kem hấp phục hồi chuyên sâu dành cho tóc hư tổn, với công thức giàu Keratin, Biotin, Argan Oil, Vitamin và các tinh chất thiên nhiên [25].",
+        "advantage": [
+            "Giảm gãy rụng, tăng độ dày cho tóc [25].",
+            "Nuôi dưỡng sâu, phục hồi hư tổn do hóa chất và nhiệt [25].",
+            "Dưỡng tóc mềm mượt, bóng khỏe vượt trội so với tinh dầu thông thường [25]."
+        ],
+        "howToUse": [
+            "Sau khi gội, lau khô tóc [25].",
+            "Thoa đều kem hấp lên tóc, tránh tiếp xúc với da đầu [25].",
+            "Ủ nóng hoặc ủ nguội trong 10-15 phút, sau đó xả sạch với nước [25].",
+            "Có thể dùng thay dầu xả để duy trì độ ẩm và bảo vệ tóc [25]."
+        ],
+        "note": "Tránh tiếp xúc với da đầu [25].",
+        "size": 0,
+        "brand": "SLIDER",
+        "slug": "slider-keratin-biotin-kem-hap-phuc-hoi-toc-hu-ton",
+        "category": "Hair Mask & Treatment",
+        "image": "/assets/products/slider/11.png"
+    },
+    {
+        "name": "SLIDER Argan Oil",
+        "fullName": "SLIDER Argan Oil là huyết thanh dưỡng tóc cao cấp, kết hợp Argan Oil nguyên chất, vitamin và chất chống oxy hóa tự nhiên, giúp phục hồi tóc hư tổn, giảm xơ rối và bảo vệ tóc khỏi tác động môi trường.",
+        "description": "là huyết thanh dưỡng tóc cao cấp, kết hợp Argan Oil nguyên chất, vitamin và chất chống oxy hóa tự nhiên, giúp phục hồi tóc hư tổn, giảm xơ rối và bảo vệ tóc khỏi tác động môi trường [26]. Đặc biệt hiệu quả khi sử dụng trên tóc còn 10-20% độ ẩm, giúp tóc mềm mại, chắc khỏe và óng mượt ngay từ lần đầu tiên sử dụng [26].",
+        "advantage": [
+            "Phục hồi tóc hư tổn, giảm khô xơ, chẻ ngọn [26].",
+            "Dưỡng tóc mềm mượt, tăng độ bóng tự nhiên [26].",
+            "Bảo vệ tóc khỏi tác động nhiệt & môi trường [26].",
+            "Không gây bết dính, phù hợp với mọi loại tóc [26]."
+        ],
+        "howToUse": [
+            "Dùng cho tóc khô hoặc tóc ướt.",
+            "Lấy một lượng vừa đủ, xoa đều vào lòng bàn tay.",
+            "Thoa nhẹ lên tóc từ giữa thân tóc đến ngọn tóc.",
+            "Không cần xả lại."
+        ],
+        "note": "Nên sử dụng sau khi gội đầu và lau khô tóc để đạt hiệu quả tốt nhất. Có thể dùng hàng ngày để duy trì độ ẩm và sự mềm mượt cho tóc [27].",
+        "size": 0,
+        "brand": "SLIDER",
+        "slug": "slider-argan-oil-la-huyet-thanh-duong-toc-cao-cap-ket-hop-argan-oil-nguyen-chat-vitamin-va-chat-chong-oxy-hoa-tu-nhien-giup-phuc-hoi-toc-hu-ton-giam-xo-roi-va-bao-ve-toc-khoi-tac-dong-moi-truong",
+        "category": "Hair Oil & Serum",
+        "image": "/assets/products/slider/12.png"
+    },
+    {
+        "name": "SLIDER Elastin Gel",
+        "fullName": "SLIDER Elastin Gel là gel dưỡng chuyên biệt với tinh chất tơ tằm giúp định hình lọn tóc xoăn, giữ sóng bền lâu mà vẫn đảm bảo độ mềm mại và bóng mượt tự nhiên.",
+        "description": "là gel dưỡng chuyên biệt với tinh chất tơ tằm giúp định hình lọn tóc xoăn, giữ sóng bền lâu mà vẫn đảm bảo độ mềm mại và bóng mượt tự nhiên [27]. Thành phần giàu dưỡng chất và độ ẩm, giúp tóc đàn hồi tốt hơn, giảm khô xơ và tạo kiểu dễ dàng [27].",
+        "advantage": [
+            "Định hình và giữ nếp sóng xoăn tự nhiên [28].",
+            "Cấp ẩm, tăng độ đàn hồi cho tóc [28].",
+            "Giúp tóc mềm mại, bóng khỏe mà không bết dính [28]."
+        ],
+        "howToUse": [
+            "Dùng trên tóc khô hoặc tóc ướt [28].",
+            "Lấy một lượng gel vừa đủ ra tay, xoa đều [28].",
+            "Vuốt nhẹ lên tóc theo từng lọn để tạo độ xoăn tự nhiên [28].",
+            "Không cần xả lại [28]."
+        ],
+        "note": "",
+        "size": 250,
+        "brand": "SLIDER",
+        "slug": "slider-elastin-gel-la-gel-duong-chuyen-biet-voi-tinh-chat-to-tam-giup-dinh-hinh-lon-toc-xoan-giu-song-ben-lau-ma-van-dam-bao-do-mem-mai-va-bong-muot-tu-nhien",
+        "category": "Styling Products",
+        "image": "/assets/products/slider/13.png"
+    },
+    {
+        "name": "SLIDER Hair Wax (Super Hold)",
+        "fullName": "SLIDER HAIR WAX – SÁP VUỐT TÓC GIỮ NẾP SIÊU CỨNG",
+        "description": "mang đến độ giữ nếp cực mạnh, giúp tạo kiểu tóc dễ dàng với hiệu ứng mờ lì (matte texture) [28]. Công thức chứa tinh chất thiên nhiên như sáp ong và dầu thực vật, giúp dưỡng tóc, giảm khô xơ, đồng thời giữ form tóc suốt cả ngày mà không gây bết dính [28].",
+        "advantage": [
+            "Mang đến độ giữ nếp cực mạnh [28].",
+            "Giúp tạo kiểu tóc dễ dàng với hiệu ứng mờ lì (matte texture) [28].",
+            "Chứa tinh chất thiên nhiên giúp dưỡng tóc [28].",
+            "Giảm khô xơ [28].",
+            "Giữ form tóc suốt cả ngày [28].",
+            "Không gây bết dính [28]."
+        ],
+        "howToUse": [
+            "Lấy một lượng sáp vừa đủ, xoa đều giữa lòng bàn tay [29].",
+            "Vuốt đều lên tóc và tạo kiểu theo ý muốn [29]."
+        ],
+        "note": "Bảo quản nơi khô ráo, thoáng mát [29]. Tránh tiếp xúc trực tiếp với mắt [29].",
+        "size": 0,
+        "brand": "SLIDER",
+        "slug": "slider-hair-wax-sap-vuot-toc-giu-nep-sieu-cung",
+        "category": "Styling Products",
+        "image": "/assets/products/slider/14.png"
+    },
+    {
+        "name": "SLIDER Strengthen Repair Conditioner (Salon)",
+        "fullName": "SLIDER STRENGTHEN REPAIR CONDITIONER: DẦU XẢ PHỤC HỒI CHUYÊN DỤNG SALON",
+        "description": "là dầu xả phục hồi chuyên sâu, kết hợp Keratin, Collagen, Vitamin và khoáng chất [29].",
+        "advantage": [
+            "Nuôi dưỡng và phục hồi tóc hư tổn từ sâu bên trong [29].",
+            "Tăng cường độ ẩm, giúp tóc chắc khỏe, mềm mượt và sáng bóng [29].",
+            "Bảo vệ tóc khỏi hư tổn do hóa chất và nhiệt độ cao [29]."
+        ],
+        "howToUse": [
+            "Sau khi gội, lấy một lượng dầu xả vừa đủ, thoa đều lên tóc [30].",
+            "Massage nhẹ nhàng để dưỡng chất thẩm thấu [30].",
+            "Xả sạch với nước."
+        ],
+        "note": "",
+        "size": 4000,
+        "brand": "SLIDER",
+        "slug": "slider-strengthen-repair-conditioner-dau-xa-phuc-hoi-chuyen-dung-salon",
+        "category": "Conditioner",
+        "image": "/assets/products/slider/15.png"
+    },
+    {
+        "name": "SLIDER Nourish Repair Shampoo (Salon)",
+        "fullName": "SLIDER NOURISH REPAIR SHAMPOO: DẦU GỘI PHỤC HỒI CHUYÊN DỤNG SALON",
+        "description": "là dầu gội phục hồi chuyên sâu, với công thức Keratin, Collagen và tinh chất Argan [30].",
+        "advantage": [
+            "Phục hồi tóc hư tổn, nuôi dưỡng lõi tóc từ bên trong [30].",
+            "Cấp ẩm, bảo vệ tóc khỏi khô xơ và gãy rụng [30].",
+            "Tăng độ đàn hồi, giúp tóc chắc khỏe, mềm mượt và sáng bóng [30]."
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ, thoa đều lên tóc [31].",
+            "Massage nhẹ nhàng để làm sạch và kích thích tuần hoàn da đầu [31].",
+            "Xả sạch với nước [31]."
+        ],
+        "note": "",
+        "size": 4000,
+        "brand": "SLIDER",
+        "slug": "slider-nourish-repair-shampoo-dau-goi-phuc-hoi-chuyen-dung-salon",
+        "category": "Shampoo",
+        "image": "/assets/products/slider/16.png"
+    },
+    {
+        "name": "COLORTOUR Collagen Cream",
+        "fullName": "COLORTOUR COLLAGEN CREAM – MÀU NHUỘM CÔNG NGHỆ CAO, BỀN MÀU & DƯỠNG TÓC CHUYÊN SÂU",
+        "description": "ứng dụng công nghệ Nano-Penetration, giúp màu nhuộm thẩm thấu sâu, lên màu chuẩn và giữ màu bền lâu mà không gây khô xơ [32]. Thành phần và công nghệ nổi bật: Công nghệ Nano-Penetration với hạt màu siêu nhỏ dễ dàng xâm nhập vào lõi tóc, giúp lên màu đồng đều và bền màu [32]. Hệ dưỡng chất phục hồi 3X bao gồm Collagen thủy phân, Keratin tự nhiên, và Dầu Argan nguyên chất [32]. Công thức Low-Ammonia giảm thiểu hư tổn, phù hợp với tóc yếu và nhạy cảm [33].",
+        "advantage": [
+            "Giúp tóc lên màu chuẩn, lâu phai [33].",
+            "Bảo vệ và nuôi dưỡng tóc từ bên trong [33].",
+            "Giữ tóc mềm mượt, chắc khỏe sau khi nhuộm [33]."
+        ],
+        "howToUse": [
+            "Trộn thuốc nhuộm với oxy theo tỷ lệ phù hợp [33].",
+            "Thoa đều hỗn hợp lên tóc khô, tránh tiếp xúc trực tiếp với da đầu [33].",
+            "Ủ trong thời gian khuyến nghị, sau đó xả sạch bằng nước và dùng dầu xả để khóa màu [33]."
+        ],
+        "note": "Để xa tầm tay trẻ em [33].",
+        "size": 100,
+        "brand": "COLORTOUR",
+        "slug": "colortour-collagen-cream-mau-nhuom-cong-nghe-cao-ben-mau-duong-toc-chuyen-sau",
+        "category": "Hair Coloring & Bleaching",
+        "image": "/assets/products/colortour/25.png"
+    },
+    {
+        "name": "COLORTOUR Collagen Cream (Ceramide A2)",
+        "fullName": "COLORTOUR COLLAGEN CREAM – MÀU NHUỘM CÔNG NGHỆ CERAMIDE A2, BỀN MÀU & DƯỠNG SÂU",
+        "description": "ứng dụng công nghệ kích hoạt tế bào tóc CERAMIDE A2, giúp màu nhuộm lên chuẩn ngay từ lần đầu mà không cần tẩy tóc [33]. Công thức cải tiến kết hợp dưỡng chất Collagen, Argan, Keratin giúp bảo vệ và phục hồi tóc tối ưu [33]. Công nghệ và thành phần nổi bật: CERAMIDE A2 tăng khả năng bám màu, bảo vệ tóc khỏi hư tổn [34]. Collagen thủy phân phục hồi tóc, ngăn ngừa gãy rụng [34]. Keratin tự nhiên tăng cường độ đàn hồi, giúp tóc chắc khỏe [34]. Dầu Argan nguyên chất cung cấp độ ẩm, làm tóc mềm mại và bóng mượt [34].",
+        "advantage": [
+            "Lên màu chuẩn ngay lần nhuộm đầu tiên, không cần tẩy tóc [34].",
+            "Màu nhuộm ổn định, lâu phai [34].",
+            "Giữ tóc chắc khỏe, suôn mượt sau khi nhuộm [34]."
+        ],
+        "howToUse": [
+            "Trộn màu nhuộm với oxy theo tỷ lệ phù hợp [34].",
+            "Thoa đều lên tóc khô, tránh tiếp xúc trực tiếp với da đầu [34].",
+            "Ủ trong thời gian khuyến nghị, sau đó xả sạch và dưỡng tóc để khóa màu [34]."
+        ],
+        "note": "",
+        "size": 100,
+        "brand": "COLORTOUR",
+        "slug": "colortour-collagen-cream-mau-nhuom-cong-nghe-ceramide-a2-ben-mau-duong-sau",
+        "category": "Hair Coloring & Bleaching",
+        "image": "/assets/products/colortour/26.png"
+    },
+    {
+        "name": "COLORTOUR Developer (New Tech)",
+        "fullName": "COLOR TOUR DEVELOPER – TRỢ NHUỘM CÔNG NGHỆ MỚI, DƯỠNG TÓC VƯỢT TRỘI",
+        "description": "là dòng trợ nhuộm công nghệ tiên tiến, giúp kích hoạt màu nhuộm lên chuẩn, bền màu đồng thời bảo vệ tóc và da đầu trong suốt quá trình nhuộm [35]. Công thức bổ sung dưỡng chất giúp tóc mềm mượt, sáng bóng mà không gây khô xơ [35]. Công nghệ và thành phần nổi bật bao gồm Hợp chất dưỡng ẩm chuyên sâu, Công thức bảo vệ da đầu, và Hương thơm cao cấp [35].",
+        "advantage": [
+            "Tăng độ bám màu, giữ màu lâu hơn (3% - 10 Vol) [36].",
+            "Nâng sáng nhẹ, phù hợp với nhuộm tông trầm (6% - 20 Vol) [36].",
+            "Hỗ trợ nâng sáng từ 2–3 tông (9% - 30 Vol) [36].",
+            "Dành cho nâng sáng tối đa hoặc tông thời trang sáng (12% - 40 Vol) [36].",
+            "Giảm tình trạng tóc khô, xơ rối sau nhuộm [35].",
+            "Hạn chế kích ứng da đầu [35].",
+            "Giúp trải nghiệm nhuộm tóc thư giãn hơn [35]."
+        ],
+        "howToUse": [
+            "Trộn với kem nhuộm theo tỷ lệ phù hợp [36].",
+            "Thoa đều hỗn hợp lên tóc, tránh tiếp xúc trực tiếp với da đầu [36].",
+            "Để thời gian theo hướng dẫn màu nhuộm, sau đó xả sạch với nước [36]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "COLORTOUR",
+        "slug": "color-tour-developer-tro-nhuom-cong-nghe-moi-duong-toc-vuot-troi",
+        "category": "Hair Coloring & Bleaching",
+        "image": "/assets/products/colortour/37.png"
+    },
+    {
+        "name": "COLORTOUR Developer (Advanced Oxy)",
+        "fullName": "COLOR TOUR DEVELOPER – TRỢ NHUỘM CÔNG NGHỆ MỚI",
+        "description": "ứng dụng công thức Oxy tiên tiến, giúp trung hòa và làm đều màu tóc, tối ưu hóa khả năng lên màu và giữ màu lâu dài [36, 37]. Đồng thời, sản phẩm giúp tóc duy trì độ bóng khỏe, mềm mượt, hạn chế hư tổn sau nhuộm [37]. Công nghệ và ưu điểm nổi bật: Công thức cân bằng màu, Dưỡng chất bảo vệ tóc, Mùi hương trái cây dịu nhẹ, và Độ ổn định cao [37].",
+        "advantage": [
+            "Cố định và giữ màu (3% - 10 Vol) [37].",
+            "Phù hợp với nhuộm tông trầm (6% - 20 Vol) [37].",
+            "Hỗ trợ nâng sáng 2–3 tông (9% - 30 Vol) [37].",
+            "Nâng sáng tối đa, phù hợp với các tông sáng thời trang (12% - 40 Vol) [37].",
+            "Hỗ trợ lên màu đồng đều, chuẩn xác [37].",
+            "Giúp tóc không bị khô, xơ rối sau nhuộm [37].",
+            "Giúp trải nghiệm nhuộm tóc dễ chịu hơn [37].",
+            "Giữ màu bền lâu, hạn chế phai màu sớm [37]."
+        ],
+        "howToUse": [
+            "Trộn với kem nhuộm theo tỷ lệ phù hợp [37].",
+            "Thoa đều lên tóc, tránh tiếp xúc trực tiếp với da đầu [37].",
+            "Ủ trong thời gian theo hướng dẫn màu nhuộm, sau đó xả sạch [37]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "COLORTOUR",
+        "slug": "color-tour-developer-tro-nhuom-cong-nghe-moi",
+        "category": "Hair Coloring & Bleaching",
+        "image": "/assets/products/colortour/38.png"
+    },
+    {
+        "name": "COLORTOUR Bleaching Powder (Salon)",
+        "fullName": "COLORTOUR BLEACHING POWDER – BỘT TẨY CHUYÊN DỤNG SALON",
+        "description": "ứng dụng công nghệ tẩy tiên tiến, giúp nâng nền tóc nhanh chóng mà vẫn giữ được độ chắc khỏe của sợi tóc [38]. Công thức chứa các dưỡng chất bảo vệ da đầu, giảm thiểu hư tổn và khô xơ, mang đến trải nghiệm thoải mái cho khách hàng [38].",
+        "advantage": [
+            "Công nghệ tẩy tiên tiến: Nâng sáng nhanh chóng đến Level 8, hạn chế tổn thương cấu trúc tóc [38].",
+            "Dưỡng chất bảo vệ tóc: Giảm thiểu hư tổn, giúp tóc không bị khô xơ sau tẩy [38].",
+            "Lý tưởng cho kỹ thuật balayage & highlight: Hỗ trợ thợ tóc dễ dàng sáng tạo các kiểu nhuộm thời trang [38].",
+            "Hạn chế kích ứng: Giúp khách hàng cảm thấy dễ chịu trong quá trình tẩy [38]."
+        ],
+        "howToUse": [
+            "Lấy một lượng bột tẩy COLORTOUR BLEACHING POWDER vừa đủ [39].",
+            "Trộn với trợ nhuộm Silky Developer theo tỷ lệ 1:2 [39].",
+            "Chải đều hỗn hợp lên phần tóc cần nâng sáng hoặc tạo highlight [39].",
+            "Chờ trong khoảng thời gian phù hợp, kiểm tra độ sáng mong muốn [39].",
+            "Xả sạch bằng nước và tiếp tục quy trình chăm sóc tóc [39]."
+        ],
+        "note": "",
+        "size": 450,
+        "brand": "COLORTOUR",
+        "slug": "colortour-bleaching-powder-bot-tay-chuyen-dung-salon",
+        "category": "Hair Coloring & Bleaching",
+        "image": "/assets/products/colortour/39.png"
+    },
+    {
+        "name": "ZDNB Nutrishine Shampoo",
+        "fullName": "NUTRISHINE SHAMPOO là dòng dầu gội cao cấp với công thức giàu dưỡng chất, giúp nuôi dưỡng sâu và phục hồi mái tóc hư tổn.",
+        "description": "là dòng dầu gội cao cấp với công thức giàu dưỡng chất, giúp nuôi dưỡng sâu và phục hồi mái tóc hư tổn [40]. Sự kết hợp hoàn hảo giữa Vitamin E, tinh dầu hướng dương và tinh chất Argan giúp tóc luôn khỏe mạnh, sáng bóng và mềm mượt [40].",
+        "advantage": [
+            "Công nghệ dưỡng ẩm chuyên sâu: Cung cấp độ ẩm tối ưu, giúp tóc chắc khỏe và suôn mượt [40].",
+            "Chống oxy hóa & bảo vệ tóc: Vitamin E và tinh dầu hướng dương giúp bảo vệ tóc khỏi tác động môi trường [40].",
+            "Phục hồi tóc hư tổn: Tinh chất Argan giúp tóc mềm mại, giảm xơ rối và chẻ ngọn [40].",
+            "Thích hợp cho mọi loại tóc, đặc biệt là tóc khô, yếu, thiếu sức sống [40]."
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ [41].",
+            "Xoa đều và mát-xa nhẹ nhàng trên da đầu và tóc [41].",
+            "Xả sạch bằng nước [41].",
+            "Kết hợp với dầu xả để đạt hiệu quả chăm sóc tóc tốt nhất [41]."
+        ],
+        "note": "Để xa tầm tay trẻ em [41].",
+        "size": 750,
+        "brand": "ZDNB",
+        "slug": "nutrishine-shampoo-la-dong-dau-goi-cao-cap-voi-cong-thuc-giau-duong-chat-giup-nuoi-duong-sau-va-phuc-hoi-mai-toc-hu-ton",
+        "category": "Shampoo",
+        image: "/assets/products/zdnb/12.png"
+    },
+    {
+        "name": "ZDNB Energy Shampoo",
+        "fullName": "ENERGY SHAMPOO – DẦU GỘI CHỐNG RỤNG VÀ TRỊ GÀU",
+        "description": "là dòng dầu gội chuyên biệt giúp loại bỏ gàu, giảm rụng tóc và nuôi dưỡng da đầu khỏe mạnh [41]. Công thức tiên tiến với công nghệ thủy phân Protein, Vitamin và khoáng chất, kết hợp cùng chiết xuất thảo dược quý giúp làm sạch sâu, bổ sung dưỡng chất và trẻ hóa da đầu [41].",
+        "advantage": [
+            "Công nghệ thủy phân Protein: Cung cấp năng lượng, kích thích mọc tóc và phục hồi chân tóc yếu [42].",
+            "Chiết xuất thảo dược tự nhiên: Giúp làm dịu da đầu, ngăn ngừa kích ứng và kiểm soát dầu nhờn [42].",
+            "Loại bỏ gàu tận gốc: Làm sạch da đầu chuyên sâu, giảm bong tróc và ngăn ngừa gàu quay trở lại [42].",
+            "Ngăn ngừa rụng tóc hiệu quả: Củng cố nang tóc, giúp tóc chắc khỏe từ gốc đến ngọn [42]."
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ [42].",
+            "Xoa đều lên tóc và da đầu, mát-xa nhẹ nhàng để dưỡng chất thẩm thấu [42].",
+            "Xả sạch bằng nước [42].",
+            "Kết hợp với dầu xả để đạt hiệu quả chăm sóc tóc tối ưu [42]."
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "ZDNB",
+        "slug": "energy-shampoo-dau-goi-chong-rung-va-tri-gau",
+        "category": "Shampoo",
+        image: "/assets/products/zdnb/11.png"
+    },
+    {
+        "name": "ZDNB Nutrishine Conditioner",
+        "fullName": "NUTRISHINE CONDITIONER – DẦU XẢ SIÊU DƯỠNG",
+        "description": "là dầu xả cao cấp giúp cải thiện tóc hư tổn, cung cấp độ ẩm sâu và phục hồi tóc bóng khỏe [43]. Công thức chuyên biệt với Vitamin E, tinh chất Argan, tinh dầu hướng dương và chiết xuất cà chua giúp tăng cường dưỡng chất, bảo vệ tóc khỏi hư tổn và mang lại độ mềm mượt tối ưu [43].",
+        "advantage": [
+            "Vitamin E & tinh dầu Argan: Nuôi dưỡng tóc từ sâu bên trong, giúp tóc chắc khỏe và giảm gãy rụng [43].",
+            "Tinh dầu hướng dương: Cung cấp độ ẩm, tạo lớp màng bảo vệ tóc khỏi tác động nhiệt và môi trường [43].",
+            "Chiết xuất cà chua: Giàu chất chống oxy hóa, giúp phục hồi tóc hư tổn và cải thiện độ đàn hồi [44].",
+            "Công thức siêu dưỡng: Tăng độ bóng mượt, giúp tóc mềm mại mà không gây bết dính [44]."
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lấy một lượng dầu xả vừa đủ [44].",
+            "Thoa đều lên thân và ngọn tóc, tránh tiếp xúc với da đầu [44].",
+            "Mát-xa nhẹ nhàng và để khoảng 2–3 phút để dưỡng chất thẩm thấu [44].",
+            "Xả sạch bằng nước [44]."
+        ],
+        "note": "Tránh tiếp xúc với da đầu [44].",
+        "size": 750,
+        "brand": "ZDNB",
+        "slug": "nutrishine-conditioner-dau-xa-sieu-duong",
+        "category": "Conditioner",
+        image: "/assets/products/zdnb/10.png"
+    },
+    {
+        "name": "ZDNB Protein Treatment",
+        "fullName": "PROTEIN TREATMENT là giải pháp phục hồi tóc chuyên sâu dành cho tóc hư tổn nặng, giúp làm mịn, chống lão hóa và tăng cường độ bóng khỏe.",
+        "description": "là giải pháp phục hồi tóc chuyên sâu dành cho tóc hư tổn nặng, giúp làm mịn, chống lão hóa và tăng cường độ bóng khỏe [44]. Công thức cải tiến với chiết xuất Argan, Vitamin và protein thủy phân, giúp tóc hấp thụ dưỡng chất nhanh hơn, tăng cường độ ẩm và phục hồi độ đàn hồi tự nhiên [44, 45].",
+        "advantage": [
+            "Chiết xuất Argan & Vitamin: Cung cấp độ ẩm sâu, giúp tóc mềm mại, bóng mượt và khỏe mạnh hơn [45].",
+            "Protein thủy phân: Thẩm thấu nhanh, phục hồi cấu trúc tóc từ lõi, giảm tình trạng tóc khô xơ và gãy rụng [45].",
+            "Công thức dạng kem tiên tiến: Đem lại hiệu quả vượt trội so với tinh dầu, giúp tóc thấm dưỡng chất tối đa mà không gây bết dính [45].",
+            "Phù hợp với mọi loại tóc, đặc biệt là tóc hư tổn: Tăng độ đàn hồi, bảo vệ tóc khỏi tác động nhiệt và hóa chất [45]."
+        ],
+        "howToUse": [
+            "Sau khi gội sạch, lấy một lượng kem vừa đủ thoa đều lên tóc, tập trung vào phần thân và ngọn tóc [45].",
+            "Ủ nóng từ 10–15 phút hoặc ủ nguội trong 20 phút để dưỡng chất thẩm thấu tối đa [46].",
+            "Xả sạch bằng nước [46]."
+        ],
+        "note": "",
+        "size": 520,
+        "brand": "ZDNB",
+        "slug": "protein-treatment-la-giai-phuc-hoi-toc-chuyen-sau-danh-cho-toc-hu-ton-nang-giup-lam-min-chong-lao-hoa-va-tang-cuong-do-bong-khoe",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/zdnb/5.png"
+    },
+    {
+        "name": "ZDNB Argan Oil",
+        "fullName": "ARGAN OIL – HUYẾT THANH TÁI TẠO TÓC",
+        "description": "là huyết thanh phục hồi chuyên sâu, ứng dụng công nghệ chiết xuất dầu Argan nguyên chất, kết hợp với vitamin và chất chống oxy hóa tự nhiên, giúp tái tạo tóc hư tổn, tăng cường độ ẩm và bảo vệ tóc trước tác động nhiệt và môi trường [46].",
+        "advantage": [
+            "Công thức Argan Oil đậm đặc: Giúp tóc hấp thụ dưỡng chất nhanh chóng, phục hồi từ sâu bên trong [47].",
+            "Chống oxy hóa & bảo vệ tóc: Ngăn ngừa hư tổn do hóa chất, nhiệt độ cao và tia UV [47].",
+            "Tăng độ mềm mượt, bóng khỏe: Dưỡng tóc suôn mượt, giảm xơ rối và gãy rụng [47].",
+            "Hiệu quả tối ưu trên tóc còn độ ẩm 10-20%, giúp dưỡng chất thẩm thấu nhanh và phát huy công dụng tốt nhất [47]."
+        ],
+        "howToUse": [
+            "Sau khi gội và lau tóc đến khi còn 10-20% độ ẩm, lấy 2-3 giọt tinh dầu thoa đều lên lòng bàn tay [47].",
+            "Vuốt nhẹ nhàng lên phần thân và ngọn tóc, tránh tiếp xúc với da đầu [47].",
+            "Có thể để khô tự nhiên hoặc sấy nhẹ để tăng độ bóng mượt [47]."
+        ],
+        "note": "Tránh tiếp xúc với da đầu [47].",
+        "size": 100,
+        "brand": "ZDNB",
+        "slug": "argan-oil-huyet-thanh-tai-tao-toc",
+        "category": "Hair Oil & Serum",
+        image: "/assets/products/zdnb/9.png"
+    },
+    {
+        "name": "ZDNB Collagen Hair Mask",
+        "fullName": "COLLAGEN HAIR MASK – KEM HẤP PHỤC HỒI COLLAGEN",
+        "description": "là giải pháp phục hồi chuyên sâu dành cho tóc hư tổn, khô xơ và chẻ ngọn do quá trình uốn, ép, nhuộm [47, 48]. Công thức tinh chất Collagen kết hợp Acid Decenoic giúp tái tạo cấu trúc tóc từ bên trong, cải thiện độ đàn hồi và mang lại mái tóc khỏe mạnh, suôn mượt [48].",
+        "advantage": [
+            "Tái tạo liên kết protein trong lõi tóc, giúp tóc chắc khỏe hơn [48].",
+            "Bổ sung Collagen và Protein nhanh chóng, phục hồi tóc hư tổn từ lớp biểu bì [48].",
+            "Giảm khô xơ, chẻ ngọn, tăng độ đàn hồi, mang lại mái tóc mềm mại, bóng mượt [48].",
+            "Phù hợp cho tóc hư tổn do hóa chất, giúp tóc lấy lại sức sống và vẻ đẹp tự nhiên [48]."
+        ],
+        "howToUse": [
+            "Gội sạch tóc hoặc làm ướt tóc trước khi sử dụng [48].",
+            "Lấy một lượng kem hấp vừa đủ, thoa đều lên tóc từ thân đến ngọn [48].",
+            "Dùng máy hấp nhiệt trong 20-25 phút để dưỡng chất thẩm thấu sâu vào tóc [49].",
+            "Để nguội và xả sạch lại với nước [49]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "ZDNB",
+        "slug": "collagen-hair-mask-kem-hap-phuc-hoi-collagen",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/zdnb/13.png"
+    },
+    {
+        "name": "ZDNB Hair Wax (Professional)",
+        "fullName": "HAIR WAX – SÁP TẠO KIỂU GIỮ NẾP CHUYÊN NGHIỆP",
+        "description": "là sản phẩm tạo kiểu chuyên nghiệp với khả năng giữ nếp mạnh mê, chịu nhiệt tốt và bảo vệ tóc khỏi tác động từ môi trường [49]. Công thức đặc biệt giúp chống tia UV, nhiệt độ cao và ánh nắng mặt trời, giữ cho mái tóc luôn vào nếp tự nhiên mà không gây bết dính [49].",
+        "advantage": [
+            "Giữ nếp linh hoạt, không gây cứng tóc [49].",
+            "Bảo vệ tóc khỏi tia UV, ánh nắng mặt trời [49].",
+            "Kiểm soát độ ẩm, chống bết dính, dễ dàng tạo kiểu [49].",
+            "Dễ gội rửa, không gây bết tóc [50]."
+        ],
+        "howToUse": [
+            "Lấy một lượng vừa đủ, xoa đều vào lòng bàn tay [50].",
+            "Vuốt lên tóc và tạo kiểu theo ý muốn [50].",
+            "Có thể sử dụng thêm lược hoặc máy sấy để cố định kiểu tóc [50]."
+        ],
+        "note": "",
+        "size": 150,
+        "brand": "ZDNB",
+        "slug": "hair-wax-sap-tao-kieu-giu-nep-chuyen-nghiep",
+        "category": "Styling Products",
+        image: "/assets/products/zdnb/16.png"
+    },
+    {
+        "name": "ZDNB Nutrishine Digital Curl Cream",
+        "fullName": "NUTRISHINE DIGITAL CURL CREAM – KEM UỐN KTS PHỤC HỒI CHUYÊN SÂU",
+        "description": "là sản phẩm uốn KTS dạng Acid tiên tiến, ứng dụng công nghệ Nhật Bản giúp tạo lọn xoăn bồng bềnh mà không làm tổn hại đến cấu trúc tóc [50, 51]. Công thức đặc biệt bổ sung dưỡng chất phục hồi ngay trong quá trình uốn, giúp mái tóc mềm mại, sáng bóng và giữ nếp lâu dài [51].",
+        "advantage": [
+            "Công thức uốn Acid an toàn, giảm thiểu hư tổn [51].",
+            "Tái tạo và phục hồi tóc ngay trong quá trình uốn [51].",
+            "Giữ nếp bền lâu, giúp tóc xoăn mềm mại, tự nhiên [51].",
+            "Mùi hương dịu nhẹ, dễ chịu cho khách hàng và nhà tạo mẫu tóc [51]."
+        ],
+        "howToUse": [
+            "Gội sạch tóc, lau khô khoảng 70% [51].",
+            "Thoa đều kem uốn lên phần tóc cần tạo kiểu [51].",
+            "Quấn lô và thực hiện quá trình uốn KTS theo hướng dẫn chuyên môn [51].",
+            "Xả sạch với nước và tiếp tục dưỡng tóc [51]."
+        ],
+        "note": "",
+        "size": 500,
+        "brand": "ZDNB",
+        "slug": "nutrishine-digital-curl-cream-kem-uon-kts-phuc-hoi-chuyen-sau",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/zdnb/1.png"
+    },
+    {
+        "name": "ZDNB Silky Hair Straight Neutralizer",
+        "fullName": "SILKY HAIR STRAIGHT NEUTRALIZER – KEM DƯỠNG TÓC ÉP",
+        "description": "ứng dụng công thức cải tiến, giúp bảo vệ cấu trúc tóc và cân bằng độ ẩm trong quá trình ép thẳng [51, 52]. Sản phẩm kết hợp Collagen và dưỡng chất thiên nhiên, giúp tóc thẳng mượt tự nhiên mà không gây khô xơ hay hư tổn [52].",
+        "advantage": [
+            "Cân bằng cấu trúc tóc, giúp tóc thẳng mượt mà vẫn mềm mại [52].",
+            "Dưỡng ẩm sâu, bảo vệ tóc khỏi hư tổn trong quá trình ép [52].",
+            "Mùi hương tự nhiên, dễ chịu khi sử dụng [52].",
+            "Giữ nếp lâu, mang lại mái tóc suôn mượt, sáng bóng [52]."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô 80% [52].",
+            "Với tóc yếu, thoa thuốc hấp phục hồi trước khi chải thuốc số 1 [52].",
+            "Chải đều thuốc số 1, cách chân tóc 2-3cm, để 10-15 phút, kiểm tra độ giãn tóc rồi xả sạch với nước ấm [52].",
+            "Sấy khô, sử dụng máy là để làm thẳng từng lớp tóc [53].",
+            "Chải kem dưỡng tóc ép đều lên tóc, để 15 phút, xả sạch, sấy khô và là lại nếu cần [53]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "ZDNB",
+        "slug": "silky-hair-straight-neutralizer-kem-duong-toc-ep",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/zdnb/15.png"
+    },
+    {
+        "name": "ZDNB Silky Hair Curly Neutralizer",
+        "fullName": "SILKY HAIR CURLY NEUTRALIZER – NƯỚC DƯỠNG TÓC UỐN",
+        "description": "là nước dưỡng chuyên biệt giúp cân bằng cấu trúc tóc và cố định sóng uốn, mang đến mái tóc bồng bềnh, mềm mại và vào nếp lâu dài [53, 54]. Công thức giàu Collagen và dưỡng chất thiên nhiên, giúp bảo vệ tóc khỏi hư tổn trong quá trình uốn, đồng thời duy trì độ ẩm và độ đàn hồi cho từng lọn tóc [54].",
+        "advantage": [
+            "Cân bằng cấu trúc tóc, giúp sóng uốn bền lâu và tự nhiên [54].",
+            "Dưỡng ẩm sâu, bảo vệ tóc khỏi khô xơ trong quá trình uốn [54].",
+            "Tạo sóng bồng bềnh, đàn hồi, giữ nếp lâu dài [54].",
+            "Mùi hương dễ chịu, mang lại trải nghiệm thoải mái khi sử dụng [54]."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô khoảng 80% [54].",
+            "Với tóc yếu, thoa thuốc hấp phục hồi trước khi chải thuốc số 1 [54].",
+            "Chải đều thuốc số 1, cách chân tóc 2-3cm, để 10-15 phút, kiểm tra độ giãn tóc rồi xả sạch bằng nước ấm [54].",
+            "Sấy khô tóc, cuộn trục uốn nóng rồi đặt vào máy uốn [54].",
+            "Chải đều nước dưỡng tóc uốn lên các lọn tóc, để 15 phút, xả sạch và tạo kiểu [54]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "ZDNB",
+        "slug": "silky-hair-curly-neutralizer-nuoc-duong-toc-uon",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/zdnb/14.png"
+    },
+    {
+        "name": "ZDNB Silky Hair Straight Cream",
+        "fullName": "SILKY HAIR STRAIGHT CREAM – KEM UỐN ÉP SIÊU DƯỠNG",
+        "description": "là dòng kem uốn ép siêu dưỡng, giúp cân bằng cấu trúc tóc, mang lại mái tóc thẳng mượt, sáng bóng và mềm mại tự nhiên [55]. Công thức tiên tiến với Collagen và dưỡng chất thiên nhiên giúp bảo vệ tóc, cung cấp độ ẩm sâu và hạn chế hư tổn trong quá trình tạo kiểu [55].",
+        "advantage": [
+            "Cân bằng cấu trúc tóc, giúp tóc thẳng mượt tự nhiên [55].",
+            "Dưỡng ẩm sâu, phục hồi tóc yếu và hư tổn [55].",
+            "Hạn chế khô xơ, giúp tóc chắc khỏe và óng ả sau khi ép/uốn [55].",
+            "Mùi hương dịu nhẹ, không gây khó chịu khi sử dụng [55]."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô 80% [55].",
+            "Với tóc yếu, bôi thuốc hấp phục hồi trước khi chải thuốc số 1 [55].",
+            "Chải đều thuốc số 1, cách chân tóc 2-3cm, để 10-15 phút, kiểm tra độ giãn tóc, sau đó xả sạch bằng nước ấm [55].",
+            "Sấy khô tóc, sau đó cuộn trục uốn nóng và đặt vào máy uốn hoặc dùng máy là từng lớp tóc [56].",
+            "Chải đều nước dưỡng tóc uốn hoặc kem dưỡng tóc ép, để 15 phút, xả sạch và sấy khô [56]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "ZDNB",
+        "slug": "silky-hair-straight-cream-kem-uon-ep-sieu-duong",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/zdnb/4.png"
+    },
+    {
+        "name": "ZDNB Cold Perm Gel",
+        "fullName": "HAIR CURLY PERM GEL – UỐN LẠNH GEL",
+        "description": "là dòng sản phẩm uốn lạnh chuyên sâu, giúp định hình lọn tóc bồng bềnh, đàn hồi và sáng bóng tự nhiên [56, 57]. Công thức chứa Polymer cation giúp ngăn chặn sự mất protein, kết hợp với Lysine trong Collagen giúp cân bằng cấu trúc tóc, giảm hư tổn trong quá trình uốn [57]. Chai A có dung tích 1000ml [57].",
+        "advantage": [
+            "Bảo vệ tóc, hạn chế mất protein trong quá trình uốn [57].",
+            "Tạo độ bồng bềnh, đàn hồi và giữ nếp lâu dài [57].",
+            "Dưỡng tóc mềm mại, giảm khô xơ sau uốn [57]."
+        ],
+        "howToUse": [
+            "Gội đầu, lau khô tóc 80% [57].",
+            "Chải đều uốn lạnh gel lên từng lớp tóc, cuốn trục, để 15-20 phút [57].",
+            "Thoa đều thuốc số 2, để 20 phút, sau đó xả sạch và sấy tạo kiểu [57]."
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "ZDNB",
+        "slug": "hair-curly-perm-gel-uon-lanh-gel",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/zdnb/6.png"
+    },
+    {
+        "name": "ZDNB Silky Hair Color Cream",
+        "fullName": "SILKY HAIR COLOR CREAM – MÀU NHUỘM SIÊU DƯỠNG",
+        "description": "là dòng màu nhuộm siêu dưỡng, ứng dụng công nghệ tiên tiến với Collagen, Ceramide A2 và các axit amin thiết yếu giúp tóc bền màu, sáng bóng và ít hư tổn [57, 58]. Sản phẩm có hơn 50 tông màu tự nhiên [58].",
+        "advantage": [
+            "Lên màu chuẩn, giữ màu lâu với hơn 50 tông màu tự nhiên [58].",
+            "Bảo vệ tóc với Collagen, Proline, Lysine và Axit Aspartic, giúp tóc mềm mại, giảm hư tổn [58].",
+            "Nồng độ amoniac thấp, không gây kích ứng da đầu, dễ dàng rửa sạch [58].",
+            "Hương thơm dịu nhẹ, tạo cảm giác thoải mái khi nhuộm [58]."
+        ],
+        "howToUse": [],
+        "note": "",
+        "size": 100,
+        "brand": "ZDNB",
+        "slug": "silky-hair-color-cream-mau-nhuom-sieu-duong",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/zdnb/3.png"
+    },
+    {
+        "name": "Oxydant Developer",
+        "fullName": "TRỢ NHUỘM (SPLENDID OXYDANT DEVELOPER) 10, 20, 30, 40 Vol",
+        "slug": "trợ-nhuộm-(splendid-oxydant-developer)-6%,-9%,-12%",
+        "description": "Công thức Oxy tiên tiến: Giúp làm đều màu tóc, hỗ trợ lên màu chuẩn xác và bền lâu.",
+        "advantage": [
+            "Công thức Oxy tiên tiến: Giúp làm đều màu tóc, hỗ trợ lên màu chuẩn xác và bền lâu",
+            "Khóa màu & bảo vệ tóc: Hạn chế phai màu, giữ cho mái tóc luôn bóng mượt, mềm mại sau nhuộm",
+            "Hương trái cây dễ chịu: Giúp giảm cảm giác khó chịu khi nhuộm, tạo sự thoải mái cho khách hàng",
+            "Tương thích linh hoạt: Phù hợp với nhiều công thức nhuộm, giúp nâng tông hoặc giữ màu tùy theo tỷ lệ Oxy"
+        ],
+        "howToUse": [
+            "Chọn nồng độ phù hợp: 6% (Giữ màu tự nhiên, phù hợp với tóc tối màu hoặc phủ bạc), 9% (Hỗ trợ nâng tông nhẹ, dùng cho tóc sáng hoặc nhuộm tone lạnh), 12% (Nâng tông mạnh, dùng trong các trường hợp cần sáng màu rõ rệt)",
+            "Pha trộn: Trộn với thuốc nhuộm theo tỉ lệ phù hợp (thường từ 1:1 đến 1:2)",
+            "Thoa đều: Dùng cọ nhuộm phủ đều lên tóc, tránh tiếp xúc với da đầu",
+            "Xả sạch: Sau thời gian ủ, gội sạch với nước và dưỡng tóc để bảo vệ màu"
+        ],
+        "note": "Avoid contact with the scalp.",
+        "size": 1000,
+        "brand": "ZDNB",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/zdnb/8.png"
+    },
+    {
+        "name": "Bleaching Powder",
+        "fullName": "HAIR BLEACHING - BỘT TẨY TÓC",
+        "slug": "hair-bleaching---bột-tẩy-tóc",
+        "description": "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ.",
+        "advantage": [
+            "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ",
+            "Thời gian xử lý tối ưu: Chỉ từ 30 - 40 phút, rút ngắn thời gian tẩy nhưng vẫn đảm bảo chất lượng tóc",
+            "Công nghệ chống bụi bột: Hạn chế phát tán bột trong không khí, giúp an toàn hơn cho người sử dụng",
+            "Công thức bảo vệ tóc: Giảm thiểu hư tổn tối đa, giúp tóc giữ được độ mềm mại sau khi tẩy"
+        ],
+        "howToUse": [
+            "Pha trộn: Trộn bột tẩy với oxy theo tỉ lệ phù hợp tùy vào nền tóc và mong muốn nâng tông",
+            "Thoa đều: Dùng cọ thoa hỗn hợp lên tóc, tránh tiếp xúc trực tiếp với da đầu",
+            "Kiểm soát thời gian: Để sản phẩm trên tóc 30 - 40 phút, kiểm tra thường xuyên để đạt kết quả mong muốn",
+            "Xả sạch & dưỡng tóc: Gội lại bằng nước sạch và dùng mặt nạ dưỡng tóc để phục hồi"
+        ],
+        "note": "Do not use on overly weak hair or sensitive scalp. Should test on a small strand before full head application. Always combine with conditioning products for best hair protection. Avoid direct contact with the scalp.",
+        "size": 500,
+        "brand": "ZDNB",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/zdnb/2.png"
+    },
+    {
+        "name": "GEL DƯỠNG XOĂN ZDNB",
+        "fullName": "GEL DƯỠNG XOĂN ZDNB 240ML – TINH CHẤT TƠ TẰM",
+        "slug": "gel-duong-xoan-zndb-240ml-tinh-chat-to-tam",
+        "description": "Gel dưỡng xoăn ZDNB với tinh chất tơ tằm giúp định hình lọn xoăn, giữ nếp bền lâu, đồng thời cung cấp độ ẩm và dưỡng",
+        "advantage": [
+            "Giữ nếp xoăn bồng bềnh hết cả ngày",
+            "Dưỡng tóc mềm mượt, giảm tình trạng khô sơ, gãy rối",
+            "Tạo độ đàn hồi & độ bóng khoẻ cho tóc xoăn",
+            "Không gây bết dính, không làm cứng tóc"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lau khô tóc khoảng 80%.",
+            "Lấy một lượng gel vừa đủ, xoa đều ra tay và bóp nhẹ lên các lọn tóc xoăn.",
+            "Để tóc khô tự nhiên hoặc dùng máy sấy khuếch tán để tăng độ bồng bềnh.",
+            "Có thể sử dụng hàng ngày để giữ nếp & dưỡng tóc."
+        ],
+        "note":  null,
+        "size": 240,
+        "brand": "ZDNB",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/zdnb/7.png"
+    },
+    {
+        "name": "Argan Oil",
+        "fullName": "TINH DẦU BÓNG TÓC ARGAN OIL – SOFT-LISS FANTASTIC REPAIR ARGAN OIL",
+        "description": "Soft-Liss Fantastic Repair Argan Oil là tinh dầu dưỡng tóc cao cấp, kết hợp công thức dạng gel lỏng với tinh dầu Argan nguyên chất. Sản phẩm giúp phục hồi tóc hư tổn, tăng cường độ bóng mượt và bảo vệ tóc khỏi tác động nhiệt.",
+        "advantage": [
+            "Chứa tinh dầu Argan giàu dưỡng chất, nuôi dưỡng tóc từ sâu bên trong",
+            "Công thức hạt siêu mịn giúp hàn gắn lõi tóc, giảm tình trạng chẻ ngọn",
+            "Thẩm thấu nhanh, không gây bết dính, giúp tóc mềm mại tự nhiên",
+            "Bổ sung độ ẩm, tạo lớp màng bảo vệ tóc khỏi hư tổn do nhiệt và hóa chất"
+        ],
+        "howToUse": [
+            "Trên tóc ướt: Lấy một lượng nhỏ thoa đều lên tóc trước khi sấy để bảo vệ tóc khỏi nhiệt",
+            "Trên tóc khô: Dùng một lượng vừa đủ xoa đều lên tóc để tăng độ bóng mượt và kiểm soát xơ rối"
+        ],
+        "note": "",
+        "size": 125,
+        "brand": "aurane",
+        image: "/assets/products/aurane/1.png",
+        slug: "tinh-dau-bong-toc-argan-oil",
+        category: "Hair Oil & Serum"
+    },
+    {
+        "name": "Macadamia Oil",
+        "fullName": "TINH DẦU BÓNG TÓC MACADAMIA – SOFT-LISS MACADAMIA OIL",
+        "description": "Soft-Liss Macadamia Oil là tinh dầu dưỡng tóc cao cấp, kết hợp công thức dạng gel lỏng với tinh dầu Macadamia. Sản phẩm giúp phục hồi tóc hư tổn, tăng cường độ bóng mượt và bảo vệ tóc khỏi tác động nhiệt.",
+        "advantage": [
+            "Chứa tinh dầu Macadamia giàu dưỡng chất, nuôi dưỡng và phục hồi tóc từ sâu bên trong",
+            "Công thức hạt siêu mịn giúp hàn gắn lõi tóc, giảm chẻ ngọn, tăng cường độ đàn hồi",
+            "Thẩm thấu nhanh, không gây bết dính, giúp tóc mềm mại tự nhiên",
+            "Cung cấp độ ẩm, giảm xơ rối và tạo độ bóng khỏe cho mái tóc"
+        ],
+        "howToUse": [
+            "Trên tóc ướt: Lấy một lượng nhỏ thoa đều lên tóc trước khi sấy để bảo vệ tóc khỏi nhiệt",
+            "Trên tóc khô: Dùng một lượng vừa đủ xoa đều lên tóc để tăng độ bóng mượt và kiểm soát xơ rối"
+        ],
+        "note": "",
+        "size": 125,
+        "brand": "aurane",
+        "slug": "macadamia-oil",
+        "category": "Hair Oil & Serum",
+        image: "/assets/products/aurane/2.png"
+    },
+    {
+        "name": "Olive Silk Oil",
+        "fullName": "TINH DẦU BÓNG TÓC OLIVE – RE-LIGHTING SILK OIL",
+        "description": "Re-Lighting Silk Oil là tinh dầu dưỡng tóc chuyên sâu, kết hợp tinh dầu Olive với công thức phân tử vi lượng, giúp phục hồi tóc chẻ ngọn, tăng cường độ bóng và duy trì màu sắc tóc sáng đẹp.",
+        "advantage": [
+            "Phục hồi tóc chẻ ngọn, giảm xơ rối và gãy rụng",
+            "Tinh dầu Olive thẩm thấu nhanh, nuôi dưỡng và bảo vệ tóc từ sâu bên trong",
+            "Cung cấp độ ẩm, giúp tóc mềm mượt và sáng bóng tự nhiên",
+            "Duy trì hiệu quả lâu dài, bảo vệ tóc khỏi tác nhân gây hư tổn"
+        ],
+        "howToUse": [
+            "Lấy một lượng vừa đủ thoa đều lên tóc khô hoặc tóc ướt, tập trung vào phần đuôi tóc để giảm chẻ ngọn và tăng độ bóng mượt"
+        ],
+        "note": "",
+        "size": 100,
+        "brand": "aurane",
+        "slug": "olive-silk-oil",
+        "category": "Hair Oil & Serum"
+        ,
+        image: "/assets/products/aurane/3.png"
+    },
+    {
+        "name": "Curl Elastin Gel",
+        "fullName": "Gel Tạo Kiểu Tóc Xoăn 3D – Giữ Nếp & Định Hình Lọn Tóc Hoàn Hảo (Moisturizing Curl Elastin)",
+        "description": "Tăng cường độ đàn hồi và giữ nếp cho tóc xoăn, giúp lọn tóc vào form tự nhiên, bồng bềnh.",
+        "advantage": [
+            "Tăng cường độ đàn hồi và giữ nếp cho tóc xoăn, giúp lọn tóc vào form tự nhiên, bồng bềnh",
+            "Chứa tinh dầu bạch quả và vitamin, bổ sung dưỡng chất giúp tóc khỏe mạnh, hạn chế khô xơ",
+            "Dưỡng ẩm sâu, bảo vệ tóc khỏi hư tổn sau quá trình uốn, giảm tác động từ môi trường"
+        ],
+        "howToUse": [
+            "Lấy một lượng gel vừa đủ, thoa đều lên tóc ẩm",
+            "Dùng tay bóp nhẹ hoặc xoắn từng lọn tóc để tạo độ xoăn mong muốn",
+            "Để khô tự nhiên hoặc sấy khuếch tán để tăng hiệu ứng bồng bềnh"
+        ],
+        "note": "",
+        "size": 325,
+        "brand": "aurane",
+        "slug": "curl-elastin-gel",
+        "category": "Styling Products",
+        image: "/assets/products/aurane/4.png"
+    },
+    {
+        "name": "Hair Mist",
+        "fullName": "XỊT DƯỠNG TÓC – MOISTURIZING HAIR MIST",
+        "description": "Moisturizing Hair Mist là sản phẩm xịt dưỡng giàu tinh dầu, cung cấp độ ẩm sâu và bảo vệ tóc khỏi tác động của tia UV. Thích hợp cho tóc khô và tóc đã qua xử lý hóa chất, giúp tóc mềm mượt, bóng khỏe tự nhiên.",
+        "advantage": [
+            "Chiết xuất từ tinh dầu C13-C14 và Laureth giúp cấp ẩm sâu, ngăn tóc khô xơ",
+            "Hình thành lớp bảo vệ mỏng, giảm tác động của tia UV",
+            "Giúp tóc mềm mại, óng mượt, hạn chế xơ rối",
+            "Dễ dàng sử dụng, không gây bết tóc"
+        ],
+        "howToUse": [
+            "Xịt một lượng vừa đủ lên tóc khô hoặc tóc đã qua xử lý hóa chất để tăng độ ẩm và bóng mượt"
+        ],
+        "note": "",
+        "size": 250,
+        "brand": "aurane",
+        "slug": "hair-mist",
+        "category": "Hair Care",
+        image: "/assets/products/aurane/5.png"
+    },
+    {
+        "name": "Protein Shampoo",
+        "fullName": "DẦU GỘI PHỤC HỒI PROTEIN – PROTEIN MOISTURIZING SHAMPOO",
+        "description": "Làm sạch hiệu quả: Loại bỏ bụi bẩn, dầu thừa mà không làm khô tóc.",
+        "advantage": [
+            "Làm sạch hiệu quả: Loại bỏ bụi bẩn, dầu thừa mà không làm khô tóc",
+            "Phục hồi tóc hư tổn: Bổ sung protein giúp tái tạo cấu trúc tóc chắc khỏe hơn",
+            "Dưỡng ẩm chuyên sâu: Cung cấp nước và dưỡng chất, giúp tóc mềm mượt, bóng khỏe",
+            "Tăng cường bảo vệ tóc: Giảm tác động của nhiệt độ và hóa chất tạo kiểu"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng vừa đủ dầu gội, massage nhẹ nhàng để tạo bọt",
+            "Xả sạch bằng nước, có thể gội lại nếu cần",
+            "Kết hợp với dầu xả hoặc mặt nạ ủ tóc để đạt hiệu quả tối ưu"
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "aurane",
+        "slug": "protein-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/aurane/6.png"
+    },
+    {
+        "name": "VE Repairing Spa",
+        "fullName": "Dầu Dưỡng Spa Phục Hồi Tóc Hư Tổn & Chẻ Ngọn (VE Repairing Hair Spa)",
+        "description": "Phục hồi tóc hư tổn chuyên sâu – Cấp ẩm, nuôi dưỡng từ bên trong.",
+        "advantage": [
+            "Phục hồi tóc hư tổn: Cung cấp dưỡng chất thiết yếu, giúp tái tạo cấu trúc tóc",
+            "Cấp ẩm chuyên sâu: Tinh chất từ thực vật thiên nhiên và tảo biển thẩm thấu vào sợi tóc, giữ ẩm lâu dài",
+            "Tăng cường độ chắc khỏe: Chứa Protein và Vitamin hòa tan, giúp tóc suôn mượt, giảm khô xơ, gãy rụng",
+            "Bảo vệ và nuôi dưỡng tóc: Hỗ trợ lớp biểu bì tóc, tăng độ bóng và đàn hồi"
+        ],
+        "howToUse": [
+            "Hòa 30ml - 50ml sản phẩm với nước ấm",
+            "Ngâm tóc trong 10 - 15 phút, sau đó xả sạch bằng nước",
+            "Sử dụng 1 - 2 lần/tuần để đạt hiệu quả tối ưu"
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "aurane",
+        "slug": "ve-repairing-spa",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/aurane/7.png"
+    },
+    {
+        "name": "Keratin Conditioner",
+        "fullName": "Dầu Xả Keratin – Phục Hồi & Bảo Vệ Tóc (Keratin Conditioner)",
+        "description": "Phục hồi tóc hư tổn: Chứa Keratin tự nhiên, giúp tái tạo cấu trúc tóc, giảm xơ rối và gãy rụng.",
+        "advantage": [
+            "Phục hồi tóc hư tổn: Chứa Keratin tự nhiên, giúp tái tạo cấu trúc tóc, giảm xơ rối và gãy rụng",
+            "Dưỡng tóc mềm mượt: Công thức giàu Acid béo Omega và tinh dầu Argan, giúp tóc chắc khỏe, bóng mượt",
+            "Bảo vệ màu tóc & chống tia UV: Giúp tóc giữ màu lâu hơn, hạn chế tác động từ ánh nắng và môi trường",
+            "Cân bằng độ ẩm: Khoáng chất tự nhiên giúp tóc duy trì độ ẩm cần thiết, tránh tình trạng khô xơ"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lấy một lượng dầu xả vừa đủ",
+            "Thoa đều từ thân đến ngọn tóc, massage nhẹ nhàng",
+            "Để khoảng 3 phút, sau đó xả sạch với nước"
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "aurane",
+        "slug": "keratin-conditioner",
+        "category": "Conditioner",
+        image: "/assets/products/aurane/8.png"
+    },
+    {
+        "name": "Keratin Shampoo",
+        "fullName": "Dầu Gội Keratin – Phục Hồi & Chống Rụng Tóc (Keratin Shampoo)",
+        "description": "Phục hồi chuyên sâu: Chứa Keratin thủy phân, giúp tái tạo cấu trúc tóc từ bên trong, cải thiện độ chắc khỏe.",
+        "advantage": [
+            "Phục hồi chuyên sâu: Chứa Keratin thủy phân, giúp tái tạo cấu trúc tóc từ bên trong, cải thiện độ chắc khỏe",
+            "Dưỡng tóc mềm mượt: Thành phần Vitamin E và tinh dầu Argan giúp tóc suôn mượt, giảm khô xơ",
+            "Giảm gãy rụng: Nuôi dưỡng chân tóc chắc khỏe, hỗ trợ giảm rụng tóc",
+            "Bảo vệ màu tóc: Giúp duy trì độ bền màu, giảm tác động của nhiệt và hóa chất"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ",
+            "Thoa đều lên tóc, massage nhẹ nhàng",
+            "Xả sạch với nước",
+            "Kết hợp với dầu xả để đạt hiệu quả tối ưu"
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "aurane",
+        "slug": "keratin-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/aurane/9.png"
+    },
+    {
+        "name": "Anti-Loss Shampoo",
+        "fullName": "Dầu Gội Chống Rụng Tóc – Ngăn Ngừa Gãy Rụng, Kích Thích Mọc Tóc (Anti-Loss Shampoo)",
+        "description": "Ngăn ngừa gãy rụng tóc: Hỗ trợ cải thiện nang tóc, giúp tóc chắc khỏe từ gốc.",
+        "advantage": [
+            "Ngăn ngừa gãy rụng tóc: Hỗ trợ cải thiện nang tóc, giúp tóc chắc khỏe từ gốc",
+            "Kích thích mọc tóc: Cung cấp dưỡng chất cần thiết giúp tóc phục hồi và phát triển tốt hơn",
+            "Cân bằng da đầu: Công thức đặc biệt giúp duy trì môi trường da đầu khỏe mạnh",
+            "Làm sạch nhẹ nhàng: Loại bỏ bụi bẩn, bã nhờn mà không gây khô da đầu"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ thoa đều lên tóc và da đầu",
+            "Massage nhẹ nhàng 2 - 3 phút để dưỡng chất thẩm thấu",
+            "Xả sạch với nước và sử dụng đều đặn để đạt hiệu quả tối ưu"
+        ],
+        "note": "",
+        "size": 730,
+        "brand": "aurane",
+        "slug": "anti-loss-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/aurane/10.png"
+    },
+    {
+        "name": "Cool Stylish Clay",
+        "fullName": "Sáp Tạo Kiểu Mờ – Giữ Nếp & Định Hình Kiểu Tóc Nam Tính (Cool Stylish Clay)",
+        "description": "Tạo kiểu tóc phồng tự nhiên, giữ nếp bền lâu mà không gây bết dính.",
+        "advantage": [
+            "Tạo kiểu tóc phồng tự nhiên, giữ nếp bền lâu mà không gây bết dính",
+            "Chứa bùn khoáng thiên nhiên, giúp tóc vào nếp chắc chắn, phù hợp với kiểu tóc đứng và messy",
+            "Chống tia UV, bảo vệ tóc, mang lại cảm giác nhẹ tóc, không bám bụi",
+            "Hương thơm nam tính, dễ chịu, tạo cảm giác tươi mới suốt ngày dài"
+        ],
+        "howToUse": [
+            "Lấy một lượng vừa đủ, xoa đều trong lòng bàn tay",
+            "Vuốt lên tóc khô hoặc ẩm, tạo kiểu theo ý muốn",
+            "Dễ dàng điều chỉnh lại kiểu tóc bằng nước"
+        ],
+        "note": "",
+        "size": 80,
+        "brand": "aurane",
+        "slug": "cool-stylish-clay",
+        "category": "Styling Products",
+        image: "/assets/products/aurane/11.png"
+    },
+    {
+        "name": "Proud Stylish Paste",
+        "fullName": "Sáp Tạo Kiểu Bóng – Giữ Nếp & Định Hình Hoàn Hảo (Proud Stylish Paste)",
+        "description": "Hiệu ứng bóng mượt tự nhiên, giúp mái tóc bồng bềnh, vào nếp mà không gây bết dính.",
+        "advantage": [
+            "Hiệu ứng bóng mượt tự nhiên, giúp mái tóc bồng bềnh, vào nếp mà không gây bết dính",
+            "Tạo kiểu linh hoạt, giữ nếp lâu nhưng vẫn mềm mại, dễ dàng tạo lại kiểu khi làm ướt",
+            "Kết cấu nhẹ, không bám bụi, không làm nặng tóc hay gây cứng đơ"
+        ],
+        "howToUse": [
+            "Lấy một lượng sáp vừa đủ, xoa đều trên lòng bàn tay",
+            "Vuốt nhẹ lên tóc khô hoặc ẩm, tạo kiểu theo ý muốn",
+            "Có thể dùng thêm nước để chỉnh lại kiểu tóc dễ dàng"
+        ],
+        "note": "",
+        "size": 80,
+        "brand": "aurane",
+        "slug": "proud-stylish-paste",
+        "category": "Styling Products",
+        image: "/assets/products/aurane/12.png"
+    },
+    {
+        "name": "Firm Hold Pomade",
+        "fullName": "Sáp Tạo Kiểu Siêu Cứng – Giữ Nếp Bền Lâu, Không Bết Dính (Firm Hold Pomade - Chỉ Độ 7.5)",
+        "description": "Giữ nếp siêu cứng, cố định kiểu tóc suốt cả ngày.",
+        "advantage": [
+            "Giữ nếp siêu cứng, cố định kiểu tóc suốt cả ngày",
+            "Công thức từ bùn khoáng thiên nhiên, giúp tóc vào nếp chắc chắn mà không gây bết dính",
+            "Chống tia UV, bảo vệ tóc, không bắt bụi, giữ tóc luôn sạch và nhẹ",
+            "Hương thơm nam tính, dễ chịu, tạo cảm giác thoải mái khi sử dụng"
+        ],
+        "howToUse": [
+            "Lấy một lượng vừa đủ, xoa đều trên lòng bàn tay",
+            "Vuốt lên tóc khô hoặc hơi ẩm, tạo kiểu theo ý muốn",
+            "Dễ dàng làm sạch với nước mà không để lại cặn"
+        ],
+        "note": "",
+        "size": 80,
+        "brand": "aurane",
+        "slug": "firm-hold-pomade",
+        "category": "Styling Products",
+        image: "/assets/products/aurane/13.png"
+    },
+    {
+        "name": "Matte Stylish Wax",
+        "fullName": "Sáp Tạo Kiểu Matte – Giữ Nếp Tự Nhiên, Không Bết Dính (Matte Stylish Wax - Chỉ Độ 6)",
+        "description": "Kết cấu sáp tơ tằm, tạo kiểu linh hoạt với độ giữ nếp vừa phải.",
+        "advantage": [
+            "Kết cấu sáp tơ tằm, tạo kiểu linh hoạt với độ giữ nếp vừa phải",
+            "Chiết xuất từ bùn biển thiên nhiên, giúp tóc vào nếp mà không gây bết dính",
+            "Hiệu ứng tạo kiểu tức thì, giúp tóc trông tự nhiên nhưng vẫn giữ form tốt"
+        ],
+        "howToUse": [
+            "Lấy một lượng sáp vừa đủ, xoa đều trên lòng bàn tay",
+            "Vuốt lên tóc khô hoặc hơi ẩm, tạo kiểu theo ý muốn",
+            "Có thể dễ dàng chỉnh sửa kiểu tóc trong ngày mà không cần gội lại"
+        ],
+        "note": "",
+        "size": 80,
+        "brand": "aurane",
+        "slug": "matte-stylish-wax",
+        "category": "Styling Products",
+        image: "/assets/products/aurane/14.png"
+    },
+    {
+        "name": "Anti-Dandruff Shampoo",
+        "fullName": "Dầu Gội Trị Gàu – Làm Sạch & Nuôi Dưỡng Da Đầu (Seaweed Anti-Dandruff Shampoo)",
+        "description": "Loại bỏ gàu hiệu quả: Công thức chứa khoáng chất vi lượng & rong biển, giúp làm sạch da đầu, giảm tình trạng bong tróc.",
+        "advantage": [
+            "Loại bỏ gàu hiệu quả: Công thức chứa khoáng chất vi lượng & rong biển, giúp làm sạch da đầu, giảm tình trạng bong tróc",
+            "Làm sạch sâu nhưng dịu nhẹ: Độ pH axit nhẹ, không gây kích ứng, phù hợp với da đầu nhạy cảm",
+            "Dưỡng da đầu khỏe mạnh: Cân bằng độ ẩm, nuôi dưỡng da đầu và tóc từ bên trong",
+            "Mang lại cảm giác dễ chịu: Giúp da đầu sạch thoáng, giảm ngứa và khó chịu ngay sau khi sử dụng"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ, thoa đều và massage nhẹ nhàng",
+            "Gội sạch với nước, có thể lặp lại nếu cần",
+            "Kết hợp với dầu xả để tăng hiệu quả dưỡng tóc và bảo vệ da đầu"
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "aurane",
+        "slug": "anti-dandruff-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/aurane/15.png"
+    },
+    {
+        "name": "Olive Oil Control Shampoo",
+        "fullName": "Dầu Gội Tinh Dầu Olive – Kiểm Soát Dầu Hiệu Quả (Olive Oil Control Shampoo)",
+        "description": "Kiểm soát dầu thừa: Hỗ trợ điều tiết bã nhờn, giảm tình trạng tóc bết dính.",
+        "advantage": [
+            "Kiểm soát dầu thừa: Hỗ trợ điều tiết bã nhờn, giảm tình trạng tóc bết dính",
+            "Dưỡng ẩm & nuôi dưỡng tóc: Cung cấp Protein và tinh dầu Olive giúp tóc mềm mượt mà không gây nặng tóc",
+            "Tái tạo môi trường da đầu khỏe mạnh: Hỗ trợ cân bằng độ ẩm và bảo vệ da đầu khỏi các tác nhân gây hại",
+            "Giúp tóc sạch lâu hơn: Giảm tình trạng tóc nhanh bết, giúp tóc bồng bềnh tự nhiên"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy lượng dầu gội vừa đủ thoa đều lên da đầu và tóc",
+            "Massage nhẹ nhàng 2 - 3 phút, sau đó xả sạch với nước",
+            "Sử dụng đều đặn để duy trì da đầu sạch khỏe và tóc suôn mượt"
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "aurane",
+        "slug": "olive-oil-control-shampoo",
+        "category": "Shampoo",
+        image: "/assets/products/aurane/16.png"
+    },
+    {
+        "name": "Protein Repair Essence",
+        "fullName": "TINH CHẤT PROTEIN SỬA CHỮA TÓC HƯ TỔN",
+        "description": "Tinh chất Protein chuyên sâu giúp phục hồi tóc hư tổn nặng do tác động của hóa chất, nhiệt độ cao và môi trường. Công thức giàu Protein kết hợp với các dưỡng chất thiết yếu giúp tái tạo cấu trúc tóc từ sâu bên trong, mang lại mái tóc chắc khỏe, suôn mượt và giảm thiểu gãy rụng.",
+        "advantage": [
+            "Bổ sung Protein và các dưỡng chất giúp phục hồi tóc hư tổn từ gốc đến ngọn",
+            "Cấp ẩm sâu, cải thiện độ đàn hồi và giảm khô xơ, chẻ ngọn",
+            "Hỗ trợ tái tạo lớp biểu bì tóc, bảo vệ tóc trước các tác nhân gây hại từ môi trường",
+            "Mang lại mái tóc mềm mượt, óng ả và chắc khỏe hơn sau mỗi lần sử dụng"
+        ],
+        "howToUse": [
+            "Cách 1 | Điều trị da đầu: Sau khi gội đầu, lấy một lượng vừa đủ thoa đều lên da đầu, massage nhẹ nhàng trong 15 phút để dưỡng chất thẩm thấu, sau đó gội sạch bằng nước ấm",
+            "Cách 2 | Phục hồi tóc: Trộn tinh chất với kem hấp tóc theo tỷ lệ phù hợp, thoa đều lên tóc, massage nhẹ nhàng và ủ tóc trong 15-20 phút. Sau khi ủ, để tóc nguội hoàn toàn rồi xả sạch bằng nước ấm để đạt hiệu quả tốt nhất"
+        ],
+        "note": "",
+        "size": 30,
+        "brand": "aurane",
+        "slug": "protein-repair-essence",
+        "category": "Hair Oil & Serum",
+        image: "/assets/products/aurane/17.png"
+    },
+    {
+        "name": "Ionic Straight Perm Set",
+        "fullName": "BỘ DUỖI TÓC THẲNG ION NHIỆT NĂNG – IONIC STRAIGHT PERM SET",
+        "description": "Bộ sản phẩm duỗi tóc chuyên nghiệp, sử dụng công nghệ nhiệt năng ion giúp tóc thẳng suôn mượt, giảm hư tổn trong quá trình duỗi. Công thức giàu dưỡng chất bảo vệ tóc khỏi tác động của nhiệt, giúp tóc bóng khỏe, mềm mượt tự nhiên.",
+        "advantage": [
+            "Công nghệ nhiệt năng sáng tạo, làm mềm tóc mà không gây hư tổn",
+            "Bảo vệ lớp biểu bì tóc, giúp tóc thẳng mượt và bóng sáng sau khi duỗi",
+            "Chống oxy hóa với Acid Amin, giúp cân bằng độ ẩm, ngăn tóc khô xơ",
+            "Cân bằng pH cho da đầu, phục hồi tóc chắc khỏe sau khi duỗi"
+        ],
+        "howToUse": [
+            "Sử dụng Thuốc Mở Biểu Bì N1 (1000ml): Thoa đều lên tóc, tránh tiếp xúc da đầu. Giữ trên tóc theo thời gian phù hợp với chất tóc (từ 20-30 phút). Xả sạch bằng nước ấm, lau khô tóc",
+            "Duỗi tóc bằng máy kẹp chuyên dụng, đảm bảo tóc thẳng mượt",
+            "Sử dụng Thuốc Dập Duỗi S2 (1000ml): Thoa đều lên tóc, giữ trong 10-15 phút để cố định nếp thẳng. Xả sạch bằng nước và dưỡng tóc bằng dầu xả chuyên sâu"
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "aurane",
+        "slug": "ionic-straight-perm-set",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/aurane/18.png"
+    },
+    {
+        "name": "Dynamic Curl Perm Set",
+        "fullName": "BỘ UỐN TÓC MỀM MẠI ĐẦY SỨC SỐNG – DYNAMIC CURL PERM SET",
+        "description": "Bộ sản phẩm uốn tóc chuyên nghiệp, ứng dụng công nghệ nhiệt năng giúp tạo sóng xoăn mềm mại, bóng mượt và giữ nếp lâu. Công thức giàu dưỡng chất giúp bảo vệ tóc khỏi tác động nhiệt, phục hồi hư tổn và duy trì độ đàn hồi tự nhiên.",
+        "advantage": [
+            "Công nghệ nhiệt năng sáng tạo, giúp tóc mềm mại mà không gây hư tổn",
+            "Chứa Protein bảo vệ lớp biểu bì, tăng cường độ bền của lọn tóc",
+            "Thành phần Silk Protein và Hydrolyzed Vegetable giúp trung hòa tác động hóa chất, giảm thiểu tổn thương tóc",
+            "Cân bằng pH cho da đầu, tạo lớp màng bảo vệ nhẹ nhàng",
+            "Bổ sung dưỡng chất phục hồi tóc hư tổn, giúp tóc bóng khỏe, vào nếp tự nhiên"
+        ],
+        "howToUse": [
+            "Sử dụng Thuốc Mở Biểu Bì N1 (1000ml): Thoa đều lên tóc, tránh tiếp xúc da đầu. Giữ trong 20-30 phút tùy vào chất tóc. Xả sạch bằng nước ấm, lau khô tóc",
+            "Cuốn lô theo kiểu uốn mong muốn, dùng máy hấp nhiệt hoặc ủ theo thời gian phù hợp",
+            "Sử dụng Thuốc Dập Uốn C2 (1000ml): Thoa đều lên tóc, giữ trong 10-15 phút để cố định nếp uốn. Xả sạch bằng nước, dùng dầu xả dưỡng tóc"
+        ],
+        "note": "",
+        "size": 1000,
+        "brand": "aurane",
+        "slug": "dynamic-curl-perm-set",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/aurane/19.png"
+    },
+    {
+        "name": "Elastic Perm Set (Cold)",
+        "fullName": "ELASTIC PERM SET – UỐN LẠNH CHUYÊN NGHIỆP (Thuốc Uốn Lạnh A & Dung Dịch Trung Hòa B)",
+        "description": "Bộ sản phẩm uốn lạnh chuyên nghiệp, ứng dụng công nghệ tiên tiến giúp tạo sóng xoăn bền đẹp, giữ nếp lâu dài mà không gây khô xơ. Công thức giàu dưỡng chất giúp tóc bóng mượt, giàu độ ẩm sau khi sử dụng.",
+        "advantage": [
+            "Công thức dưỡng ẩm cao, giúp tóc mềm mại và đàn hồi tốt sau uốn",
+            "Tạo sóng xoăn tự nhiên, chắc khỏe, phù hợp với nhiều kiểu tóc xoăn",
+            "Giữ nếp lâu dài, không làm khô tóc như các phương pháp uốn thông thường",
+            "Ứng dụng công nghệ hiện đại, bảo vệ tóc khỏi hư tổn trong quá trình uốn"
+        ],
+        "howToUse": [
+            "Chuẩn bị: Gội sạch tóc bằng dầu gội, lau khô và quấn lô cuốn (không sử dụng lô cuốn cao su)",
+            "Sử dụng Thuốc Uốn Lạnh A: Bôi đều lên tóc sao cho thấm đẫm. Quấn khăn lên toàn bộ đầu, sấy nhẹ nhàng. Để thuốc trên tóc từ 20-30 phút tùy theo chất tóc. Xả sạch tóc với nước ấm (không tháo lô cuốn), thấm khô tóc nhưng không sấy",
+            "Sử dụng Dung Dịch Trung Hòa B: Bôi đều lên tóc và giữ trong 15-20 phút. Tháo lô cuốn, xả sạch tóc với nước ấm",
+            "Chăm sóc sau uốn: Không gội đầu bằng dầu gội trong 48 giờ. Chỉ sử dụng dầu xả dinh dưỡng Aurane để giữ độ ẩm và độ bóng cho tóc"
+        ],
+        "note": "Do not use rubber rollers [1]. Do not wash hair with shampoo for 48 hours after perming. Only use Aurane nutritional conditioner [2].",
+        "size": 500,
+        "brand": "aurane",
+        "slug": "elastic-perm-set-cold",
+        "category": "Perm & Straightening Products",
+        image: "/assets/products/aurane/20.png"
+    },
+    {
+        "name": "PPT Balancing Serum Set",
+        "fullName": "ĐIỀU TRỊ TÁI TẠO - PPT BALANCING SERUM (No.1 & No.2)",
+        "description": "Bộ sản phẩm PPT Balancing Serum là giải pháp chuyên sâu giúp phục hồi tóc hư tổn nặng do hóa chất, đặc biệt phù hợp với tóc bị tổn thương do tẩy, nhuộm, uốn, duỗi. Công thức tiên tiến giúp nối lại liên kết lưu huỳnh Sunfua, tăng cường độ chắc khỏe và độ đàn hồi tự nhiên của tóc.",
+        "advantage": [
+            "No.1 – Tái tạo & bảo vệ tóc trước hóa chất: Công thức đặc biệt giúp phục hồi cấu trúc tóc từ sâu bên trong, giảm thiểu hư tổn khi xử lý hóa chất, giúp tóc khỏe mạnh hơn trong quá trình tẩy, nhuộm, ép hoặc uốn. Chứa enzyme Protein PH 4.5 và dưỡng chất cân bằng, giúp tóc dẻo dai hơn, chống gãy rụng",
+            "No.2 – Dưỡng sâu & củng cố liên kết tóc: Bước hoàn thiện giúp khóa và củng cố liên kết tóc, tăng cường độ ẩm và dưỡng chất, giúp tóc bóng mượt, chắc khỏe, hạn chế khô xơ."
+        ],
+        "howToUse": [
+            "No.1: Hòa tan với nước theo tỷ lệ, bôi đều lên tóc, ủ trong 5-8 phút, sau đó sử dụng No.2",
+            "No.2: Sau khi dùng No.1, thoa đều lên tóc, ủ trong 15-30 phút rồi gội sạch."
+        ],
+        "note": "",
+        "size": 500,
+        "brand": "aurane",
+        "slug": "ppt-balancing-serum-set",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/aurane/21.png"
+    },
+    {
+        "name": "Color Cream",
+        "fullName": "KEM NHUỘM TÓC (SPLENDID COLOR CREAM)",
+        "description": "Hạt sắc tố siêu mịn: Giúp màu lên chuẩn, sáng đẹp, nổi bật và đều màu.",
+        "advantage": [
+            "Hạt sắc tố siêu mịn: Giúp màu lên chuẩn, sáng đẹp, nổi bật và đều màu",
+            "Công nghệ điều chế màu 4D: Hỗ trợ pha trộn màu thông minh, giúp màu tóc tự nhiên, sống động và bền lâu",
+            "Bảo vệ tóc chuyên sâu: Chứa Protein & Collagen, giúp giảm hư tổn, giữ tóc mềm mại và bóng mượt sau nhuộm",
+            "Giữ màu lâu, bền đẹp: Chống phai màu, hạn chế xỉn màu theo thời gian"
+        ],
+        "howToUse": [
+            "Pha màu: Trộn kem nhuộm với trợ nhuộm (Oxy) theo tỷ lệ thích hợp (thường 1:1 hoặc 1:1.5 tùy vào mức độ sáng mong muốn)",
+            "Thoa đều lên tóc: Chia tóc thành từng lớp, dùng cọ nhuộm phủ đều sản phẩm",
+            "Ủ màu: Để trong 30-40 phút, kiểm tra màu theo thời gian thực tế",
+            "Xả tóc: Gội sạch với nước và sử dụng dầu xả/dưỡng để bảo vệ tóc và giữ màu lâu hơn"
+        ],
+        "note": "",
+        "size": 100,
+        "brand": "aurane",
+        "slug": "color-cream",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/aurane/22.png"
+    },
+    {
+        "name": "Oxydant Developer",
+        "fullName": "TRỢ NHUỘM (SPLENDID OXYDANT DEVELOPER) 6%, 9%, 12%",
+        "description": "Công thức Oxy tiên tiến: Giúp làm đều màu tóc, hỗ trợ lên màu chuẩn xác và bền lâu.",
+        "advantage": [
+            "Công thức Oxy tiên tiến: Giúp làm đều màu tóc, hỗ trợ lên màu chuẩn xác và bền lâu",
+            "Khóa màu & bảo vệ tóc: Hạn chế phai màu, giữ cho mái tóc luôn bóng mượt, mềm mại sau nhuộm",
+            "Hương trái cây dễ chịu: Giúp giảm cảm giác khó chịu khi nhuộm, tạo sự thoải mái cho khách hàng",
+            "Tương thích linh hoạt: Phù hợp với nhiều công thức nhuộm, giúp nâng tông hoặc giữ màu tùy theo tỷ lệ Oxy"
+        ],
+        "howToUse": [
+            "Chọn nồng độ phù hợp: 6% (Giữ màu tự nhiên, phù hợp với tóc tối màu hoặc phủ bạc), 9% (Hỗ trợ nâng tông nhẹ, dùng cho tóc sáng hoặc nhuộm tone lạnh), 12% (Nâng tông mạnh, dùng trong các trường hợp cần sáng màu rõ rệt)",
+            "Pha trộn: Trộn với thuốc nhuộm theo tỉ lệ phù hợp (thường từ 1:1 đến 1:2)",
+            "Thoa đều: Dùng cọ nhuộm phủ đều lên tóc, tránh tiếp xúc với da đầu",
+            "Xả sạch: Sau thời gian ủ, gội sạch với nước và dưỡng tóc để bảo vệ màu"
+        ],
+        "note": "Avoid contact with the scalp [3].",
+        "size": 1000,
+        "brand": "aurane",
+        "slug": "oxydant-developer",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/aurane/23.png"
+    },
+    {
+        "name": "Bleaching Powder",
+        "fullName": "HAIR BLEACHING - BỘT TẨY TÓC",
+        "description": "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ.",
+        "advantage": [
+            "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ",
+            "Thời gian xử lý tối ưu: Chỉ từ 30 - 40 phút, rút ngắn thời gian tẩy nhưng vẫn đảm bảo chất lượng tóc",
+            "Công nghệ chống bụi bột: Hạn chế phát tán bột trong không khí, giúp an toàn hơn cho người sử dụng",
+            "Công thức bảo vệ tóc: Giảm thiểu hư tổn tối đa, giúp tóc giữ được độ mềm mại sau khi tẩy"
+        ],
+        "howToUse": [
+            "Pha trộn: Trộn bột tẩy với oxy theo tỉ lệ phù hợp tùy vào nền tóc và mong muốn nâng tông",
+            "Thoa đều: Dùng cọ thoa hỗn hợp lên tóc, tránh tiếp xúc trực tiếp với da đầu",
+            "Kiểm soát thời gian: Để sản phẩm trên tóc 30 - 40 phút, kiểm tra thường xuyên để đạt kết quả mong muốn",
+            "Xả sạch & dưỡng tóc: Gội lại bằng nước sạch và dùng mặt nạ dưỡng tóc để phục hồi"
+        ],
+        "note": "Do not use on overly weak hair or sensitive scalp [4]. Should test on a small strand before full head application [4]. Always combine with conditioning products for best hair protection [4]. Avoid direct contact with the scalp [5].",
+        "size": 500,
+        "brand": "aurane",
+        "slug": "bleaching-powder",
+        "category": "Hair Coloring & Bleaching",
+        image: "/assets/products/aurane/24.png"
+    },
+    {
+        "name": "Bleaching Powder",
+        "fullName": "HAIR BLEACHING - BỘT TẨY TÓC",
+        "description": "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ.",
+        "advantage": [
+            "Nâng tông mạnh mẽ: Giúp nâng nền nhanh, hiệu quả lên đến 7 cấp độ",
+            "Thời gian xử lý tối ưu: Chỉ từ 30 - 40 phút, rút ngắn thời gian tẩy nhưng vẫn đảm bảo chất lượng tóc",
+            "Công nghệ chống bụi bột: Hạn chế phát tán bột trong không khí, giúp an toàn hơn cho người sử dụng",
+            "Công thức bảo vệ tóc: Giảm thiểu hư tổn tối đa, giúp tóc giữ được độ mềm mại sau khi tẩy"
+        ],
+        "howToUse": [
+            "Pha trộn: Trộn bột tẩy với oxy theo tỉ lệ phù hợp tùy vào nền tóc và mong muốn nâng tông",
+            "Thoa đều: Dùng cọ thoa hỗn hợp lên tóc, tránh tiếp xúc trực tiếp với da đầu",
+            "Kiểm soát thời gian: Để sản phẩm trên tóc 30 - 40 phút, kiểm tra thường xuyên để đạt kết quả mong muốn",
+            "Xả sạch & dưỡng tóc: Gội lại bằng nước sạch và dùng mặt nạ dưỡng tóc để phục hồi"
+        ],
+        "note": "Do not use on overly weak hair or sensitive scalp [4]. Should test on a small strand before full head application [4]. Always combine with conditioning products for best hair protection [4]. Avoid direct contact with the scalp [5].",
+        "size": 500,
+        "brand": "aurane",
+        image: "/assets/products/aurane/27.png",
+        slug: "hair-bleaching-bot-tay-toc",
+        category: "Hair Coloring & Bleaching"
+    },
+    {
+        "name": "Sea Mud Repair Mask",
+        "fullName": "MẶT NẠ PHỤC HỒI CHUYÊN SÂU - CHỐNG OXY HÓA (SEA MUD ULTRA REPAIRING HAIR MASK)",
+        "description": "Phục hồi chuyên sâu cho tóc hư tổn đã qua sử dụng hóa chất. Công thức phục hồi sâu chuyên nghiệp, được trộn với các thành phần chiết xuất từ bùn biển sâu, có thể nhanh chóng thẩm thấu vào bên trong tóc để cung cấp dinh dưỡng và nước, làm mềm lớp biểu bì tóc và cải thiện tình trạng tóc chẻ ngọn, với hương thơm thanh lịch để mang lại trải nghiệm phục hồi tóc tận hưởng toàn bộ tóc chắc khỏe và mềm mại.",
+        "advantage": [
+            "Công thức phục hồi sâu chuyên nghiệp, được trộn với các thành phần chiết xuất từ bùn biển sâu, có thể nhanh chóng thẩm thấu vào bên trong tóc để cung cấp dinh dưỡng và nước, làm mềm lớp biểu bì tóc và cải thiện tình trạng tóc chẻ ngọn",
+            "Hương thơm thanh lịch để mang lại trải nghiệm phục hồi tóc tận hưởng toàn bộ tóc chắc khỏe và mềm mại"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, sấy tóc đến 70-80% khô, lấy 100-150ml mặt nạ thoa đều lên tóc, massage tóc và ủ trong 15-20 phút cho tóc nguội hẳn rồi gội sạch lại bằng nước ấm"
+        ],
+        "note": "Do not blow dry with high heat [6, 7].",
+        "size": 500,
+        "brand": "aurane",
+        "slug": "sea-mud-repair-mask",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/aurane/28.png"
+    },
+    {
+        "name": "Nutritive Repair Mask",
+        "fullName": "Mặt Nạ Dưỡng Chất Phục Hồi & Tái Tạo Tóc (Nutritive Repairing Hair Mask)",
+        "description": "Phục hồi chuyên sâu cho tóc thiếu nước, tóc hư tổn do uốn, nhuộm và hóa chất.",
+        "advantage": [
+            "Phục hồi chuyên sâu cho tóc thiếu nước, tóc hư tổn do uốn, nhuộm và hóa chất",
+            "Cung cấp dưỡng chất từ tinh dầu thực vật, thấm sâu vào cấu trúc tóc, giúp tóc chắc khỏe, hạn chế gãy rụng",
+            "Tăng cường độ đàn hồi, giúp tóc mềm mại, suôn mượt và bồng bềnh tự nhiên"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lau bớt nước và thoa đều sản phẩm lên tóc",
+            "Massage nhẹ nhàng để dưỡng chất thấm sâu, tập trung vào phần tóc hư tổn",
+            "Ủ từ 5 - 10 phút, sau đó xả sạch bằng nước ấm"
+        ],
+        "note": "",
+        "size": 500,
+        "brand": "aurane",
+        "slug": "nutritive-repair-mask",
+        "category": "Hair Mask & Treatment",
+        image: "/assets/products/aurane/30.png"
+    },
+    {
+        "name": "Balancing Conditioner (Small)",
+        "fullName": "Dầu Xả Dinh Dưỡng – Bảo Vệ & Nuôi Dưỡng Tóc Mềm Mượt (Balancing Conditioner)",
+        "description": "Dưỡng tóc chuyên sâu: Chứa Acid Amin & Carbohydrates, giúp nuôi dưỡng tóc chắc khỏe.",
+        "advantage": [
+            "Dưỡng tóc chuyên sâu: Chứa Acid Amin & Carbohydrates, giúp nuôi dưỡng tóc chắc khỏe",
+            "Phục hồi lớp biểu bì tóc: Hỗ trợ làm mịn lớp vảy tóc, giúp tóc suôn mượt và chắc khỏe hơn",
+            "Duy trì độ ẩm tự nhiên: Cân bằng độ ẩm, giúp tóc mềm mại, đàn hồi và bóng khỏe",
+            "Bảo vệ tóc hiệu quả: Hạn chế tác động từ môi trường, duy trì độ bền và sức sống cho tóc"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lấy một lượng dầu xả vừa đủ, thoa đều từ thân đến ngọn tóc",
+            "Massage nhẹ nhàng để dưỡng chất thẩm thấu",
+            "Xả sạch lại với nước",
+            "Sử dụng thường xuyên để tóc luôn bóng mượt và chắc khỏe"
+        ],
+        "note": "",
+        "size": 750,
+        "brand": "aurane",
+        "slug": "balancing-conditioner-small",
+        "category": "Conditioner",
+        image: "/assets/products/aurane/31.png"
+    },
+    {
+        "name": "Moisture Repair Shampoo (Large)",
+        "fullName": "Dầu Gội Dinh Dưỡng – Phục Hồi & Cấp Ẩm Chuyên Sâu (Moisture Repair Shampoo)",
+        "description": "Nuôi dưỡng & phục hồi tóc: Chiết xuất từ tinh dầu thực vật, giúp tóc chắc khỏe từ bên trong.",
+        "advantage": [
+            "Nuôi dưỡng & phục hồi tóc: Chiết xuất từ tinh dầu thực vật, giúp tóc chắc khỏe từ bên trong",
+            "Cấp ẩm chuyên sâu: Bổ sung độ ẩm cần thiết cho tóc khô, xơ, giúp tóc luôn mềm mượt, đàn hồi",
+            "Tăng độ bóng & suôn mượt: Giúp tóc sáng bóng tự nhiên, giảm tình trạng chẻ ngọn, rối xù",
+            "Bảo vệ tóc khỏi hư tổn: Hỗ trợ cải thiện tóc yếu, gãy rụng do uốn, duỗi, nhuộm"
+        ],
+        "howToUse": [
+            "Làm ướt tóc, lấy một lượng dầu gội vừa đủ",
+            "Thoa đều lên tóc, massage nhẹ nhàng để tạo bọt và làm sạch da đầu",
+            "Xả sạch với nước"
+        ],
+        "note": "",
+        "size": 4000,
+        "brand": "aurane",
+        image: "/assets/products/aurane/32.png",
+        "slug": "moisture-repair-shampoo-large",
+        "category": "Shampoo"
+    },
+    {
+        "name": "Balancing Conditioner (Large)",
+        "fullName": "Dầu Xả Cân Bằng – Dưỡng Tóc & Bảo Vệ Toàn Diện (Balancing Conditioner)",
+        "description": "Cấp ẩm & nuôi dưỡng tóc: Chứa Vitamin E, axit béo không bão hòa, giúp bổ sung độ ẩm và khoáng chất cần thiết.",
+        "advantage": [
+            "Cấp ẩm & nuôi dưỡng tóc: Chứa Vitamin E, axit béo không bão hòa, giúp bổ sung độ ẩm và khoáng chất cần thiết",
+            "Kích thích mọc tóc: Hỗ trợ nuôi dưỡng da đầu, giúp tóc chắc khỏe, hạn chế gãy rụng",
+            "Chống oxy hóa & tia UV: Bảo vệ tóc khỏi tác động môi trường, duy trì độ bóng mượt tự nhiên",
+            "Giảm tác hại từ nhiệt & hóa chất: Hỗ trợ phục hồi tóc hư tổn do uốn, duỗi, nhuộm"
+        ],
+        "howToUse": [
+            "Sau khi gội đầu, lấy một lượng dầu xả vừa đủ",
+            "Thoa đều từ thân đến ngọn tóc, massage nhẹ nhàng",
+            "Để khoảng 3 phút, sau đó xả sạch với nước"
+        ],
+        "note": "",
+        "size": 4000,
+        "brand": "aurane",
+        image: "/assets/products/aurane/33.png",
+        "slug": "balancing-conditioner-large",
+        "category": "Conditioner"
+    },
+    {
+        "name": "PPT Balancing Serum",
+        "fullName": "NGUYÊN TỐ HỒI PHỤC ENZYME CÂN BẰNG PPT (PPT BALANCING SERUM)",
+        "description": "Cân bằng độ pH: Công thức chứa Enzyme Protein pH 4.5 giúp ổn định cấu trúc tóc, ngăn chặn tình trạng xơ rối và mất nước sau khi uốn.",
+        "advantage": [
+            "Cân bằng độ pH: Công thức chứa Enzyme Protein pH 4.5 giúp ổn định cấu trúc tóc, ngăn chặn tình trạng xơ rối và mất nước sau khi uốn",
+            "Dưỡng ẩm & phục hồi chuyên sâu: Thành phần PPT (Polypeptide) và nhóm Vitamin thẩm thấu sâu, giúp phục hồi cấu trúc sợi tóc từ bên trong",
+            "Ngăn ngừa oxy hóa: Hạn chế tác động tiêu cực từ hóa chất và môi trường, giúp mái tóc duy trì độ bóng mượt, khỏe mạnh",
+            "Hỗ trợ giữ màu tóc nhuộm: Cấp ẩm và khóa màu hiệu quả, giảm thiểu tình trạng tóc xỉn màu, khô xơ sau khi nhuộm"
+        ],
+        "howToUse": [
+            "Bảo vệ tóc khi uốn: Xịt nhẹ một lớp mỏng trước khi uốn để hạn chế hư tổn",
+            "Dưỡng phục hồi sau uốn/nhuộm: Thoa đều lên tóc ẩm sau khi gội, không cần xả lại",
+            "Tăng độ bóng & bảo vệ màu tóc: Dùng như một tinh chất dưỡng trước khi sấy hoặc tạo kiểu"
+        ],
+        "note": "",
+        "size": 500,
+        "brand": "aurane",
+        image: "/assets/products/aurane/34.png",
+        "slug": "ppt-balancing-serum",
+        "category": "Hair Oil & Serum"
+    },
+    {
+        "name": "Color Care Hair Mask",
+        "fullName": "HẤP DÀNH CHO TÓC MÀU (COLOR CARE HAIR MASK)",
+        "description": "Mặt nạ chuyên sâu giúp bảo vệ màu tóc, chống oxy hóa, giảm thiểu tác động của môi trường gây phai màu. Công thức giàu dưỡng chất kết hợp chiết xuất từ tinh dầu mau, giúp tóc chắc khỏe, mềm mượt và dẻo dai hơn. Hỗ trợ phục hồi tóc hư tổn sau quá trình nhuộm, cân bằng độ ẩm và tăng độ đàn hồi.",
+        "advantage": [
+            "Mặt nạ chuyên sâu giúp bảo vệ màu tóc, chống oxy hóa, giảm thiểu tác động của môi trường gây phai màu",
+            "Công thức giàu dưỡng chất kết hợp chiết xuất từ tinh dầu mau, giúp tóc chắc khỏe, mềm mượt và dẻo dai hơn",
+            "Hỗ trợ phục hồi tóc hư tổn sau quá trình nhuộm, cân bằng độ ẩm và tăng độ đàn hồi"
+        ],
+        "howToUse": [
+            "Sau khi gội sạch tóc, lau bớt nước, thoa đều sản phẩm từ thân đến ngọn tóc",
+            "Ủ nóng: Dùng khăn nóng hoặc máy hấp trong 5 - 10 phút để dưỡng chất thẩm thấu tốt hơn",
+            "Ủ nguội: Dùng thay thế dầu xả, để trên tóc 3 - 5 phút rồi xả sạch với nước"
+        ],
+        "note": "",
+        "size": 500,
+        "brand": "aurane",
+        image: "/assets/products/aurane/35.png",
+        "slug": "color-care-hair-mask",
+        "category": "Hair Mask & Treatment"
+    },
+    {
+        "name": "Nutri Care Hair Mask",
+        "fullName": "HẤP PHỤC HỒI - NUTRI CARE HAIR MASK",
+        "description": "Công thức tái tạo chuyên sâu: Chứa tinh dầu thực vật và Protein giúp phục hồi tận sâu bên trong sợi tóc, cải thiện độ đàn hồi và độ chắc khỏe.",
+        "advantage": [
+            "Công thức tái tạo chuyên sâu: Chứa tinh dầu thực vật và Protein giúp phục hồi tận sâu bên trong sợi tóc, cải thiện độ đàn hồi và độ chắc khỏe",
+            "Nuôi dưỡng từ gốc đến ngọn: Cung cấp dưỡng chất thiết yếu giúp tóc bóng mượt, mềm mại hơn sau mỗi lần sử dụng",
+            "Phục hồi lớp biểu bì tóc: Hỗ trợ sửa chữa lớp biểu bì bị tổn thương do hóa chất và nhiệt độ cao, giúp tóc bớt xơ rối và dễ chải hơn",
+            "Ngăn ngừa hư tổn về sau: Tạo lớp màng bảo vệ tóc khỏi tác nhân gây hại từ môi trường và nhiệt độ cao từ máy sấy, máy kẹp"
+        ],
+        "howToUse": [
+            "Bước 1: Gội sạch tóc và lau bớt nước",
+            "Bước 2: Lấy một lượng vừa đủ, thoa đều lên thân và ngọn tóc, tránh phần da đầu",
+            "Ủ nóng (chuyên sâu): Dùng khăn ấm hoặc máy hấp trong 5 - 10 phút để tinh chất thẩm thấu nhanh hơn",
+            "Ủ nguội (dưỡng nhanh): Để trên tóc 3 - 5 phút rồi xả sạch với nước"
+        ],
+        "note": "Avoid applying to the scalp [8].",
+        "size": 500,
+        "brand": "aurane",
+        image: "/assets/products/aurane/36.png",
+        "slug": "nutri-care-hair-mask",
+        "category": "Hair Mask & Treatment"
+    }
+]
+
+
+

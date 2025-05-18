@@ -4,14 +4,14 @@ import {Search} from "lucide-react";
 import * as React from "react"
 import { NavigationItem} from "@/components/nav-bar/nav-item";
 import Image from "next/image";
-import {BannerCarousel} from "@/components/banner-carousel";
-import TopItems from "@/components/top-items";
-import TopCategory from "@/components/top-category";
-import AboutUs from "@/components/about-us";
-import HotNews from "@/components/hot-news";
-import NewVideo from "@/components/new-video";
-import ProductCount from "@/components/product-count";
-import Branding from "@/components/branding";
+import {BannerCarousel} from "../components/home/banner-carousel";
+import TopItems from "../components/home/top-items";
+import TopCategory from "../components/home/top-category";
+import AboutUs from "../components/home/about-us";
+import HotNews from "../components/home/hot-news";
+import NewVideo from "../components/home/new-video";
+import ProductCount from "../components/home/product-count";
+import Branding from "../components/home/branding";
 
 export default function Home() {
   return (
@@ -20,9 +20,9 @@ export default function Home() {
         <TopItems />
         <TopCategory />
         <AboutUs />
-        <HotNews />
+        {/*<HotNews />*/}
         <NewVideo />
-        <ProductCount />
+        {/*<ProductCount />*/}
         <Branding />
     </main>
   );
