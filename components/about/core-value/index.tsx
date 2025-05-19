@@ -79,7 +79,7 @@ export default function CoreValue() {
     )
 }
 
-function BoltIcon(props) {
+function BoltIcon(props: any) {
     return (
         <svg
             {...props}
@@ -100,7 +100,7 @@ function BoltIcon(props) {
 }
 
 
-function HandshakeIcon(props) {
+function HandshakeIcon(props: any) {
     return (
         <svg
             {...props}
@@ -124,7 +124,7 @@ function HandshakeIcon(props) {
 }
 
 
-function LightbulbIcon(props) {
+function LightbulbIcon(props: any) {
     return (
         <svg
             {...props}
@@ -146,7 +146,7 @@ function LightbulbIcon(props) {
 }
 
 
-function RocketIcon(props) {
+function RocketIcon(props: any) {
     return (
         <svg
             {...props}
@@ -169,7 +169,7 @@ function RocketIcon(props) {
 }
 
 
-function ShieldIcon(props) {
+function ShieldIcon(props: any) {
     return (
         <svg
             {...props}
@@ -189,7 +189,7 @@ function ShieldIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props: any) {
     return (
         <svg
             {...props}
