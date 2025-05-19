@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react';
+import React, {Suspense, useState} from 'react';
 import {useSearchParams} from "next/navigation";
 import {Product} from "@/types/product";
 import {mockProducts} from "@/service/mock.product";
@@ -46,24 +46,24 @@ const Page = () => {
     }, [categoryName]);
 
     return products.length > 0 && (
-        <section className={"pt-[5.5rem]"}>
-            <div>
-                <BreadCrumbCategory brandName={brandName} name={categoryName} />
-            </div>
+       <section className={"pt-[5.5rem]"}>
+                <div>
+                    <BreadCrumbCategory brandName={brandName} name={categoryName} />
+                </div>
 
-            <div className={"py-[2rem]"}>
-                <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center mb-16">
-                    <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
-                        {mockCategory.filter(x => x.englishName == categoryName)[0].name} - <span className={"text-[#fdc254]"}>{brandName}</span>
-                    </h2>
+                <div className={"py-[2rem]"}>
+                    <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center mb-16">
+                        <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
+                            {mockCategory.filter(x => x.englishName == categoryName)[0].name} - <span className={"text-[#fdc254]"}>{brandName}</span>
+                        </h2>
+                    </div>
+                    <div className={"mx-[16rem] px-[1rem] grid grid-cols-4 gap-8"}>
+                        {products.map((product, index) => (
+                            <ProductCard from={"/category/brand"} key={index} product={product} />
+                        ))}
+                    </div>
                 </div>
-                <div className={"mx-[16rem] px-[1rem] grid grid-cols-4 gap-8"}>
-                    {products.map((product, index) => (
-                        <ProductCard from={"/category/brand"} key={index} product={product} />
-                    ))}
-                </div>
-            </div>
-        </section>
+            </section>
     );
 };
 

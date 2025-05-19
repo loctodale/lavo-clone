@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
+import {Suspense} from "react";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -23,11 +24,13 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased w-screen  ">
-      <NavBar />
-        <div className={"w-full min-h-screen"}>
-            {children}
-        </div>
-      <Footer/>
+        <Suspense fallback={<div>Loading...</div>}>
+            <NavBar />
+            <div className={"w-full min-h-screen"}>
+                {children}
+            </div>
+            <Footer/>
+        </Suspense>
       </body>
     </html>
   );
