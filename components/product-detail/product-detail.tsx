@@ -73,7 +73,7 @@ export default function ProductDetail({product}: {product: Product }) {
     )
 }
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
     return (
         <svg
             {...props}
@@ -93,7 +93,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function HeartIcon(props) {
+function HeartIcon(props: any) {
     return (
         <svg
             {...props}
@@ -113,7 +113,7 @@ function HeartIcon(props) {
 }
 
 
-function StarIcon(props) {
+function StarIcon(props: any) {
     return (
         <svg
             {...props}
