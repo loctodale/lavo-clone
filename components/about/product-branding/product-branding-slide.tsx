@@ -88,15 +88,18 @@ const ProductBrandingSlide = () => {
           {itemsProductBranding.map((item, i) => (
               <div
                   key={i}
-                  className="w-screen h-[90vh] flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-4 px-4"
+                  className="w-screen h-auto min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8"
               >
                 <img
                     src={item.imgUrl}
                     alt={`Slide ${i}`}
-                    className="w-full md:w-1/2 h-[50vh] md:h-full object-contain"
+                    className="w-full md:w-1/2 h-[40vh] md:h-[90vh] object-contain"
                 />
-                <div className="w-full md:w-1/2">
-                  <ProductBrandingCard title={item.title} descroption={item.description} />
+                <div className="w-full md:w-1/2 flex items-center justify-center h-auto md:h-full">
+                  <ProductBrandingCard
+                      title={item.title}
+                      descroption={item.description}
+                  />
                 </div>
               </div>
           ))}
