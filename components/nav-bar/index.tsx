@@ -23,7 +23,7 @@ const NavBar = () => {
             <div className={"fixed w-full h-[5.5rem] border-[1px] border-gray-200 z-20 bg-white"}>
                 <div className={"flex px-4 md:px-[1rem] mx-auto md:mx-[14rem] justify-between items-center h-full"}>
                     <div onClick={() => {router.push("/")}} className={"logo flex flex-col items-center justify-center hover:cursor-pointer"}>
-                        <Image src="/offical/logo.png" alt="logo-holder" className={"max-h-[5.5rem]"} width={100} height={100} />
+                        <Image src="/assets/logo.png" alt="logo-holder" className={"max-h-[5.5rem]"} width={100} height={100} />
                     </div>
                     
                     {/* Desktop Navigation */}
