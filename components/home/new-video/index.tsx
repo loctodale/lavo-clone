@@ -1,11 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { mockDataNews } from "@/service/mock.data";
+import {mockDataVideo} from "@/service/mock.data";
 import CardWithImage from "@/components/ui/card-with-image";
 
 const NewVideo = () => {
-    const [displayedData, setDisplayedData] = useState(mockDataNews);
+    const [displayedData, setDisplayedData] = useState(mockDataVideo);
     const buttonList = [
         "Hướng Dẫn Sử Dụng - Lavox Nano Complex",
         "Hướng Dẫn Sử Dụng - X.pros Fiber",
@@ -22,9 +22,9 @@ const NewVideo = () => {
     useEffect(() => {
         const updateDataByScreen = () => {
             if (window.innerWidth < 640) {
-                setDisplayedData(mockDataNews.slice(0, 6));
+                setDisplayedData(mockDataVideo.slice(0, 6));
             } else {
-                setDisplayedData(mockDataNews);
+                setDisplayedData(mockDataVideo);
             }
         };
 
@@ -40,21 +40,22 @@ const NewVideo = () => {
                 <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem]"}>Video <span className={"text-[#fdc254]"}>mới nhất</span></h2>
             </div>
 
-            <div className={"mx-[1rem] sm:mx-[16rem] flex justify-center items-center mt-[2.5rem] gap-4 max-w-screen flex-wrap"}>
-                {buttonList.map((label, index) => (
-                    <Button
-                        key={index}
-                        className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"}
-                        variant={"outline"}
-                    >
-                        {label}
-                    </Button>
-                ))}
-            </div>
+            {/*<div className={"mx-[1rem] sm:mx-[16rem] flex justify-center items-center mt-[2.5rem] gap-4 max-w-screen flex-wrap"}>*/}
+            {/*    {buttonList.map((label, index) => (*/}
+            {/*        <Button*/}
+            {/*            key={index}*/}
+            {/*            className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"}*/}
+            {/*            variant={"outline"}*/}
+            {/*        >*/}
+            {/*            {label}*/}
+            {/*        </Button>*/}
+            {/*    ))}*/}
+            {/*</div>*/}
 
-            <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-[1rem] sm:mx-[16rem]">
+            <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mx-[1rem] sm:mx-[16rem]">
                 {displayedData.map((data, index) => (
                     <CardWithImage
+                        slug={data.slug}
                         key={index}
                         title={data.title}
                         imageUrl={data.imageUrl}

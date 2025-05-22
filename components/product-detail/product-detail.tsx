@@ -9,9 +9,9 @@ export default function ProductDetail({product}: {product: Product }) {
                 <div className="grid md:grid-cols-5 gap-3 items-start">
                     <div className="flex md:hidden items-start">
                         <div className="grid gap-4">
-                            <h1 className="font-bold text-3xl sm:text-3xl">${product.fullName}</h1>
+                            <h1 className="font-bold text-3xl sm:text-3xl">{product.fullName}</h1>
                         </div>
-                        <div className="text-4xl font-bold ml-auto">$99</div>
+                        {/*<div className="text-4xl font-bold ml-auto">$99</div>*/}
                     </div>
                     <div className="md:col-span-4">
                         <img

@@ -11,65 +11,41 @@ import {
 
 export function DevelopmentTimeline() {
     return (
-        <Timeline className={"w-[20vw] ml-12 mt-8"}>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                    <TimelineTitle>2012</TimelineTitle>
-                    <TimelineDescription>Thành lập Công Ty TNHH TM CAO ĐẠT, bước đầu
-                        tham gia thị trường nhập khẩu và phân phối mỹ phẩm tóc.</TimelineDescription>
-                </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                    <TimelineTitle>2015</TimelineTitle>
-                    <TimelineDescription>Mở rộng hệ thống phân phối, hợp tác với nhiều
-                        salon lớn trên cả nước.</TimelineDescription>
-                </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                    <TimelineTitle>2018</TimelineTitle>
-                    <TimelineDescription>Trở thành nhà phân phối độc quyền của nhiều
-                        thương hiệu danh tiếng từ châu Âu và châu Á.</TimelineDescription>
-                </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineDot />
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                    <TimelineTitle>2022</TimelineTitle>
-                    <TimelineDescription>
-                        Kỷ niệm 10 năm thành lập, đánh dấu sự phát triển
-                        mạnh mẽ và mở rộng thị trường.
-                    </TimelineDescription>
-                </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineDot />
-                </TimelineSeparator>
-                <TimelineContent>
-                    <TimelineTitle>2024</TimelineTitle>
-                    <TimelineDescription>
-                        Tái cơ cấu doanh nghiệp với định hướng phát triển
-                        bền vững, lấy khách hàng làm trung tâm.
-                    </TimelineDescription>
-                </TimelineContent>
-            </TimelineItem>
+        <Timeline className="w-full sm:w-[80%] md:w-[60%] lg:w-[20vw] ml-0 md:ml-4 mt-4 space-y-4">
+            {[
+                {
+                    year: "2012",
+                    text: "Thành lập Công Ty TNHH TM CAO ĐẠT, bước đầu tham gia thị trường nhập khẩu và phân phối mỹ phẩm tóc."
+                },
+                {
+                    year: "2015",
+                    text: "Mở rộng hệ thống phân phối, hợp tác với nhiều salon lớn trên cả nước."
+                },
+                {
+                    year: "2018",
+                    text: "Trở thành nhà phân phối độc quyền của nhiều thương hiệu danh tiếng từ châu Âu và châu Á."
+                },
+                {
+                    year: "2022",
+                    text: "Kỷ niệm 10 năm thành lập, đánh dấu sự phát triển mạnh mẽ và mở rộng thị trường."
+                },
+                {
+                    year: "2024",
+                    text: "Tái cơ cấu doanh nghiệp với định hướng phát triển bền vững, lấy khách hàng làm trung tâm."
+                }
+            ].map(({ year, text }, index) => (
+                <TimelineItem key={year}>
+                    <TimelineSeparator>
+                        <TimelineDot />
+                        {index < 4 && <TimelineConnector />}
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <TimelineTitle>{year}</TimelineTitle>
+                        <TimelineDescription>{text}</TimelineDescription>
+                    </TimelineContent>
+                </TimelineItem>
+            ))}
         </Timeline>
-    )
+    );
 }
+

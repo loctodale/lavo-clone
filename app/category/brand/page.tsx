@@ -14,8 +14,8 @@ import {Product} from "@/types/product";
 import ProductCard from "@/components/ui/product-card";
 function BreadCrumbBrand({categoryName, brandName}:{categoryName: string, brandName: string}) {
     return (
-        <Breadcrumb className={"w-full p-[0.5rem] text-[1rem] bg-[#f3f3f4] z-10"}>
-            <BreadcrumbList className={" px-[1rem] mx-[16rem] text-[#172345]"}>
+        <Breadcrumb className={"w-full p-2 text-[1rem] bg-[#f3f3f4] z-10"}>
+            <BreadcrumbList className={"px-4 sm:px-6 lg:px-20 max-w-screen-xl mx-auto text-[#172345]"}>
                 <BreadcrumbItem>
                     <BreadcrumbLink className={"font-[400]"} href="/">Trang chủ</BreadcrumbLink>
                 </BreadcrumbItem>
@@ -35,13 +35,13 @@ const Page = () => {
     const [products, setProduct] = React.useState<Product[]>([])
 
     const searchParams = useSearchParams()
-    const categoryName = searchParams.get("category_name");
-    const brandName = searchParams.get("brand");
+    let categoryName = searchParams.get("category_name");
+    let brandName = searchParams.get("brand");
     if (!categoryName || !brandName)
         return null;
 
     React.useEffect(() => {
-        const productList = mockProducts.filter(x => x.brand == brandName && x.category == categoryName);
+        const productList = mockProducts.filter(x => encodeURIComponent(x.brand) == brandName && encodeURIComponent(x.category) == categoryName);
         setProduct(productList);
     }, [categoryName]);
     return (
@@ -49,13 +49,13 @@ const Page = () => {
             <div>
                 <BreadCrumbBrand brandName={brandName} categoryName={categoryName} />
             </div>
-            <div className={"py-[2rem]"}>
-                <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center mb-16">
-                    <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
+            <div className={"py-8"}>
+                <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center mb-10">
+                    <h2 className="text-[#172345] font-bold text-[24px] sm:text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
                         {mockCategory.filter(x => x.englishName == categoryName)[0].name} - <span className={"text-[#fdc254]"}>{brandName}</span>
                     </h2>
                 </div>
-                <div className={"mx-[16rem] px-[1rem] grid grid-cols-4 gap-8"}>
+                <div className={"max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"}>
                     {products.map((product, index) => (
                         <ProductCard from={"/category/brand"} key={index} product={product} />
                     ))}

@@ -13,24 +13,25 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 
-export function ProductBrandingCard({title, descroption} : {title: string; descroption: string[]}) {
+export function ProductBrandingCard({ title, descroption }: { title: string; descroption: string[] }) {
     return (
-        <Card className="w-[30vw]">
+        <Card className="w-full md:w-[70%] lg:w-[30vw] max-w-md">
             <CardHeader>
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="text-lg md:text-xl lg:text-2xl">{title}</CardTitle>
             </CardHeader>
             <CardContent>
-                    <div className="grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                            {descroption.map((desc, i) => (
-                                <p key={i}>- {desc}</p>
-                            ))}
-                        </div>
+                <div className="grid w-full gap-4">
+                    <div className="flex flex-col space-y-2 text-sm md:text-base">
+                        {descroption.map((desc, i) => (
+                            <p key={i}>- {desc}</p>
+                        ))}
                     </div>
+                </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-                <Button>Xem chi tiết</Button>
+                <Button className="w-full md:w-auto">Xem chi tiết</Button>
             </CardFooter>
         </Card>
-    )
+    );
 }
+

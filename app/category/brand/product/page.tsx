@@ -14,8 +14,8 @@ import { mockProducts } from '@/service/mock.product';
 import ProductDetail from "@/components/product-detail/product-detail";
 function BreadCrumbProduct({categoryName, brandName, productName}:{categoryName: string, brandName: string, productName: string}) {
     return (
-        <Breadcrumb className={"w-full p-[0.5rem] text-[1rem] bg-[#f3f3f4]"}>
-            <BreadcrumbList className={" px-[1rem] mx-[16rem] text-[#172345]"}>
+        <Breadcrumb className={"w-full p-2 text-[1rem] bg-[#f3f3f4] z-10"}>
+            <BreadcrumbList className={"px-4 sm:px-6 lg:px-20 max-w-screen-xl mx-auto text-[#172345]"}>
                 <BreadcrumbItem>
                     <BreadcrumbLink className={"font-[400]"} href="/">Trang chủ</BreadcrumbLink>
                 </BreadcrumbItem>

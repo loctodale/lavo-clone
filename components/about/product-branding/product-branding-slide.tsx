@@ -54,45 +54,48 @@ const ProductBrandingSlide = () => {
 
     if (!container || !slider) return;
 
-    const numSlides = slider.children.length;
-    const totalScroll = window.innerWidth * (numSlides - 2) + window.innerWidth;
+    const slides = slider.children;
+    const totalSlides = slides.length;
+    const slideWidth = window.innerWidth;
+
+    const totalScroll = slideWidth * totalSlides;
 
     gsap.to(slider, {
-      x: () => `-${totalScroll}`,
+      x: () => `-${totalScroll - slideWidth}`,
       ease: "none",
       scrollTrigger: {
         trigger: container,
         start: "top top",
-        end: () => `+=${window.innerWidth * numSlides}`,
+        end: () => `+=${totalScroll}`,
         scrub: 1,
         pin: true,
         anticipatePin: 1,
       },
     });
 
-    return () => ScrollTrigger.getAll().forEach(t => t.kill());
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, []);
 
   return (
-      <div ref={containerRef} className="h-3/4 w-full overflow-hidden relative">
+      <div ref={containerRef} className="w-full overflow-hidden relative">
         <div
             ref={sliderRef}
-            className="flex w-full h-full"
-            style={{ width: `${images.length * 100}vw` }}
+            className="flex"
+            style={{ width: `${itemsProductBranding.length * 100}vw` }}
         >
-
           {itemsProductBranding.map((item, i) => (
               <div
                   key={i}
-                  className="w-screen h-screen flex-shrink-0"
+                  className="w-screen h-[90vh] flex-shrink-0 flex flex-col md:flex-row items-center justify-center gap-4 px-4"
               >
-                <div className={"w-full h-full flex justify-center items-center "}>
-                  <img
-                      src={item.imgUrl}
-                      alt={`Slide ${i}`}
-                      className="w-[50vw] h-screen object-contain"
-                  />
-
+                <img
+                    src={item.imgUrl}
+                    alt={`Slide ${i}`}
+                    className="w-full md:w-1/2 h-[50vh] md:h-full object-contain"
+                />
+                <div className="w-full md:w-1/2">
                   <ProductBrandingCard title={item.title} descroption={item.description} />
                 </div>
               </div>
@@ -101,6 +104,5 @@ const ProductBrandingSlide = () => {
       </div>
   );
 };
-
 
 export default ProductBrandingSlide;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import {Input} from "@/components/ui/input";
 import {Button} from "@/components/ui/button";
 import {Facebook, Instagram, Phone, Youtube} from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
       {/* Location */}
       <div className="flex flex-col gap-2 w-full lg:w-1/4">
         <div className={"relative w-full h-full"}>
-          <Image className={"absolute bottom-[-2rem] left-[-2rem]"} width={200} height={50} src="/assets/logo.png" alt="logo" />
+          <Image className={"relative md:absolute md:bottom-[-2rem] left-[-2rem]"} width={200} height={50} src="/assets/logo.png" alt="logo" />
         </div>
         <h3 className="font-bold">Địa chỉ: <span className="font-normal">34 ĐÀO DUY ANH, PHƯỜNG 9, <br /> QUẬN PHÚ NHUẬN, TPHCM</span></h3>
         <h3 className="font-bold">Điện thoại: <span className="font-normal">(02)838424372</span></h3>
@@ -59,14 +60,9 @@ const Footer = () => {
           Liên kết
         </h3>
         <div className="flex flex-col gap-1.5">
-          <h3 className="font-bold">Trang chủ</h3>
-          <h3 className="font-bold">Giới thiệu</h3>
-          <h3 className="font-bold">Hoạt động</h3>
-          <h3 className="font-bold">Kinh nghiệm hay</h3>
-          <h3 className="font-bold">Xu hướng tóc</h3>
-          <h3 className="font-bold">Kỹ thuật</h3>
-          <h3 className="font-bold">Video sản phẩm</h3>
-          <h3 className="font-bold">Liên hệ</h3>
+          <Link href={"/"} className="font-bold">Trang chủ</Link>
+          <Link href={"/about"} className="font-bold">Giới thiệu</Link>
+          <Link href={"/video"} className="font-bold">Video sản phẩm</Link>
         </div>
       </div>
     </div>

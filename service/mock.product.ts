@@ -20,7 +20,7 @@ export const mockProducts: Product[] = [
         "size": 350,
         "brand": "HAIRPLEXX",
         "slug": "bo-phuc-hoi-chuyen-sau-chong-lao-hoa-caviar",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/hairplexx/1.png"
     },
     {
@@ -43,7 +43,7 @@ export const mockProducts: Product[] = [
         "size": 0,
         "brand": "KARSILK",
         "slug": "tinh-dau-argan-karsilk-phuc-hoi-bao-ve-toc-toan-dien",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         image: "/assets/products/karsilk/2.png"
     },
     {
@@ -63,7 +63,7 @@ export const mockProducts: Product[] = [
         "size": 0,
         "brand": "KARSILK",
         "slug": "karsilk-keratin-hair-mask-mat-na-u-toc-phuc-hoi-chuyen-sau",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/karsilk/3.png"
     },
     {
@@ -86,7 +86,7 @@ export const mockProducts: Product[] = [
         "size": 800,
         "brand": "SLIDER",
         "slug": "dau-xa-phuc-hoi-slider-strengthen-repair-conditioner",
-        "category": "Conditioner",
+        "category": "conditioner",
         image: "/assets/products/slider/1.png"
     },
     {
@@ -111,7 +111,7 @@ export const mockProducts: Product[] = [
         "size": 800,
         "brand": "SLIDER",
         "slug": "dau-goi-phuc-hoi-toc-hu-ton-slider-nourish-repair-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/slider/2.png"
     },
     {
@@ -135,7 +135,7 @@ export const mockProducts: Product[] = [
         "size": 800,
         "brand": "SLIDER",
         "slug": "dau-goi-tri-gau-chong-nhon-slider-anti-dandruff-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/slider/3.png"
     },
     {
@@ -160,7 +160,7 @@ export const mockProducts: Product[] = [
         "size": 800,
         "brand": "SLIDER",
         "slug": "dau-goi-ngan-ngua-chong-rung-toc-slider-anti-hair-loss-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/slider/4.png"
     },
     {
@@ -185,7 +185,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "SLIDER",
         "slug": "kem-duoi-toc-slider-silky-hair-straight-cream-danh-cho-toc-khoe",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/slider/5.png"
     },
     {
@@ -211,7 +211,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "SLIDER",
         "slug": "kem-duoi-toc-slider-silky-hair-straight-cream-danh-cho-toc-hu-ton-toc-da-qua-tay",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/slider/6.png"
     },
     {
@@ -236,7 +236,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "SLIDER",
         "slug": "kem-dap-duong-toc-duoi-slider-silky-hair-straight-neutralizer-bao-ve-can-bang-cau-truc-toc",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         "image": "/assets/products/slider/7.png"
     },
     {
@@ -259,7 +259,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "SLIDER",
         "slug": "nuoc-dap-duong-toc-uon-slider-silky-hair-curly-neutralizer-giu-nep-bao-ve-song-uon",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         "image": "/assets/products/slider/8.png"
     },
     {
@@ -281,7 +281,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "SLIDER",
         "slug": "kem-hap-phuc-hoi-chuyen-sau-slider-repair-hair-mask-phuc-hoi-nuoi-duong-toc-hu-ton",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         "image": "/assets/products/slider/9.png"
     },
     {
@@ -303,7 +303,7 @@ export const mockProducts: Product[] = [
         "size": 250,
         "brand": "SLIDER",
         "slug": "xit-duong-sieu-bong-slider-nourish-spray-bao-ve-phuc-hoi-toc",
-        "category": "Styling Products",
+        "category": "styling-products",
         "image": "/assets/products/slider/10.png"
     },
     {
@@ -325,7 +325,7 @@ export const mockProducts: Product[] = [
         "size": 0,
         "brand": "SLIDER",
         "slug": "slider-keratin-biotin-kem-hap-phuc-hoi-toc-hu-ton",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         "image": "/assets/products/slider/11.png"
     },
     {
@@ -348,7 +348,7 @@ export const mockProducts: Product[] = [
         "size": 0,
         "brand": "SLIDER",
         "slug": "slider-argan-oil-la-huyet-thanh-duong-toc-cao-cap-ket-hop-argan-oil-nguyen-chat-vitamin-va-chat-chong-oxy-hoa-tu-nhien-giup-phuc-hoi-toc-hu-ton-giam-xo-roi-va-bao-ve-toc-khoi-tac-dong-moi-truong",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         "image": "/assets/products/slider/12.png"
     },
     {
@@ -370,7 +370,7 @@ export const mockProducts: Product[] = [
         "size": 250,
         "brand": "SLIDER",
         "slug": "slider-elastin-gel-la-gel-duong-chuyen-biet-voi-tinh-chat-to-tam-giup-dinh-hinh-lon-toc-xoan-giu-song-ben-lau-ma-van-dam-bao-do-mem-mai-va-bong-muot-tu-nhien",
-        "category": "Styling Products",
+        "category": "styling-products",
         "image": "/assets/products/slider/13.png"
     },
     {
@@ -393,7 +393,7 @@ export const mockProducts: Product[] = [
         "size": 0,
         "brand": "SLIDER",
         "slug": "slider-hair-wax-sap-vuot-toc-giu-nep-sieu-cung",
-        "category": "Styling Products",
+        "category": "styling-products",
         "image": "/assets/products/slider/14.png"
     },
     {
@@ -414,7 +414,7 @@ export const mockProducts: Product[] = [
         "size": 4000,
         "brand": "SLIDER",
         "slug": "slider-strengthen-repair-conditioner-dau-xa-phuc-hoi-chuyen-dung-salon",
-        "category": "Conditioner",
+        "category": "conditioner",
         "image": "/assets/products/slider/15.png"
     },
     {
@@ -435,7 +435,7 @@ export const mockProducts: Product[] = [
         "size": 4000,
         "brand": "SLIDER",
         "slug": "slider-nourish-repair-shampoo-dau-goi-phuc-hoi-chuyen-dung-salon",
-        "category": "Shampoo",
+        "category": "shampoo",
         "image": "/assets/products/slider/16.png"
     },
     {
@@ -456,7 +456,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "COLORTOUR",
         "slug": "colortour-collagen-cream-mau-nhuom-cong-nghe-cao-ben-mau-duong-toc-chuyen-sau",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/colortour/25.png"
     },
     {
@@ -477,7 +477,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "COLORTOUR",
         "slug": "colortour-collagen-cream-mau-nhuom-cong-nghe-ceramide-a2-ben-mau-duong-sau",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/colortour/26.png"
     },
     {
@@ -502,7 +502,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "COLORTOUR",
         "slug": "color-tour-developer-tro-nhuom-cong-nghe-moi-duong-toc-vuot-troi",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/colortour/37.png"
     },
     {
@@ -528,7 +528,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "COLORTOUR",
         "slug": "color-tour-developer-tro-nhuom-cong-nghe-moi",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/colortour/38.png"
     },
     {
@@ -552,7 +552,7 @@ export const mockProducts: Product[] = [
         "size": 450,
         "brand": "COLORTOUR",
         "slug": "colortour-bleaching-powder-bot-tay-chuyen-dung-salon",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/colortour/39.png"
     },
     {
@@ -575,7 +575,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "ZDNB",
         "slug": "nutrishine-shampoo-la-dong-dau-goi-cao-cap-voi-cong-thuc-giau-duong-chat-giup-nuoi-duong-sau-va-phuc-hoi-mai-toc-hu-ton",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/zdnb/12.png"
     },
     {
@@ -598,7 +598,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "ZDNB",
         "slug": "energy-shampoo-dau-goi-chong-rung-va-tri-gau",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/zdnb/11.png"
     },
     {
@@ -621,7 +621,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "ZDNB",
         "slug": "nutrishine-conditioner-dau-xa-sieu-duong",
-        "category": "Conditioner",
+        "category": "conditioner",
         image: "/assets/products/zdnb/10.png"
     },
     {
@@ -643,7 +643,7 @@ export const mockProducts: Product[] = [
         "size": 520,
         "brand": "ZDNB",
         "slug": "protein-treatment-la-giai-phuc-hoi-toc-chuyen-sau-danh-cho-toc-hu-ton-nang-giup-lam-min-chong-lao-hoa-va-tang-cuong-do-bong-khoe",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/zdnb/5.png"
     },
     {
@@ -665,7 +665,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "ZDNB",
         "slug": "argan-oil-huyet-thanh-tai-tao-toc",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         image: "/assets/products/zdnb/9.png"
     },
     {
@@ -688,7 +688,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "ZDNB",
         "slug": "collagen-hair-mask-kem-hap-phuc-hoi-collagen",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/zdnb/13.png"
     },
     {
@@ -710,7 +710,7 @@ export const mockProducts: Product[] = [
         "size": 150,
         "brand": "ZDNB",
         "slug": "hair-wax-sap-tao-kieu-giu-nep-chuyen-nghiep",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/zdnb/16.png"
     },
     {
@@ -733,7 +733,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "ZDNB",
         "slug": "nutrishine-digital-curl-cream-kem-uon-kts-phuc-hoi-chuyen-sau",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/zdnb/1.png"
     },
     {
@@ -757,7 +757,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "ZDNB",
         "slug": "silky-hair-straight-neutralizer-kem-duong-toc-ep",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/zdnb/15.png"
     },
     {
@@ -781,7 +781,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "ZDNB",
         "slug": "silky-hair-curly-neutralizer-nuoc-duong-toc-uon",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/zdnb/14.png"
     },
     {
@@ -805,7 +805,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "ZDNB",
         "slug": "silky-hair-straight-cream-kem-uon-ep-sieu-duong",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/zdnb/4.png"
     },
     {
@@ -826,7 +826,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "ZDNB",
         "slug": "hair-curly-perm-gel-uon-lanh-gel",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/zdnb/6.png"
     },
     {
@@ -844,7 +844,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "ZDNB",
         "slug": "silky-hair-color-cream-mau-nhuom-sieu-duong",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/zdnb/3.png"
     },
     {
@@ -867,7 +867,7 @@ export const mockProducts: Product[] = [
         "note": "Avoid contact with the scalp.",
         "size": 1000,
         "brand": "ZDNB",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/zdnb/8.png"
     },
     {
@@ -890,7 +890,7 @@ export const mockProducts: Product[] = [
         "note": "Do not use on overly weak hair or sensitive scalp. Should test on a small strand before full head application. Always combine with conditioning products for best hair protection. Avoid direct contact with the scalp.",
         "size": 500,
         "brand": "ZDNB",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/zdnb/2.png"
     },
     {
@@ -913,7 +913,7 @@ export const mockProducts: Product[] = [
         "note":  null,
         "size": 240,
         "brand": "ZDNB",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/zdnb/7.png"
     },
     {
@@ -935,7 +935,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/1.png",
         slug: "tinh-dau-bong-toc-argan-oil",
-        category: "Hair Oil & Serum"
+        category: "Hair Oil and Serum"
     },
     {
         "name": "Macadamia Oil",
@@ -955,7 +955,7 @@ export const mockProducts: Product[] = [
         "size": 125,
         "brand": "aurane",
         "slug": "macadamia-oil",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         image: "/assets/products/aurane/2.png"
     },
     {
@@ -975,7 +975,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "aurane",
         "slug": "olive-silk-oil",
-        "category": "Hair Oil & Serum"
+        "category": "hair-oil-and-serum"
         ,
         image: "/assets/products/aurane/3.png"
     },
@@ -997,7 +997,7 @@ export const mockProducts: Product[] = [
         "size": 325,
         "brand": "aurane",
         "slug": "curl-elastin-gel",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/aurane/4.png"
     },
     {
@@ -1017,7 +1017,7 @@ export const mockProducts: Product[] = [
         "size": 250,
         "brand": "aurane",
         "slug": "hair-mist",
-        "category": "Hair Care",
+        "category": "hair-care",
         image: "/assets/products/aurane/5.png"
     },
     {
@@ -1039,7 +1039,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "aurane",
         "slug": "protein-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/aurane/6.png"
     },
     {
@@ -1061,7 +1061,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "aurane",
         "slug": "ve-repairing-spa",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/aurane/7.png"
     },
     {
@@ -1083,7 +1083,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "aurane",
         "slug": "keratin-conditioner",
-        "category": "Conditioner",
+        "category": "conditioner",
         image: "/assets/products/aurane/8.png"
     },
     {
@@ -1106,7 +1106,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "aurane",
         "slug": "keratin-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/aurane/9.png"
     },
     {
@@ -1128,7 +1128,7 @@ export const mockProducts: Product[] = [
         "size": 730,
         "brand": "aurane",
         "slug": "anti-loss-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/aurane/10.png"
     },
     {
@@ -1150,7 +1150,7 @@ export const mockProducts: Product[] = [
         "size": 80,
         "brand": "aurane",
         "slug": "cool-stylish-clay",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/aurane/11.png"
     },
     {
@@ -1171,7 +1171,7 @@ export const mockProducts: Product[] = [
         "size": 80,
         "brand": "aurane",
         "slug": "proud-stylish-paste",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/aurane/12.png"
     },
     {
@@ -1193,7 +1193,7 @@ export const mockProducts: Product[] = [
         "size": 80,
         "brand": "aurane",
         "slug": "firm-hold-pomade",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/aurane/13.png"
     },
     {
@@ -1214,7 +1214,7 @@ export const mockProducts: Product[] = [
         "size": 80,
         "brand": "aurane",
         "slug": "matte-stylish-wax",
-        "category": "Styling Products",
+        "category": "styling-products",
         image: "/assets/products/aurane/14.png"
     },
     {
@@ -1236,7 +1236,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "aurane",
         "slug": "anti-dandruff-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/aurane/15.png"
     },
     {
@@ -1258,7 +1258,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "aurane",
         "slug": "olive-oil-control-shampoo",
-        "category": "Shampoo",
+        "category": "shampoo",
         image: "/assets/products/aurane/16.png"
     },
     {
@@ -1279,7 +1279,7 @@ export const mockProducts: Product[] = [
         "size": 30,
         "brand": "aurane",
         "slug": "protein-repair-essence",
-        "category": "Hair Oil & Serum",
+        "category": "hair-oil-and-serum",
         image: "/assets/products/aurane/17.png"
     },
     {
@@ -1301,7 +1301,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "aurane",
         "slug": "ionic-straight-perm-set",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/aurane/18.png"
     },
     {
@@ -1324,7 +1324,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "aurane",
         "slug": "dynamic-curl-perm-set",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/aurane/19.png"
     },
     {
@@ -1347,7 +1347,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "aurane",
         "slug": "elastic-perm-set-cold",
-        "category": "Perm & Straightening Products",
+        "category": "perm-and-straightening-products",
         image: "/assets/products/aurane/20.png"
     },
     {
@@ -1366,7 +1366,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "aurane",
         "slug": "ppt-balancing-serum-set",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/aurane/21.png"
     },
     {
@@ -1389,7 +1389,7 @@ export const mockProducts: Product[] = [
         "size": 100,
         "brand": "aurane",
         "slug": "color-cream",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/aurane/22.png"
     },
     {
@@ -1412,7 +1412,7 @@ export const mockProducts: Product[] = [
         "size": 1000,
         "brand": "aurane",
         "slug": "oxydant-developer",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/aurane/23.png"
     },
     {
@@ -1435,7 +1435,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "aurane",
         "slug": "bleaching-powder",
-        "category": "Hair Coloring & Bleaching",
+        "category": "hair-coloring-and-bleaching",
         image: "/assets/products/aurane/24.png"
     },
     {
@@ -1459,7 +1459,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/27.png",
         slug: "hair-bleaching-bot-tay-toc",
-        category: "Hair Coloring & Bleaching"
+        category: "Hair Coloring and Bleaching"
     },
     {
         "name": "Sea Mud Repair Mask",
@@ -1476,7 +1476,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "aurane",
         "slug": "sea-mud-repair-mask",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/aurane/28.png"
     },
     {
@@ -1497,7 +1497,7 @@ export const mockProducts: Product[] = [
         "size": 500,
         "brand": "aurane",
         "slug": "nutritive-repair-mask",
-        "category": "Hair Mask & Treatment",
+        "category": "hair-mask-and-treatment",
         image: "/assets/products/aurane/30.png"
     },
     {
@@ -1520,7 +1520,7 @@ export const mockProducts: Product[] = [
         "size": 750,
         "brand": "aurane",
         "slug": "balancing-conditioner-small",
-        "category": "Conditioner",
+        "category": "conditioner",
         image: "/assets/products/aurane/31.png"
     },
     {
@@ -1543,7 +1543,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/32.png",
         "slug": "moisture-repair-shampoo-large",
-        "category": "Shampoo"
+        "category": "shampoo"
     },
     {
         "name": "Balancing Conditioner (Large)",
@@ -1565,7 +1565,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/33.png",
         "slug": "balancing-conditioner-large",
-        "category": "Conditioner"
+        "category": "conditioner"
     },
     {
         "name": "PPT Balancing Serum",
@@ -1587,7 +1587,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/34.png",
         "slug": "ppt-balancing-serum",
-        "category": "Hair Oil & Serum"
+        "category": "hair-oil-and-serum"
     },
     {
         "name": "Color Care Hair Mask",
@@ -1608,7 +1608,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/35.png",
         "slug": "color-care-hair-mask",
-        "category": "Hair Mask & Treatment"
+        "category": "hair-mask-and-treatment"
     },
     {
         "name": "Nutri Care Hair Mask",
@@ -1631,7 +1631,7 @@ export const mockProducts: Product[] = [
         "brand": "aurane",
         image: "/assets/products/aurane/36.png",
         "slug": "nutri-care-hair-mask",
-        "category": "Hair Mask & Treatment"
+        "category": "hair-mask-and-treatment"
     }
 ]
 

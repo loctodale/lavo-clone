@@ -3,4 +3,5 @@ interface CardWithImageType {
     title: string;
     date: Date;
     status: string;
+    slug: string;
 }

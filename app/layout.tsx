@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={"w-screen h-full "} lang="en">
+    <html className={"w-screen h-full overflow-x-hidden"} lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"

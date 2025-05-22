@@ -10,43 +10,32 @@ import {
 } from "@/components/ui/navigation-menu"
 import React from "react";
 
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-]
+
+function onNavChange() {
+    setTimeout(() => {
+        // Select elements with the state "open"
+        const triggers = document.querySelectorAll(
+            '.submenu-trigger[data-state="open"]'
+        );
+        const dropdowns = document.querySelectorAll(
+            '.nav-viewport[data-state="open"]'
+        );
+
+        // Check if both triggers and dropdowns are present
+        if (!triggers.length || !dropdowns.length) return;
+
+        // Simplify the calculation by extracting it into a variable
+        const { offsetLeft, offsetWidth } = triggers[0] as HTMLElement;
+        const menuWidth = dropdowns[0].children[0].clientWidth;
+        const menuLeftPosition = offsetLeft + offsetWidth / 2 - menuWidth / 2;
+
+        // Apply the calculated position
+        document.documentElement.style.setProperty(
+            "--menu-left-position",
+            `${menuLeftPosition}px`
+        );
+    });
+}
 import {
     Carousel,
     CarouselContent,
@@ -59,39 +48,14 @@ import Image from "next/image";
 import {NavImgTrigger} from "@/types/nav-img-trigger";
 import {useRouter} from "next/navigation";
 import {mockCategory} from "@/service/mock.category";
+import {mockImageTrigger} from "@/service/mock.navigation";
 
 
-const mockImageTrigger : NavImgTrigger[] = [
-    {
-        img: "/assets/branding/2.png",
-        url: "ZDNB",
-        description: "Chất lượng chuẩn Nhật, chăm sóc tóc toàn diện và an toàn."
-    },
-    {
-        img: "/assets/branding/3.png",
-        url: "KARSILK",
-        description: "Dòng mỹ phẩm tóc cao cấp, mang đến trải nghiệm đẳng cấp cho salon."
-    },
-    {
-        img: "/assets/branding/4.png",
-        url: "aurane",
-        description: "Sự tinh tế trong từng sản phẩm, phù hợp cho những salon chuyên nghiệp."
-    },
-    {
-        img: "/assets/branding/5.png",
-        url: "SLIDER",
-        description: "Công nghệ chăm sóc tóc tiên tiến từ châu Âu, mang đến hiệu quả vượt trội."
-    },
-    {
-        img: "/image-holder.png",
-        url: "COLORTOUR",
-        description: "Thương hiệu màu nhuộm chuyên nghiệp, sắc nét và bền lâu."
-    }
-]
+
 export function NavigationItem() {
     const router = useRouter();
     return (
-        <NavigationMenu className="w-full">
+        <NavigationMenu onValueChange={onNavChange} className="w-full">
             <NavigationMenuList className="relative flex flex-col md:flex-row md:justify-center gap-2 md:gap-0">
                 <NavigationMenuItem>
                     <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Trang chủ</NavigationMenuLink>
@@ -102,7 +66,7 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent focus:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Thương hiệu</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"submenu-trigger py-1.5 md:py-10 hover:bg-transparent focus:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Thương hiệu</NavigationMenuTrigger>
                     <NavigationMenuContent className="absolute left-1/2 transform -translate-x-1/2">
                         <ul className=" grid gap-2 p-4 w-[37.5rem] md:w-[43.5rem] lg:w-[50rem] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
@@ -145,7 +109,7 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Sản phẩm</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={"submenu-trigger py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Sản phẩm</NavigationMenuTrigger>
                     <NavigationMenuContent className={"absolute"}>
                         <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">
 
@@ -164,51 +128,11 @@ export function NavigationItem() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/*<NavigationMenuItem>*/}
-                {/*    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Gentleman</NavigationMenuLink>*/}
-                {/*</NavigationMenuItem>*/}
-
-                {/*<NavigationMenuItem>*/}
-                {/*    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Dịch vụ ODM</NavigationMenuLink>*/}
-                {/*</NavigationMenuItem>*/}
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Kỹ thuật</NavigationMenuLink>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/video"}>Video</NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/*<NavigationMenuItem>*/}
-                {/*    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Tin tức</NavigationMenuTrigger>*/}
-                {/*    <NavigationMenuContent>*/}
-                {/*        <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">*/}
-                {/*            {components.map((component) => (*/}
-                {/*                <ListItem*/}
-                {/*                    key={component.title}*/}
-                {/*                    title={component.title}*/}
-                {/*                    href={component.href}*/}
-                {/*                >*/}
-                {/*                    {component.description}*/}
-                {/*                </ListItem>*/}
-                {/*            ))}*/}
-                {/*        </ul>*/}
-                {/*    </NavigationMenuContent>*/}
-                {/*</NavigationMenuItem>*/}
-
-                {/*<NavigationMenuItem>*/}
-                {/*    <NavigationMenuTrigger className={"py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Kỹ thuật</NavigationMenuTrigger>*/}
-                {/*    <NavigationMenuContent>*/}
-                {/*        <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">*/}
-                {/*            {components.map((component) => (*/}
-                {/*                <ListItem*/}
-                {/*                    key={component.title}*/}
-                {/*                    title={component.title}*/}
-                {/*                    href={component.href}*/}
-                {/*                >*/}
-                {/*                    {component.description}*/}
-                {/*                </ListItem>*/}
-                {/*            ))}*/}
-                {/*        </ul>*/}
-                {/*    </NavigationMenuContent>*/}
-                {/*</NavigationMenuItem>*/}
             </NavigationMenuList>
         </NavigationMenu>
     )

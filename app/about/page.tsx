@@ -15,19 +15,24 @@ import CoreValue from "@/components/about/core-value";
 
 function BreadCrumbAbout() {
     return (
-        <Breadcrumb className={"w-full p-[0.5rem] text-[1rem] bg-[#f3f3f4]"}>
-            <BreadcrumbList className={" px-[1rem] mx-[16rem] text-[#172345]"}>
+        <Breadcrumb className="w-full p-2 text-base bg-[#f3f3f4]">
+            <BreadcrumbList className="mx-auto px-4 md:px-8 lg:px-16 max-w-screen-xl text-[#172345]">
                 <BreadcrumbItem>
-                    <BreadcrumbLink className={"font-[400]"} href="/">Trang chủ</BreadcrumbLink>
+                    <BreadcrumbLink className="font-normal" href="/">
+                        Trang chủ
+                    </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                    <BreadcrumbPage className={"font-bold "}>Giới thiệu</BreadcrumbPage>
+                    <BreadcrumbPage className="font-bold">
+                        Giới thiệu
+                    </BreadcrumbPage>
                 </BreadcrumbItem>
             </BreadcrumbList>
         </Breadcrumb>
-    )
+    );
 }
+
 
 const Page = () => {
     return (

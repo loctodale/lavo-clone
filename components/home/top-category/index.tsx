@@ -2,6 +2,10 @@ import React from 'react';
 import {AspectRatio} from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 
+interface TopCategoryType{
+    img: string
+    url: string
+}
 const topCategory : string[] = ["/assets/top-category/aurane.jpg", "/assets/top-category/aurane-2.jpg", "/assets/top-category/aurane-3.jpg", "/assets/top-category/aurane-4.jpg"]
 
 const TopCategory = () => {
@@ -20,8 +24,11 @@ const TopCategory = () => {
                 <div className="flex flex-wrap justify-center gap-4 mt-12">
                     {topCategory.map((item, i) => (
                         <Image
+                            onClick={() => {
+                                window.location.href = "/brand?brand=aurane"
+                            }}
                             key={i}
-                            className="scale-100 hover:scale-105 ease-in duration-200 w-full sm:w-[45%] md:w-[22%] max-w-[320px] h-auto"
+                            className="scale-100 hover:scale-105 ease-in duration-200 w-full sm:w-[45%] md:w-[22%] max-w-[320px] h-auto hover:cursor-pointer"
                             width={320}
                             height={450}
                             src={item}

@@ -8,8 +8,33 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
+interface CarouselItem{
+    img: string
+    url: string
+}
 
-const carouselItem : string[] = ["/assets/carousel/aurane.png", "/assets/carousel/colortour.png", "/assets/carousel/karsilk.jpg", "/assets/carousel/slider.png", "/assets/carousel/zdnb.png"]
+
+const carouselItem : CarouselItem[] = [{
+    img: "/assets/carousel/aurane.png",
+    url: `/brand?brand=aurane`
+    },
+    {
+        img: "/assets/carousel/colortour.png",
+        url: `/brand?brand=COLORTOUR`
+    },
+    {
+        img: "/assets/carousel/karsilk.jpg",
+        url: `/brand?brand=KARSILK`
+    },
+    {
+        img:  "/assets/carousel/slider.png",
+        url: `/brand?brand=SLIDER`
+    },
+    {
+        img: "/assets/carousel/zdnb.png",
+        url: `/brand?brand=ZDNB`
+    }
+    ]
 export function BannerCarousel() {
     return (
         <Carousel plugins={[
@@ -20,12 +45,14 @@ export function BannerCarousel() {
             <CarouselContent>
                 {carouselItem.map((item, i) => (
                     <CarouselItem key={i}>
-                        <div className="">
+                        <div onClick={() => {
+                            window.location.href = item.url
+                        }} className="hover:cursor-pointer">
                             <CustomCard className={"p-0"}>
                                 <CardContent className=" flex items-center justify-center h-[90vh] p-0">
                                     {/*<div className={`w-full h-full bg-contain bg-no-repeat bg-[url(${item})]`}></div>*/}
                                     {/*<div className={"w-full h-full bg-[url(/assets/carousel/aurane.png)]"}></div>*/}
-                                    <img src={item} className="w-full h-full object-contain" />
+                                    <img src={item.img} className="w-full h-full object-contain" />
                                 </CardContent>
                             </CustomCard>
                         </div>
