@@ -57,16 +57,16 @@ export function NavigationItem() {
     return (
         <NavigationMenu onValueChange={onNavChange} className="w-full">
             <NavigationMenuList className="relative flex flex-col md:flex-row md:justify-center gap-2 md:gap-0">
-                <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/"}>Trang chủ</NavigationMenuLink>
+                <NavigationMenuItem className={"hover:bg-black transition-all duration-100 h-[5.5rem] text-center flex flex-col justify-center items-center"}>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] h-full font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase flex flex-col justify-center py-1.5 text-nowrap text-center "} href={"/"}>Trang chủ</NavigationMenuLink>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/about"}>Giới thiệu</NavigationMenuLink>
+                <NavigationMenuItem className={"h-[5.5rem] hover:bg-black"}>
+                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase flex flex-col justify-center h-full py-1.5 text-nowrap"} href={"/about"}>Giới thiệu</NavigationMenuLink>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"submenu-trigger py-1.5 md:py-10 hover:bg-transparent focus:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Thương hiệu</NavigationMenuTrigger>
+                <NavigationMenuItem className={"h-[5.5rem] hover:bg-black"}>
+                    <NavigationMenuTrigger className={"mt-1 submenu-trigger py-1.5 md:py-10 hover:bg-transparent focus:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] text-nowrap hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Thương hiệu</NavigationMenuTrigger>
                     <NavigationMenuContent className="absolute left-1/2 transform -translate-x-1/2">
                         <ul className=" grid gap-2 p-4 w-[37.5rem] md:w-[43.5rem] lg:w-[50rem] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
@@ -108,8 +108,8 @@ export function NavigationItem() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger className={"submenu-trigger py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto"}>Sản phẩm</NavigationMenuTrigger>
+                <NavigationMenuItem className={"h-[5.5rem] hover:bg-black"}>
+                    <NavigationMenuTrigger className={"mt-1 submenu-trigger py-1.5 md:py-10 hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto text-nowrap"}>Sản phẩm</NavigationMenuTrigger>
                     <NavigationMenuContent className={"absolute"}>
                         <ul className="grid w-[37.5rem] gap-2 p-4 md:w-[43.5rem] md:grid-cols-2 lg:w-[50rem]">
 
@@ -129,8 +129,8 @@ export function NavigationItem() {
                 </NavigationMenuItem>
 
 
-                <NavigationMenuItem>
-                    <NavigationMenuLink className={"hover:bg-transparent text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase block py-1.5"} href={"/video"}>Video</NavigationMenuLink>
+                <NavigationMenuItem className={"h-[5.5rem] hover:bg-black"}>
+                    <NavigationMenuLink className={"h-full flex flex-col justify-center hover:bg-transparent text-nowrap text-[0.9rem] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase py-1.5"} href={"/video"}>Video</NavigationMenuLink>
                 </NavigationMenuItem>
 
             </NavigationMenuList>
