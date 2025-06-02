@@ -42,7 +42,7 @@ const Page = () => {
     }, [categoryName]);
 
     return products.length > 0 && (
-        <section className={"pt-[5.5rem]"}>
+        <section className={"pt-[4.5rem]"}>
             <div>
                 <BreadCrumbCategory name={categoryName} />
             </div>

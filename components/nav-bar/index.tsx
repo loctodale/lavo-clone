@@ -1,42 +1,70 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
-import {NavigationItem} from "@/components/nav-bar/nav-item";
-import {Search, Menu, X} from "lucide-react";
-import {SearchItem} from "@/components/nav-bar/search-item";
+import { NavigationItem } from "@/components/nav-bar/nav-item";
+import { Search, Menu } from "lucide-react";
+import { SearchItem } from "@/components/nav-bar/search-item";
 import { cn } from "@/lib/utils";
 import { useRouter } from 'next/navigation';
 import MobileNav from "@/components/nav-bar/mobile.nav";
 
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [showNav, setShowNav] = useState(true);
+    const lastScrollY = useRef(0);
     const router = useRouter();
-    React.useEffect(() => {
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+                setShowNav(false);
+            } else {
+                setShowNav(true);
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
         if (isSidebarOpen) {
-            document.body.classList.add("overflow-hidden")
+            document.body.classList.add("overflow-hidden");
         } else {
-            document.body.classList.remove("overflow-hidden")
+            document.body.classList.remove("overflow-hidden");
         }
-    }, [isSidebarOpen])
+    }, [isSidebarOpen]);
+
     return (
         <>
-            <div className={"fixed w-full h-[5.5rem] border-[1px] border-gray-200 z-20 bg-white"}>
-                <div className={"flex px-4 md:px-[1rem] mx-auto md:mx-[14rem] justify-between items-center h-full"}>
-                    <div onClick={() => {router.push("/")}} className={"logo flex flex-col items-center justify-center hover:cursor-pointer"}>
-                        <Image src="/assets/logo.png" alt="logo-holder" className={"max-h-[5.5rem]"} width={100} height={100} />
+            <div className={cn(
+                "fixed w-full h-[4.5rem] border-b border-gray-200 z-20 bg-white transition-transform duration-300",
+                showNav ? "translate-y-0" : "-translate-y-full"
+            )}>
+                <div className="flex px-4 md:px-[1rem] mx-auto md:mx-[14rem] justify-between items-center">
+                    <div onClick={() => router.push("/")} className="md:absolute logo flex flex-col items-center justify-center h-[4.5rem] overflow-hidden hover:cursor-pointer">
+                        <Image src="/assets/logo.png" alt="logo-holder" width={200} height={200} />
                     </div>
-                    
+
                     {/* Desktop Navigation */}
-                    <div className="hidden md:block">
+                    <div className="hidden md:block ml-80">
                         <NavigationItem />
                     </div>
-                    <div className={"header-right flex items-center justify-between gap-1"}>
+
+                    <div className="header-right flex items-center justify-between gap-1">
                         <SearchItem />
                         <Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />
                         <Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />
-                        
+
                         {/* Mobile Menu Button */}
-                        <button 
+                        <button
                             className="block md:hidden ml-4"
                             onClick={() => setIsSidebarOpen(true)}
                             aria-label="Open menu"

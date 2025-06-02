@@ -15,7 +15,7 @@ import Branding from "../components/home/branding";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full pt-[5.5rem]">
+    <main className="min-h-screen w-full pt-[4.5rem]">
         <BannerCarousel />
         <TopItems />
         <TopCategory />
