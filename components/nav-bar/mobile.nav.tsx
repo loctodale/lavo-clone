@@ -21,7 +21,7 @@ const MobileNav = ({
         <>
             <div
                 className={cn(
-                    "fixed top-0 right-0 h-full w-[280px] bg-white border-l border-gray-200 z-50 transition-transform duration-300",
+                    "fixed top-0 right-0 h-full w-[200px] bg-white border-l border-gray-200 z-50 transition-transform duration-300",
                     isSidebarOpen ? "translate-x-0" : "translate-x-full",
                     "md:hidden"
                 )}
@@ -114,7 +114,7 @@ const MobileNav = ({
             {/* Overlay */}
             {isSidebarOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden"
+                    className="fixed inset-0 backdrop-blur-sm bg-black/10 z-40 md:hidden"
                     onClick={() => setIsSidebarOpen(false)}
                 />
             )}

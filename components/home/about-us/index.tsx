@@ -21,7 +21,7 @@ const AboutUs = () => {
                         <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
                             Về <span className="text-[#fdc254]">Chúng tôi</span>
                         </h2>
-                        <p className="font-[400] text-[#172345] text-center leading-relaxed">
+                        <p className="font-[400] text-[#172345] text-justify leading-relaxed ">
                             Công Ty TNHH TM CAO ĐẠT được thành lập vào ngày 05/09/2012, với hơn 10 năm kinh nghiệm, là đơn vị nhập
                             khẩu và phân phối độc quyền các thương hiệu mỹ phẩm tóc chuyên nghiệp từ châu Âu và châu Á tại Việt Nam.
                             Chúng tôi không chỉ đơn thuần cung cấp sản phẩm, mà còn mang đến giải pháp chăm sóc tóc toàn diện, giúp
@@ -39,7 +39,8 @@ const AboutUs = () => {
                                 alt="icon-01"
                                 className="pb-4"
                             />
-                            <p className="font-[400] text-[#172345]">
+                            <p className="font-[400] text-[#172345] text-justify
+                            ">
                                 Công Ty TNHH TM CAO ĐẠT hướng đến trở thành
                                 đơn vị hàng đầu trong lĩnh vực nhập khẩu và phân phối
                                 mỹ phẩm tóc chuyên nghiệp tại Việt Nam, mang đến
@@ -56,7 +57,7 @@ const AboutUs = () => {
                                 alt="icon-02"
                                 className="pb-4"
                             />
-                            <p className="font-[400] text-[#172345]">
+                            <p className="font-[400] text-[#172345] text-justify">
                                 Với giá trị cốt lõi là sự bền vững và lâu dài, chúng tôi
                                 không chỉ tập trung vào lợi nhuận mà còn đặt sự phát
                                 triển của khách hàng và đối tác lên hàng đầu. Chúng

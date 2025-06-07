@@ -22,7 +22,7 @@ const Page = () => {
         return () => window.removeEventListener('resize', updateDataByScreen);
     }, []);
     return (
-        <section className={"pt-[4.5rem]"}>
+        <section className={"pt-[10vh]"}>
             <div className={"py-[4rem]"}>
                 <h2 className={"uppercase text-nowrap font-semibold text-[40px] text-center mb-[1rem] text-[#172345]"}>Video</h2>
                 <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mx-[1rem] sm:mx-[16rem]">

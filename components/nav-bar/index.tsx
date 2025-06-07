@@ -45,11 +45,11 @@ const NavBar = () => {
     return (
         <>
             <div className={cn(
-                "fixed w-full h-[4.5rem] border-b border-gray-200 z-20 bg-white transition-transform duration-300",
+                "fixed w-full h-[10vh] border-b border-gray-200 z-20 bg-white transition-transform duration-300",
                 showNav ? "translate-y-0" : "-translate-y-full"
             )}>
                 <div className="flex px-4 md:px-[1rem] mx-auto md:mx-[12vw] justify-between items-center">
-                    <div onClick={() => router.push("/")} className="md:absolute logo flex flex-col items-center justify-center h-[4.5rem] overflow-hidden hover:cursor-pointer">
+                    <div onClick={() => router.push("/")} className="md:absolute logo flex flex-col items-center justify-center h-[10vh] overflow-hidden hover:cursor-pointer">
                         <Image src="/assets/logo.png" alt="logo-holder" width={500} height={500} className={"md:max-w-[10vw] max-w-[10rem]"} />
                     </div>
 
@@ -60,8 +60,8 @@ const NavBar = () => {
 
                     <div className="header-right flex items-center justify-between gap-1">
                         <SearchItem />
-                        <Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />
-                        <Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />
+                        {/*<Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />*/}
+                        {/*<Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />*/}
 
                         {/* Mobile Menu Button */}
                         <button

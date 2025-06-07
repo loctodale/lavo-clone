@@ -36,7 +36,7 @@ function BreadCrumbAbout() {
 
 const Page = () => {
     return (
-        <section className={"min-h-screen pt-[4.5rem]"}>
+        <section className={"min-h-screen pt-[10vh]"}>
             <BreadCrumbAbout />
             <Banner />
             <ProductBranding />

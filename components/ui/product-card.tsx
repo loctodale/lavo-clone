@@ -7,16 +7,18 @@ export default function ProductCard({product, from}: {product: Product, from: st
     const router = useRouter()
     const path = usePathname()
     return (
-        <Card className="w-full max-w-xs rounded-xl border width hover:border-[1px] hover:border-[#fdc254] hover: cursor-pointer hover:bg-gray-200 transition-all duration-200">
+        <Card className="group w-full max-w-xs rounded-xl border width hover:cursor-pointer hover:shadow-xl transition-all duration-200">
             <div className="grid gap-4 p-4 ">
-                <div className="aspect-[4/5] w-full overflow-hidden rounded-xl">
-                    <img
-                        src={product.image}
-                        alt="Product image"
-                        width="400"
-                        height="500"
-                        className="aspect-[4/5] object-cover  w-full"
-                    />
+                <div className="aspect-[4/5] w-full overflow-hidden rounded-xl ">
+                    <div className="group aspect-[4/5] w-full overflow-hidden rounded-xl">
+                        <img
+                            src={product.image}
+                            alt="Product image"
+                            width="400"
+                            height="500"
+                            className="aspect-[4/5] object-cover w-full transition-transform duration-300 group-hover:scale-[1.2]"
+                        />
+                    </div>
                 </div>
                 <div className="grid">
                     <h3 className="text-center font-semibold text-sm md:text-base text-[#172345] text-nowrap truncate ">{product.name}</h3>

@@ -54,7 +54,7 @@ const Page = () => {
     if (!categoryName || !brandName || !productSlug)
         return null;
     return product && (
-        <section className={"pt-[4.5rem]"}>
+        <section className={"pt-[10vh]"}>
             <div>
                 <BreadCrumbProduct categoryName={categoryName} brandName={brandName} productName={product.name} />
             </div>

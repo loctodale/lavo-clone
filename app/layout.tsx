@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className="antialiased w-screen  ">
         <Suspense fallback={<div>Loading...</div>}>
             <NavBar />
-            <div className={"w-full min-h-screen bg-[#FFFAED]"}>
+            <div className={"w-full min-h-screen "}>
                 {children}
             </div>
             <Footer/>

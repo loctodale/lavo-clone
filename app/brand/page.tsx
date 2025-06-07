@@ -40,7 +40,7 @@ const Page = () => {
     }, [brandName]);
 
     return (
-        <section className="pt-[4.5rem]">
+        <section className="pt-[10vh]">
             <BreadCrumbBrand brandName={brandName} />
 
             <div className="py-8">

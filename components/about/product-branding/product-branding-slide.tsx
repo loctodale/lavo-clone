@@ -83,7 +83,7 @@ const ProductBrandingSlide = () => {
         <div
             ref={sliderRef}
             className="flex"
-            style={{ width: `${itemsProductBranding.length * 100}vw` }}
+            style={{ width: `${(itemsProductBranding.length - 0.5) * 100}vw` }}
         >
           {itemsProductBranding.map((item, i) => (
               <div

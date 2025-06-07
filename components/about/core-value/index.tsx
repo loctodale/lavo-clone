@@ -2,9 +2,9 @@ export default function CoreValue() {
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted flex items-center justify-center">
             <div className="container px-4 md:px-6">
-                <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="flex flex-col items-center justify-center space-y-4 text-justify">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#172345] uppercase">Giá trị cốt lõi</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#172345] uppercase text-center">Giá trị cốt lõi</h2>
                         <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                             "Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành Công"
                         </p>
@@ -16,7 +16,7 @@ export default function CoreValue() {
                             <RocketIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Phát triển bền vững</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             Xây dựng doanh nghiệp không chỉ vì
                             lợi nhuận mà còn vì giá trị lâu dài cho ngành tóc Việt Nam.
                         </p>
@@ -26,7 +26,7 @@ export default function CoreValue() {
                             <HandshakeIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Hợp tác & Đồng hành</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             Coi trọng sự hợp tác chặt chẽ với
                             các đối tác, salon và khách hàng để tạo nên giá trị chung.
                         </p>
@@ -36,7 +36,7 @@ export default function CoreValue() {
                             <BoltIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Slogan</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             "Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành
                             Công"
                         </p>
@@ -46,7 +46,7 @@ export default function CoreValue() {
                             <LightbulbIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Sáng tạo & Đổi mới</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             Không ngừng cải tiến, ứng dụng công
                             nghệ hiện đại để đáp ứng nhu cầu ngày càng cao của thị
                             trường.
@@ -57,7 +57,7 @@ export default function CoreValue() {
                             <ShieldIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Chất lượng & Uy tín</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             Cam kết sản phẩm chính hãng, an
                             toàn và hiệu quả.
                         </p>
@@ -67,7 +67,7 @@ export default function CoreValue() {
                             <UsersIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <h3 className="text-xl font-semibold">Khách hàng là trung tâm</h3>
-                        <p className="text-muted-foreground text-center min-h-[4.5rem]">
+                        <p className="text-muted-foreground text-justify min-h-[10vh]">
                             Đặt lợi ích của khách hàng lên
                             hàng đầu, đồng hành cùng sự phát triển của salon và nhà
                             tạo mẫu tóc.

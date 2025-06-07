@@ -45,7 +45,7 @@ const Page = () => {
         setProduct(productList);
     }, [categoryName]);
     return (
-        <section className={"pt-[4.5rem]"}>
+        <section className={"pt-[10vh]"}>
             <div>
                 <BreadCrumbBrand brandName={brandName} categoryName={categoryName} />
             </div>

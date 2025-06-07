@@ -15,11 +15,11 @@ const TopItems = () => {
             <div className="flex flex-col md:flex-row gap-4 py-[4rem]">
                 <div onClick={() => {
                     window.location.href= "/brand?brand=SLIDER";
-                }} className="bg-[url(/assets/best-seller/best-seller-1.png)] bg-no-repeat bg-cover  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
+                }} className="bg-[url(/assets/best-seller/best-seller-1.png)] bg-no-repeat bg-contain  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
                 <div onClick={() => {
                     window.location.href= "/brand?brand=aurane";
                 }}
-                    className="bg-[url(/assets/best-seller/best-seller-2.png)] bg-no-repeat bg-cover  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
+                    className="bg-[url(/assets/best-seller/best-seller-2.png)] bg-no-repeat bg-contain  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
             </div>
         </div>
 

@@ -17,7 +17,7 @@ const Page = () => {
         .replace("/upload/", "/upload/so_2/")
         .replace(/\.(mp4|webm|mov)$/, ".jpg");
     return videoItem && (
-        <section className={"pt-[4.5rem]"}>
+        <section className={"pt-[10vh]"}>
             <div className={"py-[4rem]"}>
                 <h2 className={"uppercase text-nowrap font-semibold text-[40px] text-center mb-[1rem] text-[#172345]"}>{videoItem?.title}</h2>
                 <div className={"px-[2rem] py-8"}>
