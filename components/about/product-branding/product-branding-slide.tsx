@@ -93,7 +93,7 @@ const ProductBrandingSlide = () => {
                 <img
                     src={item.imgUrl}
                     alt={`Slide ${i}`}
-                    className="w-full md:w-1/2 h-[40vh] md:h-[90vh] object-contain"
+                    className="w-full md:w-1/2 h-[25vh] md:h-[90vh] object-contain"
                 />
                 <div className="w-full md:w-1/2 flex items-center justify-center h-auto md:h-full">
                   <ProductBrandingCard

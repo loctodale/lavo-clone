@@ -55,7 +55,7 @@ const Page = () => {
                         {mockCategory.filter(x => x.englishName == categoryName)[0].name} - <span className={"text-[#fdc254]"}>{brandName}</span>
                     </h2>
                 </div>
-                <div className={"max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"}>
+                <div className={"max-w-screen-xl mx-auto pl-6 sm:px-6 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"}>
                     {products.map((product, index) => (
                         <ProductCard from={"/category/brand"} key={index} product={product} />
                     ))}
