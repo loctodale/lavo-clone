@@ -11,7 +11,7 @@ import {
 
 export function DevelopmentTimeline() {
     return (
-        <Timeline className="w-full sm:w-[80%] md:w-[60%] lg:w-[20vw] ml-0 md:ml-4 mt-4 space-y-4">
+        <Timeline className="w-full sm:w-[7 0vw] md:w-[60%] lg:w-[20vw] ml-0 md:ml-4 mt-4 space-y-4">
             {[
                 {
                     year: "2012",

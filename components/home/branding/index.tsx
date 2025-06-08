@@ -67,7 +67,7 @@ const Branding = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselDots className={"top-[60vh] md:top-[85vh]"} />
+                    <CarouselDots className={"top-[35vh] md:top-[85vh]"} />
                 </Carousel>
             </div>
         </div>

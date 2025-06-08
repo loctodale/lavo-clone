@@ -95,7 +95,7 @@ const ProductBrandingSlide = () => {
                     alt={`Slide ${i}`}
                     className="w-full md:w-1/2 h-[25vh] md:h-[90vh] object-contain"
                 />
-                <div className="w-full md:w-1/2 flex items-center justify-center h-auto md:h-full">
+                <div className="w-[98vw] md:w-1/2 flex items-center justify-center h-auto md:h-full">
                   <ProductBrandingCard
                       title={item.title}
                       descroption={item.description}
