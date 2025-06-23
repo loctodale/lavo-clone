@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const DevelopmentHistory = () => {
     return (
-        <section className="w-full h-full mt-32 md:mt-0">
+        <section className="w-full h-full mt-32 md:mt-12">
             <div className="w-full max-w-screen-xl mx-auto pl-6 sm:px-6 lg:px-20 h-full">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full h-full gap-8">
                     {/* Timeline & title section */}

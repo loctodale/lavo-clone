@@ -34,7 +34,7 @@ const Footer = () => {
                 </h3>
                 <div className="space-y-2 text-[1rem] md:text-[1vw]">
                   <div className="flex">
-                    <span className="min-w-24 font-bold">Địa chỉ:</span>
+                    <span className="md:min-w-[6vw] min-w-24 font-bold">Địa chỉ:</span>
                       <div className={"font-normal"}>
                           <div className={"text-nowrap"}>
                               34 ĐÀO DUY ANH, PHƯỜNG 9
@@ -45,19 +45,19 @@ const Footer = () => {
                       </div>
                   </div>
                   <div className="flex">
-                    <span className="min-w-24  font-bold">Điện thoại:</span>
+                    <span className="md:min-w-[6vw]  min-w-24 font-bold">Điện thoại:</span>
                     <span className="font-normal">02838424372</span>
                   </div>
                   <div className="flex">
-                    <span className="min-w-24  font-bold">HOTLINE:</span>
+                    <span className="md:min-w-[6vw] min-w-24  font-bold">HOTLINE:</span>
                     <span className="font-normal">0919797414</span>
                   </div>
                   <div className="flex">
-                    <span className="min-w-24 font-bold">Fax:</span>
+                    <span className="md:min-w-[6vw] min-w-24 font-bold">Fax:</span>
                     <span className="font-normal">028-38424372</span>
                   </div>
                   <div className="flex">
-                    <span className="min-w-24 font-bold">Email:</span>
+                    <span className="md:min-w-[6vw] min-w-24 font-bold">Email:</span>
                     <span className="font-normal">CAODAT.COSMETICS@GMAIL.COM</span>
                   </div>
                 </div>
