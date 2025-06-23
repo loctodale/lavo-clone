@@ -15,7 +15,7 @@ export const SearchItem = () => {
                 <input
                     type="text"
                     className={`bg-gray-200 h-10 pl-5 pr-10 rounded-full text-sm focus:outline-none transition-all duration-300 ease-in-out ${
-                        focused ? "w-[8vw]" : "w-[2vw]"
+                        focused ? "w-[11vw]" : "w-[2vw]"
                     }`}
                     placeholder="Search..."
                     value={value}
