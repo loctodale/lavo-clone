@@ -50,7 +50,18 @@ import {useRouter} from "next/navigation";
 import {mockCategory} from "@/service/mock.category";
 import {mockImageTrigger} from "@/service/mock.navigation";
 
-
+function formatKebabToSentence(text: string) {
+    if (!text) return "";
+    const words = text.split("-");
+    return words
+        .map((word, index) => {
+            if (index === 0) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }
+            return word;
+        })
+        .join(" ");
+}
 
 export function NavigationItem() {
     const router = useRouter();
@@ -82,8 +93,8 @@ export function NavigationItem() {
                                                     }} key={i}>
                                                         <div className="p-1">
                                                             <Card>
-                                                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                                                    <Image src={item.img} alt={item.url} width={200} height={200} />
+                                                                <CardContent className="flex  items-center justify-center p-6">
+                                                                    <Image src={item.img} alt={item.url} width={100} height={100} />
                                                                 </CardContent>
                                                             </Card>
                                                         </div>
@@ -122,7 +133,7 @@ export function NavigationItem() {
                                         title={item.name}
                                         href={`/category?category_name=${item.englishName}`}
                                     >
-                                        {item.englishName}
+                                        {formatKebabToSentence(item.englishName)}
                                     </ListItem>
                                 ))
                             }

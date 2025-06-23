@@ -15,7 +15,7 @@ export const SearchItem = () => {
                 <input
                     type="text"
                     className={`bg-gray-200 h-10 pl-5 pr-10 rounded-full text-sm focus:outline-none transition-all duration-300 ease-in-out ${
-                        focused ? "w-64" : "w-12"
+                        focused ? "w-[8vw]" : "w-[2vw]"
                     }`}
                     placeholder="Search..."
                     value={value}
@@ -26,6 +26,8 @@ export const SearchItem = () => {
                 <button
                     type="submit"
                     className="absolute top-0 mt-3 right-0 mr-3"
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                 >
                     <svg
                         className="h-4 w-4 fill-current"

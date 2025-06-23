@@ -74,7 +74,6 @@ const Page = () => {
                     Các sản phẩm liên quan
                 </h3>
                 <div className={"w-full mb-16"}>
-
                     <CarouselRecommend products={products} from={"/brand/category"} />
                 </div>
             </div>

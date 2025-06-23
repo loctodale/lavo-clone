@@ -19,12 +19,12 @@ export default function ProductDetail({product}: {product: Product }) {
                             alt="Product Image"
                             width={600}
                             height={900}
-                            className="aspect-[2/3] object-cover border border-gray-200 w-full rounded-lg overflow-hidden dark:border-gray-800"
+                            className="aspect-[5/6] border border-gray-200 w-full rounded-lg overflow-hidden dark:border-gray-800 object-contain"
                         />
                     </div>
                 </div>
                 <div className="grid  items-start">
-                    <form className="grid gap-6 ">
+                    <form className="grid gap-2 ">
                         <div className="grid">
                             <Label htmlFor="color" className="text-lg font-bold ">
                                 {product.name}
@@ -34,7 +34,7 @@ export default function ProductDetail({product}: {product: Product }) {
                             </p>
                         </div>
                         <div className="grid gap-2">
-                            <Label htmlFor="size" className="text-lg">
+                            <Label htmlFor="size" className="text-lg font-bold">
                                 Mô tả
                             </Label>
                             <p className={"font-[400] text-[1rem] text-gray-700"}>

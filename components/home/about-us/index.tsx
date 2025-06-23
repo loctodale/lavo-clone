@@ -40,7 +40,7 @@ const AboutUs = () => {
                             {/*    alt="icon-01"*/}
                             {/*    className="pb-4"*/}
                             {/*/>*/}
-                            <Trophy size={"60"} className={"my-6 bg-yellow-200 p-4 rounded-full"} />
+                            <Trophy size={"60"} className={"my-6 p-4 rounded-full"} />
                             <p className="font-[400] text-[#172345] text-justify
                             ">
                                 Công Ty TNHH TM CAO ĐẠT hướng đến trở thành
@@ -59,7 +59,7 @@ const AboutUs = () => {
                             {/*    alt="icon-02"*/}
                             {/*    className="pb-4"*/}
                             {/*/>*/}
-                            <Eye size={"60"} className={"my-6 bg-yellow-200 p-4 rounded-full"} />
+                            <Eye size={"60"} className={"my-6 p-4 rounded-full"} />
                             <p className="font-[400] text-[#172345] text-justify">
                                 Với giá trị cốt lõi là sự bền vững và lâu dài, chúng tôi
                                 không chỉ tập trung vào lợi nhuận mà còn đặt sự phát

@@ -32,11 +32,11 @@ export function CarouselRecommend({ products, from }: { products: Product[], fro
             </CarouselContent>
 
             {/* Navigation arrows (always visible on non-mobile) */}
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
+            <CarouselPrevious className="sm:flex -left-4 md:left-0"/>
+            <CarouselNext className="sm:flex right-0 md:right-0" />
 
             {/* Dots only visible on mobile */}
-            <CarouselDots className="flex sm:hidden justify-center mt-2 top-[60vh]" />
+            {/*<CarouselDots className="flex sm:hidden justify-center mt-2 top-[122vw]" />*/}
         </Carousel>
     )
 }
