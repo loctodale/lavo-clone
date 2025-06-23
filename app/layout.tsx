@@ -17,16 +17,18 @@ export default function RootLayout({
 }>) {
   return (
     <html className={"w-screen h-full overflow-x-hidden"} lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="antialiased w-screen  ">
-        <Suspense fallback={<div>Loading...</div>}>
-            <NavBar />
-            <div className={"w-full min-h-screen "}>
+    <head>
+        {/*<link*/}
+        {/*  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"*/}
+        {/*  rel="stylesheet"*/}
+        {/*/>*/}
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+              rel="stylesheet"/>
+    </head>
+    <body className="antialiased w-screen  ">
+    <Suspense fallback={<div>Loading...</div>}>
+        <NavBar/>
+        <div className={"w-full min-h-screen "}>
                 {children}
             </div>
             <Footer/>

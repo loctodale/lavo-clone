@@ -56,7 +56,7 @@ export function NavigationItem() {
     const router = useRouter();
     return (
         <NavigationMenu onValueChange={onNavChange} className="w-full">
-            <NavigationMenuList className="relative flex flex-col md:flex-row md:justify-center gap-6! md:gap-0 my-2">
+            <NavigationMenuList className="relative flex flex-col md:flex-row md:justify-center gap-6! md:gap-0 my-[0.7vh]">
                 <NavigationMenuItem className={"hover:bg-black transition-all duration-100 h-[8.5vh] text-center flex flex-col justify-center items-center rounded-md"}>
                     <NavigationMenuLink className={"hover:bg-transparent text-[1.2vw] h-full font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] uppercase flex flex-col justify-center py-1.5 text-nowrap text-center md:min-w-[6.5vw] "} href={"/"}>Trang chủ</NavigationMenuLink>
                 </NavigationMenuItem>
@@ -95,14 +95,16 @@ export function NavigationItem() {
                                     </Carousel>
                                 </NavigationMenuLink>
                             </li>
-                            <div className={"flex flex-col gap-4 pt-4"}>
-                                {
-                                    mockImageTrigger.map((item, i) => (
-                                        <ListItem key={i} href={`/brand?brand=${item.url}`} className={"uppercase"} title={item.url}>
-                                            <span className={"normal-case"}>{item.description}</span>
-                                        </ListItem>
-                                    ))
-                                }
+                            <div className={"flex items-center w-full h-full"}>
+                                <div className={"grid grid-cols-2 gap-4 pt-4 w-full h-full"}>
+                                    {
+                                        mockImageTrigger.map((item, i) => (
+                                            <ListItem key={i} href={`/brand?brand=${item.url}`} className={"uppercase w-full"} title={item.url}>
+                                                {/*<span className={"normal-case"}>{item.description}</span>*/}
+                                            </ListItem>
+                                        ))
+                                    }
+                                </div>
                             </div>
                         </ul>
                     </NavigationMenuContent>

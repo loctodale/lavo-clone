@@ -15,7 +15,7 @@ import { Label } from "@/components/ui/label"
 
 export function ProductBrandingCard({ title, descroption }: { title: string; descroption: string[] }) {
     return (
-        <Card className="w-full md:w-[70%] lg:w-[30vw] max-w-md">
+        <Card className="w-full md:w-[70%] lg:w-[30vw] max-w-md border-none shadow-none">
             <CardHeader>
                 <CardTitle className="text-lg md:text-xl lg:text-2xl">{title}</CardTitle>
             </CardHeader>

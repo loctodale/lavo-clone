@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import {Eye, LightbulbIcon, Trophy} from "lucide-react";
 
 const AboutUs = () => {
     return (
@@ -17,9 +18,9 @@ const AboutUs = () => {
                 {/* Nội dung bên phải */}
                 <div className="mt-6 lg:mt-12 w-full">
                     {/* Tiêu đề */}
-                    <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center">
+                    <div className="flex flex-col items-center justify-center pb-20 bg-[url(/line.png)] bg-contain bg-no-repeat bg-bottom text-center">
                         <h2 className="text-[#172345] font-bold text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
-                            Về <span className="text-[#fdc254]">Chúng tôi</span>
+                            Về <span className="">Chúng tôi</span>
                         </h2>
                         <p className="font-[400] text-[#172345] text-justify leading-relaxed ">
                             Công Ty TNHH TM CAO ĐẠT được thành lập vào ngày 05/09/2012, với hơn 10 năm kinh nghiệm, là đơn vị nhập
@@ -32,13 +33,14 @@ const AboutUs = () => {
                     {/* Icon mô tả */}
                     <div className="flex flex-col sm:flex-row mt-6 gap-10 items-center justify-center">
                         <div className="flex flex-col items-center max-w-xs text-center">
-                            <Image
-                                width={70}
-                                height={70}
-                                src="/icon-home-01.png"
-                                alt="icon-01"
-                                className="pb-4"
-                            />
+                            {/*<Image*/}
+                            {/*    width={70}*/}
+                            {/*    height={70}*/}
+                            {/*    src="/icon-home-01.png"*/}
+                            {/*    alt="icon-01"*/}
+                            {/*    className="pb-4"*/}
+                            {/*/>*/}
+                            <Trophy size={"60"} className={"my-6 bg-yellow-200 p-4 rounded-full"} />
                             <p className="font-[400] text-[#172345] text-justify
                             ">
                                 Công Ty TNHH TM CAO ĐẠT hướng đến trở thành
@@ -50,13 +52,14 @@ const AboutUs = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center max-w-xs text-center">
-                            <Image
-                                width={70}
-                                height={70}
-                                src="/icon-home-02.png"
-                                alt="icon-02"
-                                className="pb-4"
-                            />
+                            {/*<Image*/}
+                            {/*    width={70}*/}
+                            {/*    height={70}*/}
+                            {/*    src="/icon-home-02.png"*/}
+                            {/*    alt="icon-02"*/}
+                            {/*    className="pb-4"*/}
+                            {/*/>*/}
+                            <Eye size={"60"} className={"my-6 bg-yellow-200 p-4 rounded-full"} />
                             <p className="font-[400] text-[#172345] text-justify">
                                 Với giá trị cốt lõi là sự bền vững và lâu dài, chúng tôi
                                 không chỉ tập trung vào lợi nhuận mà còn đặt sự phát

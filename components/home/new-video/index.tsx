@@ -36,8 +36,8 @@ const NewVideo = () => {
 
     return (
         <div className={"py-[4rem] bg-[#f3f3f4]"}>
-            <div className={"mx-[1rem] sm:mx-[16rem] flex flex-col items-center justify-center pb-[40px] bg-[url(/line.png)] bg-bottom bg-no-repeat"}>
-                <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem]"}>Video <span className={"text-[#fdc254]"}>mới nhất</span></h2>
+            <div className={"mx-[1rem] sm:mx-[16rem] flex flex-col items-center justify-center pb-16 md:mx-120 bg-[url(/line.png)] bg-contain bg-bottom bg-no-repeat"}>
+                <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem]"}>Video <span className={""}>mới nhất</span></h2>
             </div>
 
             {/*<div className={"mx-[1rem] sm:mx-[16rem] flex justify-center items-center mt-[2.5rem] gap-4 max-w-screen flex-wrap"}>*/}

@@ -59,7 +59,7 @@ const NavBar = () => {
                     </div>
 
                     <div className="header-right flex items-center justify-between gap-1">
-                        <SearchItem />
+                        <SearchItem  />
                         {/*<Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />*/}
                         {/*<Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />*/}
 

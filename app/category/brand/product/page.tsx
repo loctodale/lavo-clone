@@ -12,6 +12,7 @@ import {useSearchParams} from "next/navigation";
 import { Product } from '@/types/product';
 import { mockProducts } from '@/service/mock.product';
 import ProductDetail from "@/components/product-detail/product-detail";
+import {CarouselRecommend} from "@/components/ui/carousel-recommend";
 function BreadCrumbProduct({categoryName, brandName, productName}:{categoryName: string, brandName: string, productName: string}) {
     return (
         <Breadcrumb className={"w-full p-2 text-[1rem] bg-[#f3f3f4] z-10"}>
@@ -37,6 +38,7 @@ function BreadCrumbProduct({categoryName, brandName, productName}:{categoryName:
 }
 const Page = () => {
     const [product, setProduct] = React.useState<Product | null>(null);
+    const [products, setProducts] = React.useState<Product[]>([]);
     // brand=SLIDER&category_name=Shampoo&product_slug=dau-goi-ngan-ngua-chong-rung-toc-slider-anti-hair-loss-shampoo
     const searchParams = useSearchParams()
     const categoryName = searchParams.get("category_name");
@@ -50,6 +52,8 @@ const Page = () => {
         if (!product)
             return;
         setProduct(product);
+        const recommendProducts = mockProducts.filter(x => x.category == categoryName);
+        setProducts(recommendProducts);
     }, [productSlug, categoryName, brandName]);
     if (!categoryName || !brandName || !productSlug)
         return null;
@@ -58,8 +62,11 @@ const Page = () => {
             <div>
                 <BreadCrumbProduct categoryName={categoryName} brandName={brandName} productName={product.name} />
             </div>
-            <div className={"py-[4rem]"}>
+            <div className={"py-[4rem] mx-[5vw]"}>
                 <ProductDetail product={product} />
+            </div>
+            <div className={"w-full mb-16"}>
+                <CarouselRecommend products={products} from={"/category/brand"} />
             </div>
         </section>
     );

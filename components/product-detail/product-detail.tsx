@@ -63,7 +63,9 @@ export default function ProductDetail({product}: {product: Product }) {
                             )
                         }
                         <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                            <Button className={"w-1/2 h-full rounded-none font-bold p-[1rem] bg-[#474747] text-[#fdc254] text-[1rem] hover:bg-[#474747] hover:cursor-pointer"}>Liên hệ</Button>
+                            <Button onClick={event => {
+                                event.preventDefault()
+                            }} className={"w-1/2 h-full rounded-3xl font-bold p-[0.5rem] bg-[#474747]  text-[1rem] hover:bg-[#474747] hover:cursor-pointer"}>Liên hệ</Button>
                         </div>
                     </form>
                     {/*<Separator />*/}

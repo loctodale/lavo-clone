@@ -54,15 +54,17 @@ const Page = () => {
                 </div>
 
                 <div className={"py-8"}>
-                    <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-bottom bg-no-repeat text-center mb-10">
+                    <div className="flex flex-col items-center justify-center pb-10 bg-[url(/line.png)] bg-contain bg-bottom bg-no-repeat text-center mb-16 md:mx-[30vw]">
                         <h2 className="text-[#172345] font-bold text-[24px] sm:text-[28px] md:text-[36px] xl:text-[40px] uppercase mb-4">
                             {mockCategory.filter(x => x.englishName == categoryName)[0].name} - <span className={"text-[#fdc254]"}>{brandName}</span>
                         </h2>
                     </div>
-                    <div className={"max-w-screen-xl mx-auto pl-6 sm:px-6 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"}>
-                        {products.map((product, index) => (
-                            <ProductCard from={"/category/brand"} key={index} product={product} />
-                        ))}
+                    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-20 items-center justify-center flex">
+                        <div className="grid justify-center sm:justify-normal grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            {products.map((product, index) => (
+                                <ProductCard from="/brand/category" key={index} product={product} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

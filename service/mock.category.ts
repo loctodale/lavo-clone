@@ -2,7 +2,7 @@ import {Category} from "@/types/category";
 
 export const mockCategory : Category[] = [
     {
-        name: "Xà bông",
+        name: "Dầu gội",
         englishName: "shampoo",
     },
     {
@@ -10,27 +10,27 @@ export const mockCategory : Category[] = [
         englishName: "conditioner",
     },
     {
-        name: "Mặt nạ tóc & Phục hồi tóc",
+        name: "Phục hồi tóc hư tổn",
         englishName: "hair-mask-and-treatment",
     },
     {
-        name: "Dầu dưỡng tóc & Tinh chất dưỡng tóc",
+        name: "Dưỡng tóc & Chăm sóc",
         englishName: "hair-oil-and-serum"
     },
     {
-        name: "Uốn tóc & Duỗi tóc",
+        name: "Sản phẩm uống & duỗi",
         englishName: "perm-and-straightening-products"
     },
     {
-        name: "Nhuộm tóc & Tẩy tóc",
+        name: "Sản phẩm nhuộm và tẩy",
         englishName: "hair-coloring-and-bleaching"
     },
     {
-        name: "Tạo kiểu",
+        name: "Sản phẩm tạo kiểu tóc",
         englishName: "styling-products"
     },
-    {
-        name: "Chăm sóc tóc",
-        englishName: "hair-care"
-    },
+    // {
+    //     name: "Chăm sóc tóc",
+    //     englishName: "hair-care"
+    // },
 ]

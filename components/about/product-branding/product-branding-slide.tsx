@@ -80,20 +80,24 @@ const ProductBrandingSlide = () => {
 
   return (
       <div ref={containerRef} className="w-full overflow-hidden relative">
+        <h2 className="uppercase font-semibold text-2xl sm:text-3xl md:text-4xl text-center mt-12 m-4 text-[#172345]">
+          Hệ thống thương hiệu
+        </h2>
         <div
             ref={sliderRef}
             className="flex"
-            style={{ width: `${(itemsProductBranding.length - 0.5) * 100}vw` }}
+            style={{ width: `${(itemsProductBranding.length ) * 100}vw` }}
         >
+
           {itemsProductBranding.map((item, i) => (
               <div
                   key={i}
-                  className="w-screen h-auto min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8"
+                  className="w-screen h-auto min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8 border-gray-200 border-1 shadow-sm mx-1"
               >
                 <img
                     src={item.imgUrl}
                     alt={`Slide ${i}`}
-                    className="w-full md:w-1/2 h-[25vh] md:h-[90vh] object-contain"
+                    className="w-full md:w-1/2 h-[25vh] md:h-[80vh] object-contain"
                 />
                 <div className="w-[98vw] md:w-1/2 flex items-center justify-center h-auto md:h-full">
                   <ProductBrandingCard
