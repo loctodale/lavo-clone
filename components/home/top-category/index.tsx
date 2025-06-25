@@ -6,7 +6,28 @@ interface TopCategoryType{
     img: string
     url: string
 }
-const topCategory : string[] = ["/assets/top-category/aurane.jpg", "/assets/top-category/aurane-2.jpg", "/assets/top-category/aurane-3.jpg", "/assets/top-category/aurane-4.jpg"]
+const topCategory : TopCategoryType[] = [
+        {
+            img: "/assets/top-category/28.png",
+            url: "/brand?brand=aurane"
+        },
+        {
+            img: "/assets/top-category/6.png",
+            url: "/brand?brand=ZDNB"
+        },
+        {
+            img: "/assets/top-category/3.png",
+            url: "/brand?brand=KARSILK"
+        },
+        {
+            img: "/assets/top-category/5.png",
+            url: "/brand?brand=SLIDER"
+        },
+        {
+            img: "/assets/top-category/39.png",
+            url: "/brand?brand=COLORTOUR"
+        },
+    ]
 
 const TopCategory = () => {
     return (
@@ -23,17 +44,19 @@ const TopCategory = () => {
 
                 <div className="flex flex-wrap justify-center gap-4 mt-12">
                     {topCategory.map((item, i) => (
-                        <Image
-                            onClick={() => {
-                                window.location.href = "/brand?brand=aurane"
-                            }}
-                            key={i}
-                            className="scale-100 hover:scale-105 ease-in duration-200 w-full sm:w-[45%] md:w-[22%] max-w-[320px] h-auto hover:cursor-pointer"
-                            width={320}
-                            height={450}
-                            src={item}
-                            alt={`image-holder-${i}`}
-                        />
+                        <div key={i} className={"min-h-[40vh] sm:w-[45%] md:w-[15%] max-w-[320px] bg-white items-center flex justify-center"}>
+                            <Image
+                                onClick={() => {
+                                    window.location.href = item.url
+                                }}
+                                key={i}
+                                className="scale-100 hover:scale-105 ease-in duration-200 w-full h-auto hover:cursor-pointer"
+                                width={320}
+                                height={450}
+                                src={item.img}
+                                alt={`image-holder-${i}`}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
