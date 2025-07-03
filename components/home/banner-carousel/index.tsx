@@ -41,7 +41,7 @@ export function BannerCarousel() {
             Autoplay({
                 delay: 5000
             })
-        ]} className="w-full h-screen">
+        ]} className="w-full h-full">
             <CarouselContent>
                 {carouselItem.map((item, i) => (
                     <CarouselItem key={i}>

@@ -49,6 +49,7 @@ import {NavImgTrigger} from "@/types/nav-img-trigger";
 import {useRouter} from "next/navigation";
 import {mockCategory} from "@/service/mock.category";
 import {mockImageTrigger} from "@/service/mock.navigation";
+import {mockCoverCategory} from "@/service/mock.cover-category";
 
 function formatKebabToSentence(text: string) {
     if (!text) return "";
@@ -121,22 +122,32 @@ export function NavigationItem() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem className={"h-[8.5vh] hover:bg-black rounded-md"}>
-                    <NavigationMenuTrigger className={"submenu-trigger py-1.5 md:py-[4.2vh] hover:bg-transparent text-[1.2vw] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto text-nowrap md:min-w-[6.5vw]"}>Sản phẩm</NavigationMenuTrigger>
-                    <NavigationMenuContent className={"absolute"}>
-                        <ul className="grid w-[68vw] md:grid-cols-3">
+                <NavigationMenuItem className="h-[8.5vh] hover:bg-black rounded-md">
+                    <NavigationMenuTrigger className="submenu-trigger py-1.5 md:py-[4.2vh] hover:bg-transparent text-[1.2vw] font-semibold hover:cursor-pointer text-[#172345] hover:text-[#fdc254] bg-transparent uppercase w-full md:w-auto text-nowrap md:min-w-[6.5vw]">
+                        Sản phẩm
+                    </NavigationMenuTrigger>
 
-                            {
-                                mockCategory.map((item, i) => (
-                                    <ListItem
-                                        key={i}
-                                        title={item.name}
-                                        href={`/category?category_name=${item.englishName}`}
-                                    >
-                                        {formatKebabToSentence(item.englishName)}
-                                    </ListItem>
-                                ))
-                            }
+                    <NavigationMenuContent className="absolute z-50">
+                        <ul className="grid w-[68vw] grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-white  rounded-lg">
+                            {mockCoverCategory.map((cover, i) => (
+                                <li key={i} className="flex flex-col">
+                                  <span className="text-sm font-bold text-[#172345] uppercase mb-2">
+                                    {cover.name}
+                                  </span>
+                                    <ul className="space-y-1">
+                                        {cover.category.map((cat, j) => (
+                                            <li key={j}>
+                                                <a
+                                                    href={`/category?category_name=${cat.englishName}`}
+                                                    className="text-sm text-gray-600 hover:text-[#fdc254] transition"
+                                                >
+                                                    {formatKebabToSentence(cat.name)}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            ))}
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>

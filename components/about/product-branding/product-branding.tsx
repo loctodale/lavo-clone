@@ -3,9 +3,8 @@ import ProductBrandingSlide from "@/components/about/product-branding/product-br
 
 const ProductBranding = () => {
     return (
-        <div className="pt-16 bg-cover bg-no-repeat">
+        <div className="pt-4 bg-cover bg-no-repeat">
             <div>
-
                 <ProductBrandingSlide />
             </div>
         </div>

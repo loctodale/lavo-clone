@@ -22,18 +22,23 @@ export default function RootLayout({
         {/*  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"*/}
         {/*  rel="stylesheet"*/}
         {/*/>*/}
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-              rel="stylesheet"/>
+        {/*<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"*/}
+        {/*      rel="stylesheet"/>*/}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"anonymous"} />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+            rel="stylesheet"/>
     </head>
-    <body className="antialiased w-screen  ">
+    <body className="antialiased w-screen">
     <Suspense fallback={<div>Loading...</div>}>
         <NavBar/>
         <div className={"w-full min-h-screen "}>
-                {children}
-            </div>
-            <Footer/>
-        </Suspense>
-      </body>
+            {children}
+        </div>
+        <Footer/>
+    </Suspense>
+    </body>
     </html>
   );
 }

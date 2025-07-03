@@ -1,28 +1,188 @@
 import React from 'react';
+import Image from "next/image";
+import {
+    ResizableHandle,
+    ResizablePanel,
+    ResizablePanelGroup,
+} from "@/components/ui/resizable"
+
+const banners = [
+    {
+        src: "/assets/banner/karsilk.JPG",
+        alt: "KARSILK",
+        brand: "KARSILK",
+    },
+    {
+        src: "/assets/best-seller/best-seller-1.png",
+        alt: "SLIDER",
+        brand: "SLIDER",
+    },
+    {
+        src: "/assets/banner/aurane.png",
+        alt: "Aurane",
+        brand: "aurane",
+    },
+    {
+        src: "/assets/banner/zdnb.jpg",
+        alt: "ZDNB",
+        brand: "ZDNB",
+    },
+    {
+        src: "/assets/banner/39.png",
+        alt: "Colortour",
+        brand: "Colortour",
+    },
+];
 
 const TopItems = () => {
     return (
-        <div className="mt-[4rem]">
-            <div className="flex flex-col items-center justify-center pb-[5rem] bg-[url(/line.png)] bg-contain bg-bottom bg-no-repeat text-center px-4 md:mx-120">
-                <h2 className="text-[#172345] font-bold text-[32px] md:text-[40px] uppercase mb-[1rem]">
-                    Sản phẩm <span className="">nổi bật</span>
-                </h2>
-                <p className="font-[400] text-[#172345] max-w-2xl">
-                    Mang đến nhiều sản phẩm khác biệt, không ngừng cải tiến và cập nhật xu hướng làm đẹp mới
-                </p>
+        <div className="px-2">
+            <div className="block md:hidden space-y-4">
+                <div className={"flex w-screen"}>
+                    <Image
+                        onClick={() => (window.location.href = "/brand?brand=KARSILK")}
+                        src="/assets/banner/karsilk.JPG"
+                        alt="KARSILK"
+                        className="w-1/2 h-full object-contain cursor-pointer"
+                        width={1000}
+                        height={1000}
+                    />
+                   <div className={"flex flex-col"}>
+                       <Image
+                           onClick={() => (window.location.href = "/brand?brand=ZDNB")}
+                           src="/assets/banner/zdnb.jpg"
+                           alt="ZDNB"
+                           className="w-[90%] h-full object-contain cursor-pointer"
+                           width={1000}
+                           height={1000}
+                       />
+                       <Image
+                           onClick={() => (window.location.href = "/brand?brand=Colortour")}
+                           src="/assets/banner/39.png"
+                           alt="Colortour"
+                           className="w-[30vw] h-full object-contain cursor-pointer"
+                           width={1000}
+                           height={1000}
+                       />
+                   </div>
+                </div>
+                <Image
+                    onClick={() => (window.location.href = "/brand?brand=SLIDER")}
+                    src="/assets/best-seller/best-seller-1.png"
+                    alt="SLIDER"
+                    className="w-full h-[200px] object-contain cursor-pointer"
+                    width={1000}
+                    height={1000}
+                />
+                <Image
+                    onClick={() => (window.location.href = "/brand?brand=aurane")}
+                    src="/assets/banner/aurane.png"
+                    alt="Aurane"
+                    className="w-full h-[200px] object-contain cursor-pointer"
+                    width={1000}
+                    height={1000}
+                />
+
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 py-[4rem]">
-                <div onClick={() => {
-                    window.location.href= "/brand?brand=SLIDER";
-                }} className="bg-[url(/assets/best-seller/best-seller-1.png)] bg-no-repeat bg-contain  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
-                <div onClick={() => {
-                    window.location.href= "/brand?brand=aurane";
-                }}
-                    className="bg-[url(/assets/best-seller/best-seller-2.png)] bg-no-repeat bg-contain  w-full md:w-1/2 h-[25vh] md:h-[50vh] hover:cursor-pointer"></div>
+            {/* 🖥️ Desktop: Resizable Layout */}
+            <div className="hidden md:block">
+                <div className="flex flex-col items-center h-full">
+                    <ResizablePanelGroup
+                        direction="horizontal"
+                        className="max-w-screen rounded-lg border"
+                    >
+                        <ResizablePanel defaultSize={30}>
+                            <div className="flex h-[80vh] items-center justify-center">
+                                <Image
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href = "/brand?brand=KARSILK";
+                                    }}
+                                    src="/assets/banner/karsilk.JPG"
+                                    className="w-full h-full object-cover cursor-pointer"
+                                    alt="KARSILK"
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
+                        </ResizablePanel>
+                        <ResizableHandle />
+                        <ResizablePanel defaultSize={50}>
+                            <ResizablePanelGroup direction="vertical">
+                                <ResizablePanel defaultSize={50}>
+                                    <div className="flex h-full items-center justify-center">
+                                        <Image
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                window.location.href = "/brand?brand=SLIDER";
+                                            }}
+                                            src="/assets/best-seller/best-seller-1.png"
+                                            className="w-full h-full object-cover cursor-pointer"
+                                            alt="SLIDER"
+                                            width={1000}
+                                            height={1000}
+                                        />
+                                    </div>
+                                </ResizablePanel>
+                                <ResizableHandle />
+                                <ResizablePanel defaultSize={50}>
+                                    <div className="flex h-full items-center justify-center">
+                                        <Image
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                window.location.href = "/brand?brand=aurane";
+                                            }}
+                                            src="/assets/banner/aurane.png"
+                                            className="w-full h-full object-cover cursor-pointer"
+                                            alt="Aurane"
+                                            width={1000}
+                                            height={1000}
+                                        />
+                                    </div>
+                                </ResizablePanel>
+                            </ResizablePanelGroup>
+                        </ResizablePanel>
+                        <ResizableHandle />
+                        <ResizablePanel defaultSize={25}>
+                            <ResizablePanelGroup direction="vertical">
+                                <ResizablePanel defaultSize={50}>
+                                    <div className="flex h-full items-center justify-center">
+                                        <Image
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                window.location.href = "/brand?brand=ZDNB";
+                                            }}
+                                            src="/assets/banner/zdnb.jpg"
+                                            className="w-full h-full object-cover cursor-pointer"
+                                            alt="ZDNB"
+                                            width={1000}
+                                            height={1000}
+                                        />
+                                    </div>
+                                </ResizablePanel>
+                                <ResizableHandle />
+                                <ResizablePanel defaultSize={50}>
+                                    <div className="flex h-full items-center justify-center">
+                                        <Image
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                window.location.href = "/brand?brand=Colortour";
+                                            }}
+                                            src="/assets/banner/39.png"
+                                            className="w-full h-full object-cover cursor-pointer"
+                                            alt="Colortour"
+                                            width={1000}
+                                            height={1000}
+                                        />
+                                    </div>
+                                </ResizablePanel>
+                            </ResizablePanelGroup>
+                        </ResizablePanel>
+                    </ResizablePanelGroup>
+                </div>
             </div>
         </div>
-
     );
 };
 

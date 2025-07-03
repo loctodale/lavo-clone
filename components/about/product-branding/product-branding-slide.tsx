@@ -22,7 +22,6 @@ const itemsProductBranding : ProductBranding[] = [
     imgUrl: "/assets/branding/3.png",
     description: ["Thành phần chất lượng cao: Các sản phẩm của KARSILK chứa tinh chất keratin siêu mịn, giúp bổ sung keratin tự nhiên cho tóc, hàn gắn cấu trúc tóc và phục hồi độ đàn hồi.",
     "Khả năng kháng nhiệt: Sản phẩm có khả năng bảo vệ tóc khỏi tác động của nhiệt độ cao từ máy sấy, máy duỗi, giúp tóc không bị hư tổn thêm.",
-      "Giữ nếp và bảo vệ màu nhuộm: KARSILK giúp tóc giữ nếp nhẹ nhàng, đặc biệt phù hợp với tóc uốn, và bảo vệ màu nhuộm lâu phai."
     ],
     title: "KARSILK (Ý) – Dòng mỹ phẩm tóc cao cấp, mang đến trải nghiệm đẳng cấp cho salon."
   },
@@ -85,21 +84,21 @@ const ProductBrandingSlide = () => {
         </h2>
         <div
             ref={sliderRef}
-            className="flex"
+            className="flex mb-4"
             style={{ width: `${(itemsProductBranding.length ) * 100}vw` }}
         >
 
           {itemsProductBranding.map((item, i) => (
               <div
                   key={i}
-                  className="w-screen h-auto min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8 border-gray-200 border-1 shadow-sm mx-1"
+                  className="w-screen h-[60vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8 border-gray-200 border-1 shadow-sm mx-1"
               >
                 <img
                     src={item.imgUrl}
                     alt={`Slide ${i}`}
-                    className="w-full md:w-1/2 h-[25vh] md:h-[80vh] object-contain"
+                    className="w-full md:w-1/4 h-[25vh] md:h-[60vh] object-contain"
                 />
-                <div className="w-[98vw] md:w-1/2 flex items-center justify-center h-auto md:h-full">
+                <div className="w-[98vw] md:w-1/2 flex items-center justify-center h-auto md:h-[60vh]">
                   <ProductBrandingCard
                       title={item.title}
                       descroption={item.description}

@@ -12,16 +12,18 @@ import HotNews from "../components/home/hot-news";
 import NewVideo from "../components/home/new-video";
 import ProductCount from "../components/home/product-count";
 import Branding from "../components/home/branding";
+import HomeCategory from "@/components/home/home-category";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full pt-[10vh]">
+    <main className="h-full w-full pt-[10vh]">
         <BannerCarousel />
+        <HomeCategory />
         <TopItems />
-        <TopCategory />
-        <AboutUs />
+        {/*<TopCategory />*/}
+        {/*<AboutUs />*/}
         {/*<HotNews />*/}
-        <NewVideo />
+        {/*<NewVideo />*/}
         {/*<ProductCount />*/}
         <Branding />
     </main>

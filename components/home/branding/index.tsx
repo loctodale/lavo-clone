@@ -29,9 +29,9 @@ const branding : BrandItem[] = [
 ]
 const Branding = () => {
     return (
-        <div className={"py-[4rem]"}>
+        <div className={""}>
             {/* Grid cho desktop, ẩn trên mobile */}
-            <div className={"hidden md:grid mx-[16rem] px-[1rem] gap-4 grid-cols-4"}>
+            <div className={"hidden md:flex px-[1rem] gap-4 flex-row justify-evenly "}>
                 {branding.map((item, index) => (
                     <Image
                         onClick={() => {
@@ -67,7 +67,7 @@ const Branding = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselDots className={"top-[35vh] md:top-[85vh]"} />
+                    <CarouselDots className={"top-[30vh] md:top-[85vh]"} />
                 </Carousel>
             </div>
         </div>

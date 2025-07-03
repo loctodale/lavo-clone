@@ -29,8 +29,4 @@ export const mockCategory : Category[] = [
         name: "Sản phẩm tạo kiểu tóc",
         englishName: "styling-products"
     },
-    // {
-    //     name: "Chăm sóc tóc",
-    //     englishName: "hair-care"
-    // },
 ]
