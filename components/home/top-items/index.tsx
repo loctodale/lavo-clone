@@ -36,7 +36,7 @@ const banners = [
 
 const TopItems = () => {
     return (
-        <div className="px-2">
+        <div className="px-2 lg:pr-6">
             <div className="block md:hidden space-y-4">
                 <div className={"flex w-screen"}>
                     <Image

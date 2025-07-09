@@ -13,7 +13,7 @@ export const mockImageTrigger : NavImgTrigger[] = [
     },
     {
         img: "/assets/branding/4.png",
-        url: "aurane",
+        url: "AURANE",
         description: "Sự tinh tế trong từng sản phẩm, phù hợp cho những salon chuyên nghiệp."
     },
     {

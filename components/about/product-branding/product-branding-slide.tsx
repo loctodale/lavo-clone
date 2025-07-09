@@ -78,20 +78,20 @@ const ProductBrandingSlide = () => {
   }, []);
 
   return (
-      <div ref={containerRef} className="w-full overflow-hidden relative">
-        <h2 className="uppercase font-semibold text-2xl sm:text-3xl md:text-4xl text-center mt-12 m-4 text-[#172345]">
+      <div ref={containerRef} className="w-full overflow-hidden relative h-screen">
+        <h2 className="uppercase font-semibold text-2xl sm:text-3xl md:text-4xl text-center mt-6 m-4 text-[#172345]">
           Hệ thống thương hiệu
         </h2>
         <div
             ref={sliderRef}
-            className="flex mb-4"
+            className="flex mb-4 h-screen gap-40"
             style={{ width: `${(itemsProductBranding.length ) * 100}vw` }}
         >
 
           {itemsProductBranding.map((item, i) => (
               <div
                   key={i}
-                  className="w-screen h-[60vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-8 border-gray-200 border-1 shadow-sm mx-1"
+                  className="w-screen h-[80vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 border-gray-200 border-1 shadow-sm mx-1"
               >
                 <img
                     src={item.imgUrl}

@@ -16,7 +16,7 @@ interface CarouselItem{
 
 const carouselItem : CarouselItem[] = [{
     img: "/assets/carousel/aurane.png",
-    url: `/brand?brand=aurane`
+    url: `/brand?brand=AURANE`
     },
     {
         img: "/assets/carousel/colortour.png",

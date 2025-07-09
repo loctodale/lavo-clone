@@ -8,6 +8,11 @@ export const SearchItem = () => {
     const handleBlur = () => {
         if (value === "") setFocused(false);
     };
+    const handleSearch = () => {
+        if (value !== "") {
+            window.location.href = "/category?search=" + value;
+        }
+    }
 
     return (
         <div className="flex justify-center items-center invisible md:visible">
@@ -22,12 +27,18 @@ export const SearchItem = () => {
                     onChange={(e) => setValue(e.target.value)}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
+                    onKeyPress={(e) => {
+                        if (e.key === "Enter") {
+                            handleSearch();
+                        }
+                    }}
                 />
                 <button
                     type="submit"
-                    className="absolute top-0 mt-3 right-0 mr-3"
+                    className="absolute p-3 right-0"
                     onFocus={handleFocus}
                     onBlur={handleBlur}
+                    onClick={handleSearch}
                 >
                     <svg
                         className="h-4 w-4 fill-current"

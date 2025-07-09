@@ -42,7 +42,7 @@ export default function HorizontalTimeline() {
                             text: "Tái cơ cấu doanh nghiệp với định hướng phát triển bền vững, lấy khách hàng làm trung tâm."
                         }
                     ].map((item, i) => (
-                        <div key={i} className="flex-shrink-0 w-64 p-4 rounded-lg bg-card">
+                        <div key={i} className="flex-shrink-0 w-[18vw] p-4 rounded-lg bg-card">
                             <div className="flex items-center gap-2 mb-2">
                                 <div className="aspect-square w-8 bg-primary rounded-full" />
                                 <div className="text-sm font-medium">{item.year}</div>

@@ -8,7 +8,7 @@ interface BrandItem{
 const branding : BrandItem[] = [
     {
         img: "/assets/branding/4.png",
-        url: `/brand?brand=aurane`
+        url: `/brand?brand=AURANE`
     },
     // {
     //     img: "/assets/carousel/colortour.png",
@@ -38,9 +38,9 @@ const Branding = () => {
                              window.location.href = item.url
                         }}
                         key={index}
-                        className={"scale-100 hover:scale-110 ease-in duration-200 hover:cursor-pointer"}
-                        width={320}
-                        height={450}
+                        className={"scale-100 h-full w-[20vw] hover:scale-110 ease-in duration-200 hover:cursor-pointer"}
+                        width={1000}
+                        height={1000}
                         src={item.img}
                         alt={"image-holder"}
                     />

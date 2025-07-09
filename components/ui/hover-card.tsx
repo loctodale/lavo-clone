@@ -13,9 +13,9 @@ function formatKebabToSentence(text: string) {
         .join(" ");
 }
 
-const HoverCard = ({name, description, image} : {name: string, description: string, image: string}) => {
+const HoverCard = ({name, description, image, englishName} : {name: string, description: string, image: string, englishName: string}) => {
     return (
-            <Card className="md:w-1/3 overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl py-0 my-2">
+            <Card onClick={() => window.location.href = `/category?categories=${englishName}`} className="md:w-1/3 overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl py-0 my-2">
                 <CardContent className="p-0">
                     <div className="relative overflow-hidden group-hover:shadow-xl transition-shadow duration-300 h-[60vh]">
                         <img

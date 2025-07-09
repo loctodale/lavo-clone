@@ -924,7 +924,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 125,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "tinh-dầu-bóng-tóc-argan-oil-–-soft-liss-fantastic-repair-argan-oil",
             "category": "hair-oil-and-serum",
             "image": "/assets/products/aurane/1.png"
@@ -945,7 +945,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 125,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "tinh-dầu-bóng-tóc-macadamia-–-soft-liss-macadamia-oil",
             "category": "hair-oil-and-serum",
             "image": "/assets/products/aurane/2.png"
@@ -965,7 +965,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 100,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "tinh-dầu-bóng-tóc-olive-–-re-lighting-silk-oil",
             "category": "hair-oil-and-serum",
             "image": "/assets/products/aurane/3.png"
@@ -986,7 +986,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 325,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "gel-tạo-kiểu-tóc-xoăn-3d-–-giữ-nếp-va-định-hình-lọn-tóc-hoàn-hảo-(moisturizing-curl-elastin)",
             "category": "styling-products",
             "image": "/assets/products/aurane/4.png"
@@ -1006,7 +1006,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 250,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "xịt-dưỡng-tóc-–-moisturizing-hair-mist",
             "category": "hair-oil-and-serum",
             "image": "/assets/products/aurane/5.png"
@@ -1028,7 +1028,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 750,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-gội-phục-hồi-protein-–-protein-moisturizing-shampoo",
             "category": "shampoo",
             "image": "/assets/products/aurane/6.png"
@@ -1050,7 +1050,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 750,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-dưỡng-spa-phục-hồi-tóc-hư-tổn-va-chẻ-ngọn-(ve-repairing-hair-spa)",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/7.png"
@@ -1072,7 +1072,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 1000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-xả-keratin-–-phục-hồi-va-bảo-vệ-tóc-(keratin-conditioner)",
             "category": "conditioner",
             "image": "/assets/products/aurane/8.png"
@@ -1095,7 +1095,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 1000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-gội-keratin-–-phục-hồi-va-chống-rụng-tóc-(keratin-shampoo)",
             "category": "shampoo",
             "image": "/assets/products/aurane/9.png"
@@ -1117,7 +1117,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 730,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-gội-chống-rụng-tóc-–-ngăn-ngừa-gãy-rụng,-kích-thích-mọc-tóc-(anti-loss-shampoo)",
             "category": "shampoo",
             "image": "/assets/products/aurane/10.png"
@@ -1139,7 +1139,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 80,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "sáp-tạo-kiểu-mờ-–-giữ-nếp-va-định-hình-kiểu-tóc-nam-tính-(cool-stylish-clay)",
             "category": "styling-products",
             "image": "/assets/products/aurane/11.png"
@@ -1160,7 +1160,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 80,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "sáp-tạo-kiểu-bóng-–-giữ-nếp-va-định-hình-hoàn-hảo-(proud-stylish-paste)",
             "category": "styling-products",
             "image": "/assets/products/aurane/12.png"
@@ -1182,7 +1182,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 80,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "sáp-tạo-kiểu-siêu-cứng-–-giữ-nếp-bền-lâu,-không-bết-dính-(firm-hold-pomade---chỉ-độ-7.5)",
             "category": "styling-products",
             "image": "/assets/products/aurane/13.png"
@@ -1203,7 +1203,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 0,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "sáp-tạo-kiểu-matte-–-giữ-nếp-tự-nhiên,-không-bết-dính-(matte-stylish-wax---chỉ-độ-6)",
             "category": "styling-products",
             "image": "/assets/products/aurane/14.png"
@@ -1225,7 +1225,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 750,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-gội-trị-gàu-–-làm-sạch-va-nuôi-dưỡng-da-đầu-(seaweed-anti-dandruff-shampoo)",
             "category": "shampoo",
             "image": "/assets/products/aurane/15.png"
@@ -1247,7 +1247,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 750,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "dầu-gội-tinh-dầu-olive-–-kiểm-soát-dầu-hiệu-quả-(olive-oil-control-shampoo)",
             "category": "shampoo",
             "image": "/assets/products/aurane/16.png"
@@ -1268,7 +1268,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 30,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "tinh-chất-protein-sửa-chữa-tóc-hư-tổn",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/17.png"
@@ -1290,7 +1290,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 2000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "bộ-duỗi-tóc-thẳng-ion-nhiệt-năng-–-ionic-straight-perm-set",
             "category": "perm-and-straightening-products",
             "image": "/assets/products/aurane/18.png"
@@ -1313,7 +1313,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 2000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "bộ-uốn-tóc-mềm-mại-đầy-sức-sống-–-dynamic-curl-perm-set",
             "category": "perm-and-straightening-products",
             "image": "/assets/products/aurane/19.png"
@@ -1336,7 +1336,7 @@ export const mockProducts : Product[] =
             ],
             "note": "Không gội đầu bằng dầu gội trong 48 giờ. Chỉ sử dụng dầu xả dinh dưỡng Aurane để giữ độ ẩm và độ bóng cho tóc .",
             "size": 1000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "elastic-perm-set-–-uốn-lạnh-chuyên-nghiệp-(thuốc-uốn-lạnh-a-va-dung-dịch-trung-hòa-b)",
             "category": "perm-and-straightening-products",
             "image": "/assets/products/aurane/21.png"
@@ -1357,7 +1357,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 1000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "điều-trị-tái-tạo---ppt-balancing-serum-(no.1-va-no.2)",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/22.png"
@@ -1380,7 +1380,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 100,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "kem-nhuộm-tóc-(splendid-color-cream)",
             "category": "hair-coloring-and-bleaching",
             "image": "/assets/products/aurane/23.png"
@@ -1403,7 +1403,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 1000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "trợ-nhuộm-(splendid-oxydant-developer)-6%25,-9%25,-12%25",
             "category": "hair-coloring-and-bleaching",
             "image": "/assets/products/aurane/24.png"
@@ -1426,7 +1426,7 @@ export const mockProducts : Product[] =
             ],
             "note": "Không sử dụng trên tóc quá yếu hoặc da đầu nhạy cảm. Nên thử trên một lọn tóc nhỏ trước khi tẩy toàn bộ. Luôn kết hợp với sản phẩm dưỡng để bảo vệ tóc tốt nhất [92].",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "hair-bleaching---bột-tẩy-tóc",
             "category": "hair-coloring-and-bleaching",
             "image": "/assets/products/aurane/27.png"
@@ -1448,7 +1448,7 @@ export const mockProducts : Product[] =
             ],
             "note": "Không thổi với nhiệt độ cao [94].",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "mặt-nạ-phục-hồi-chuyên-sâu---chống-oxy-hóa-(sea-mud-ultra-repairing-hair-mask)",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/28.png"
@@ -1469,7 +1469,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "mặt-nạ-dưỡng-chất-phục-hồi-va-tái-tạo-tóc-(nutritive-repairing-hair-mask)",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/30.png"
@@ -1491,7 +1491,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 750,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Dau-Xa-Dinh-Duong-–-Bao-Ve-va-Nuoi-Duong-Toc-Mem-Muot-(Balancing-Conditioner)",
             "category": "conditioner",
             "image": "/assets/products/aurane/31.png"
@@ -1513,7 +1513,7 @@ export const mockProducts : Product[] =
             ],
             "note": "Large capacity – Optimized for salons .",
             "size": 4000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Dau-Goi-Dinh-Duong-–-Phuc-Hoi-va-Cap-Am-Chuyen-Sau-(Moisture-Repair-Shampoo)",
             "category": "shampoo",
             "image": "/assets/products/aurane/32.png"
@@ -1535,7 +1535,7 @@ export const mockProducts : Product[] =
             ],
             "note": "Large capacity – Optimized for salons .",
             "size": 4000,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Dau-Xa-Can-Bang-–-Duong-Toc-va-Bao-Ve-Toan-Dien-(Balancing-Conditioner)",
             "category": "conditioner",
             "image": "/assets/products/aurane/33.png"
@@ -1557,7 +1557,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Nguyen-To-Hoi-Phuc-Enzyme-Can-Bang-PPT-(PPT-Balancing-Serum)",
             "category": "hair-oil-and-serum",
             "image": "/assets/products/aurane/34.png"
@@ -1578,7 +1578,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Hap-Danh-Cho-Toc-Mau-(Color-Care-Hair-Mask)",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/35.png"
@@ -1601,7 +1601,7 @@ export const mockProducts : Product[] =
             ],
             "note": "",
             "size": 500,
-            "brand": "aurane",
+            "brand": "AURANE",
             "slug": "Hap-Phuc-Hoi---Nutri-Care-Hair-Mask",
             "category": "hair-mask-and-treatment",
             "image": "/assets/products/aurane/36.png"

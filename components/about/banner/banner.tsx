@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className="w-full bg-[#dde4e4]">
             <div className="px-4 md:px-8 lg:px-16 mx-auto max-w-screen-xl">
-                <div className="flex flex-col lg:flex-row items-center gap-10 py-12">
+                <div className="flex flex-col lg:flex-row items-center gap-10 py-4">
                     <div className="w-full lg:w-1/2">
                         <Image
                             src="/assets/thongtin.jpg"
