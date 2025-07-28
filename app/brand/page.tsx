@@ -62,6 +62,13 @@ const Page = () => {
     if (!brandName) return null;
 
     React.useEffect(() => {
+
+        setFilters((prev) => ({
+            ...prev,
+            brands: brandName ? [brandName] : prev.brands,
+        }));
+    }, [searchParams]);
+    React.useEffect(() => {
         let productList : Product []= mockProducts
         if (filters.categories.length > 0) {
             const listCategory = mockCoverCategory
@@ -100,6 +107,8 @@ const Page = () => {
                             </div>
                     }
                 </div>
+                <HorizontalFilters className={"justify-center"} filters={filters} setFilters={setFilters} />
+
                 {/*<HorizontalFilters className={"justify-center"} filters={filters} setFilters={setFilters} />*/}
 
                 <div className="max-w-screen mx-[0vw] md:mx-[15vw] items-center justify-center flex mt-4">

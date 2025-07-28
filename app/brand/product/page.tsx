@@ -69,12 +69,12 @@ const Page = () => {
             <div className={"py-[4rem] mx-[5vw]"}>
                 <ProductDetail product={product} />
             </div>
-            <div className={"mx-[5vw]"}>
+            <div className={"mx-[3vw]"}>
                 <h3 className="text-xl md:text-2xl font-semibold uppercase leading-snug text-[#172345] mb-4 md:ml-8 text-center md:text-left">
                     Các sản phẩm liên quan
                 </h3>
-                <div className={"w-full mb-16"}>
-                    <CarouselRecommend products={products} from={"/brand/category"} />
+                <div className={"w-full mb-16 ml-2"}>
+                    <CarouselRecommend products={products} from={"/brand"} />
                 </div>
             </div>
         </section>

@@ -175,7 +175,7 @@ function CarouselDots({ className }: { className?: string }) {
             <button
                 key={index}
                 className={cn(
-                    "h-4 w-4 rounded-full transition-colors duration-300",
+                    "md:h-[1vw] md:w-[1vw] h-4 w-4 rounded-full transition-colors duration-300",
                     index === selectedIndex ? "bg-[#fdc254]" : "bg-gray-300"
                 )}
                 onClick={() => api?.scrollTo(index)}

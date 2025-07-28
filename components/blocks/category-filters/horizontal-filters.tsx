@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/popover";
 import {mockCoverCategory} from "@/service/mock.cover-category";
 import {CoverCategory} from "@/types/cover-category";
+import {usePathname} from "next/navigation";
 
 // Modified base slider component to show end circle
 interface SliderProps
@@ -67,23 +68,13 @@ export default function HorizontalFilters({
     filters,
     setFilters,
 }: HorizontalFiltersProps) {
-  // const [filters, setFilters] = useState<FilterState>({
-  //   categories: [],
-  //   subCategories: [],
-  //   brands: [],
-  //   sortBy: "featured",
-  // });
 
   const [currentCategory, setCurrentCategory] = useState<CoverCategory[]>([])
 
   const [activeFiltersCount, setActiveFiltersCount] = useState(0);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
-
-  // React.useEffect(() => {
-  //   if (filters.categories.length > 0){
-  //     setCurrentCategory((prevState) => [...prevState, mockCoverCategory.filter(x => x.name == filters.categories[0])[0]])
-  //   }
-  // }, []);
+  const pathname = usePathname();
+  console.log(pathname);
   const updateFilters = (newFilters: Partial<FilterState>) => {
     const updated = { ...filters, ...newFilters };
     if (setFilters) {
@@ -221,7 +212,7 @@ export default function HorizontalFilters({
             <Popover>
               <PopoverTrigger asChild>
                 <Button variant="outline" size="sm" className="h-8">
-                  Thể loại
+                  Phân loại
                   <ChevronDown className="ml-1 h-3 w-3" />
                 </Button>
               </PopoverTrigger>
@@ -290,38 +281,41 @@ export default function HorizontalFilters({
 
 
             {/* Brand Filter */}
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button variant="outline" size="sm" className="h-8">
-                  Thương hiệu
-                  <ChevronDown className="ml-1 h-3 w-3" />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-56 p-3">
-                <div className="space-y-2">
-                  {brands.map((brand) => (
-                    <div key={brand} className="flex items-center">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className={cn(
-                          "justify-start w-full font-normal",
-                          filters.brands.includes(brand) && "font-medium"
-                        )}
-                        onClick={() => toggleFilter("brands", brand)}
-                      >
-                        <div className="flex items-center justify-between w-full">
-                          {brand}
-                          {filters.brands.includes(brand) && (
-                            <Check className="h-4 w-4" />
-                          )}
-                        </div>
-                      </Button>
+            {pathname != "/brand" && (
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Button variant="outline" size="sm" className="h-8">
+                      Thương hiệu
+                      <ChevronDown className="ml-1 h-3 w-3" />
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-56 p-3">
+                    <div className="space-y-2">
+                      {brands.map((brand) => (
+                          <div key={brand} className="flex items-center">
+                            <Button
+                                variant="ghost"
+                                size="sm"
+                                className={cn(
+                                    "justify-start w-full font-normal",
+                                    filters.brands.includes(brand) && "font-medium"
+                                )}
+                                onClick={() => toggleFilter("brands", brand)}
+                            >
+                              <div className="flex items-center justify-between w-full">
+                                {brand}
+                                {filters.brands.includes(brand) && (
+                                    <Check className="h-4 w-4" />
+                                )}
+                              </div>
+                            </Button>
+                          </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </PopoverContent>
-            </Popover>
+                  </PopoverContent>
+                </Popover>
+
+            )}
 
             {/* Mobile All Filters Button */}
             <Button
@@ -364,7 +358,7 @@ export default function HorizontalFilters({
                 <div className="space-y-6 pr-4">
                   {/* Categories */}
                   <div className="space-y-3">
-                    <h3 className="text-sm font-medium">Thể loại</h3>
+                    <h3 className="text-sm font-medium">Phân loại</h3>
                     <div className="space-y-2">
                       {categories.map((category) => (
                         <Button
@@ -421,32 +415,37 @@ export default function HorizontalFilters({
                   <Separator />
 
                   {/* Brands */}
-                  <div className="space-y-3">
-                    <h3 className="text-sm font-medium">Thương hiệu</h3>
-                    <div className="space-y-2">
-                      {brands.map((brand) => (
-                        <Button
-                          key={brand}
-                          variant="ghost"
-                          size="sm"
-                          className={cn(
-                            "justify-start w-full font-normal",
-                            filters.brands.includes(brand) && "font-medium"
-                          )}
-                          onClick={() => toggleFilter("brands", brand)}
-                        >
-                          <div className="flex items-center justify-between w-full">
-                            {brand}
-                            {filters.brands.includes(brand) && (
-                              <Check className="h-4 w-4" />
-                            )}
+                  {pathname != "/brand" && (
+                      <div>
+                        <div className="space-y-3">
+                          <h3 className="text-sm font-medium">Thương hiệu</h3>
+                          <div className="space-y-2">
+                            {brands.map((brand) => (
+                                <Button
+                                    key={brand}
+                                    variant="ghost"
+                                    size="sm"
+                                    className={cn(
+                                        "justify-start w-full font-normal",
+                                        filters.brands.includes(brand) && "font-medium"
+                                    )}
+                                    onClick={() => toggleFilter("brands", brand)}
+                                >
+                                  <div className="flex items-center justify-between w-full">
+                                    {brand}
+                                    {filters.brands.includes(brand) && (
+                                        <Check className="h-4 w-4" />
+                                    )}
+                                  </div>
+                                </Button>
+                            ))}
                           </div>
-                        </Button>
-                      ))}
-                    </div>
-                  </div>
+                        </div>
 
-                  <Separator />
+                        <Separator />
+                      </div>
+                  )}
+
                 </div>
               </ScrollArea>
 

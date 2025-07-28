@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [new URL('https://img.icons8.com/**')],
         domains: ['img.icons8.com'],
     },
+    plugins: [require('tailwind-scrollbar-hide')],
 };
 
 export default nextConfig;

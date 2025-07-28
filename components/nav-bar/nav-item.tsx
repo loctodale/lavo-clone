@@ -107,11 +107,11 @@ export function NavigationItem() {
                                     </Carousel>
                                 </NavigationMenuLink>
                             </li>
-                            <div className={"flex items-center w-full h-full"}>
-                                <div className={"grid grid-cols-2 gap-4 pt-4 w-full h-full"}>
+                            <div className={"flex items-center w-full h-full "}>
+                                <div className={"grid grid-cols-2 gap-4 pt-4 w-full h-full "}>
                                     {
                                         mockImageTrigger.map((item, i) => (
-                                            <ListItem key={i} href={`/brand?brand=${item.url}`} className={"uppercase w-full"} title={item.url}>
+                                            <ListItem key={i} href={`/brand?brand=${item.url}`} className={"uppercase w-full hover:bg-black hover:text-yellow-400 align-middle  pt-4"} title={item.url}>
                                                 {/*<span className={"normal-case"}>{item.description}</span>*/}
                                             </ListItem>
                                         ))
@@ -131,7 +131,7 @@ export function NavigationItem() {
                         <ul className="grid w-[68vw] grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-white  rounded-lg">
                             {mockCoverCategory.map((cover, i) => (
                                 <li key={i} className="flex flex-col">
-                                  <span className="text-sm font-bold text-[#172345] uppercase mb-2">
+                                  <span className="text-sm font-bold text-[#172345] uppercase mb-2 text-nowrap">
                                     {cover.name}
                                   </span>
                                     <ul className="space-y-1">
@@ -139,9 +139,9 @@ export function NavigationItem() {
                                             <li key={j}>
                                                 <a
                                                     href={`/category?category_name=${cat.englishName}`}
-                                                    className="text-sm text-gray-600 hover:text-[#fdc254] transition"
+                                                    className="text-sm text-gray-600 hover:text-[#fdc254] hover:bg-black text-nowrap p-2 rounded-md"
                                                 >
-                                                    {formatKebabToSentence(cat.name)}
+                                                        {formatKebabToSentence(cat.name)}
                                                 </a>
                                             </li>
                                         ))}

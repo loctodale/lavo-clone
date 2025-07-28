@@ -36,9 +36,9 @@ const banners = [
 
 const TopItems = () => {
     return (
-        <div className="px-2 lg:pr-6">
+        <div className="px-2">
             <div className="block md:hidden space-y-4">
-                <div className={"flex w-screen"}>
+                <div className={"flex w-full"}>
                     <Image
                         onClick={() => (window.location.href = "/brand?brand=KARSILK")}
                         src="/assets/banner/karsilk.JPG"
@@ -52,7 +52,7 @@ const TopItems = () => {
                            onClick={() => (window.location.href = "/brand?brand=ZDNB")}
                            src="/assets/banner/zdnb.jpg"
                            alt="ZDNB"
-                           className="w-[90%] h-full object-contain cursor-pointer"
+                           className="w-full h-full object-contain cursor-pointer"
                            width={1000}
                            height={1000}
                        />

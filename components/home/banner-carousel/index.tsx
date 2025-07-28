@@ -49,7 +49,7 @@ export function BannerCarousel() {
                             window.location.href = item.url
                         }} className="hover:cursor-pointer">
                             <CustomCard className={"p-0"}>
-                                <CardContent className=" flex items-center justify-center h-[95vh] p-0">
+                                <CardContent className=" flex items-center justify-center h-[38vh] md:h-[95vh] p-0">
                                     {/*<div className={`w-full h-full bg-contain bg-no-repeat bg-[url(${item})]`}></div>*/}
                                     {/*<div className={"w-full h-full bg-[url(/assets/carousel/aurane.png)]"}></div>*/}
                                     <img src={item.img} className="w-full h-full object-contain" />
@@ -59,7 +59,7 @@ export function BannerCarousel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselDots />
+            <CarouselDots className={"md:top-[95%]"} />
         </Carousel>
     )
 }

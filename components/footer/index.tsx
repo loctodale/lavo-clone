@@ -22,7 +22,7 @@ const Footer = () => {
     };
     return (
        <div className="py-16 bg-black opacity-95 text-white text-base">
-          <div className="mx-[4vw] px-4 opacity-100">
+          <div className="mx-4 px-4 opacity-100">
             <div className="flex flex-col md:flex-row gap-8 justify-between">
               {/* Location */}
               <div className="flex flex-col gap-2 w-full lg:w-1/4">

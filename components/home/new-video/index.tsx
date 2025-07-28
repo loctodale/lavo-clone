@@ -39,20 +39,7 @@ const NewVideo = () => {
             <div className={"mx-[1rem] sm:mx-[16rem] flex flex-col items-center justify-center pb-16 md:mx-100 bg-[url(/line.png)] bg-contain bg-bottom bg-no-repeat"}>
                 <h2 className={"text-[#172345] font-bold text-[40px] uppercase mb-[1rem] text-nowrap"}>Video mới nhất </h2>
             </div>
-
-            {/*<div className={"mx-[1rem] sm:mx-[16rem] flex justify-center items-center mt-[2.5rem] gap-4 max-w-screen flex-wrap"}>*/}
-            {/*    {buttonList.map((label, index) => (*/}
-            {/*        <Button*/}
-            {/*            key={index}*/}
-            {/*            className={"bg-transparent uppercase text-[#172345] text-[1rem] font-[400] border-[#172345] hover:bg-[#fdc254] hover:text-white ease-in duration-300"}*/}
-            {/*            variant={"outline"}*/}
-            {/*        >*/}
-            {/*            {label}*/}
-            {/*        </Button>*/}
-            {/*    ))}*/}
-            {/*</div>*/}
-
-            <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mx-[1rem] sm:mx-[16rem]">
+            <div className="mt-[4rem] mb-[2rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 ">
                 {displayedData.map((data, index) => (
                     <CardWithImage
                         slug={data.slug}

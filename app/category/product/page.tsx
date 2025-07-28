@@ -66,7 +66,7 @@ const Page = () => {
                 <ProductDetail product={product} />
             </div>
             <div className={"w-full mb-16"}>
-                <CarouselRecommend products={products} from={"/category/brand"} />
+                <CarouselRecommend products={products} from={"/category"} />
             </div>
         </section>
     );

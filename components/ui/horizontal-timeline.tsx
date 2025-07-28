@@ -8,17 +8,17 @@ import { Button } from "@/components/ui/button"
 export default function HorizontalTimeline() {
     return (
         <div className="relative w-full ">
-            <div className="flex items-center justify-between mb-4 md:mx-16">
-                <Button variant="ghost" size="icon" className="rounded-full">
-                    <ChevronLeftIcon className="w-5 h-5" />
-                    <span className="sr-only">Previous</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="rounded-full">
-                    <ChevronRightIcon className="w-5 h-5" />
-                    <span className="sr-only">Next</span>
-                </Button>
-            </div>
-            <div className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide justify-center">
+            {/*<div className="flex items-center justify-between mb-4 md:mx-16">*/}
+            {/*    <Button variant="ghost" size="icon" className="rounded-full">*/}
+            {/*        <ChevronLeftIcon className="w-5 h-5" />*/}
+            {/*        <span className="sr-only">Previous</span>*/}
+            {/*    </Button>*/}
+            {/*    <Button variant="ghost" size="icon" className="rounded-full">*/}
+            {/*        <ChevronRightIcon className="w-5 h-5" />*/}
+            {/*        <span className="sr-only">Next</span>*/}
+            {/*    </Button>*/}
+            {/*</div>*/}
+            <div className="flex flex-col md:flex-row gap-4 overflow-x-auto scroll-smooth scrollbar-hide justify-center">
                 {
                     [
                         {
@@ -42,10 +42,13 @@ export default function HorizontalTimeline() {
                             text: "Tái cơ cấu doanh nghiệp với định hướng phát triển bền vững, lấy khách hàng làm trung tâm."
                         }
                     ].map((item, i) => (
-                        <div key={i} className="flex-shrink-0 w-[18vw] p-4 rounded-lg bg-card">
+                        <div key={i} className="flex-shrink-0 w-full md:w-[18vw] p-4 rounded-lg bg-card">
                             <div className="flex items-center gap-2 mb-2">
-                                <div className="aspect-square w-8 bg-primary rounded-full" />
-                                <div className="text-sm font-medium">{item.year}</div>
+                                <div className="relative w-6 h-6 md:w-8 md:h-8">
+                                    <div className="absolute inset-0 rounded-full bg-primary opacity-75 animate-ping"></div>
+                                    <div className="relative w-full h-full rounded-full bg-primary border-2 border-white shadow" />
+                                </div>
+                                <div className="text-sm font-medium pl-2">{item.year}</div>
                             </div>
                             <h3 className="text-lg font-semibold">{item.text}</h3>
 

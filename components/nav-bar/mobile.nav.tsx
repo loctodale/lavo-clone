@@ -27,9 +27,9 @@ const MobileNav = ({
         <>
             <div
                 className={cn(
-                    "fixed top-0 right-0 h-full w-[260px] bg-white border-l border-gray-200 z-50 transition-transform duration-300",
+                    "fixed top-0 right-0 h-full w-[70vw] bg-white border-l border-gray-200 z-50 transition-transform duration-300",
                     isSidebarOpen ? "translate-x-0" : "translate-x-full",
-                    "md:hidden"
+                    "md:hidden "
                 )}
             >
                 {/* Close button */}

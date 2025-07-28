@@ -20,7 +20,7 @@ const Page = () => {
         <section className={"pt-[10vh]"}>
             <div className={"py-[4rem]"}>
                 <h2 className={"uppercase text-nowrap font-semibold text-[40px] text-center mb-[1rem] text-[#172345]"}>{videoItem?.title}</h2>
-                <div className={"px-[2rem] py-8"}>
+                <div className={"px-2 py-8"}>
                     <MediaPlayer title="Sprite Fight" src={videoItem?.imageUrl}>
                         <MediaProvider />
                         <DefaultVideoLayout thumbnails={posterUrl ?? ""} icons={defaultLayoutIcons} />

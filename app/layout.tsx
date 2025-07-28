@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={"w-screen h-full overflow-x-hidden"} lang="en">
+    <html className={"w-screen h-full overflow-x-hidden scrollbar-hide"} lang="en">
     <head>
         {/*<link*/}
         {/*  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"*/}

@@ -83,15 +83,11 @@ const Page = () => {
         setProduct(productList);
     }, [brandName, filters]);
 
-    console.log(products)
-    console.log(filters)
     return (
         <section className="pt-[11vh]">
             {/*<BreadCrumbBrand brandName={brandName} />*/}
             <div className="py-4">
-                <div className="flex flex-col items-center justify-center pb-6
-                {/*bg-[url(/line.png)] */}
-                bg-contain bg-bottom bg-no-repeat text-center md:mx-[30vw]">
+                <div className="flex flex-col items-center justify-center pb-6 text-center md:mx-[30vw]">
                     <h2 className="text-[#172345] font-bold text-[24px] sm:text-[28px] md:text-[36px] xl:text-[40px] uppercase">
                         Sản phẩm
                     </h2>
