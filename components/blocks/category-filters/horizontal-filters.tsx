@@ -17,6 +17,7 @@ import {
 import {mockCoverCategory} from "@/service/mock.cover-category";
 import {CoverCategory} from "@/types/cover-category";
 import {usePathname} from "next/navigation";
+import {useTranslation} from "react-i18next";
 
 // Modified base slider component to show end circle
 interface SliderProps
@@ -70,7 +71,7 @@ export default function HorizontalFilters({
 }: HorizontalFiltersProps) {
 
   const [currentCategory, setCurrentCategory] = useState<CoverCategory[]>([])
-
+  const {t} = useTranslation();
   const [activeFiltersCount, setActiveFiltersCount] = useState(0);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const pathname = usePathname();
@@ -171,16 +172,6 @@ export default function HorizontalFilters({
               onClick={() =>
                 {
                   toggleFilter(filter.type as keyof FilterState, filter.value)
-                  // if (filter.type == "categories") {
-                  //     const removeCategory = mockCoverCategory.find(x => x.name == filter.value);
-                  //     const removeSubCategory = removeCategory?.category.map((x) => x.name)
-                  //     // removeSubCategory?.map(y => {
-                  //     //   if (activeFilters.find(x =>  x.value == y)){
-                  //     //     toggleFilter("subCategories", y)
-                  //     //   }
-                  //     // })
-                  //     setCurrentCategory((prevState) =>  prevState.filter(item => item !== removeCategory))
-                  // }
                 }
               }
             >
@@ -212,7 +203,7 @@ export default function HorizontalFilters({
             <Popover>
               <PopoverTrigger asChild>
                 <Button variant="outline" size="sm" className="h-8">
-                  Phân loại
+                  {t("product.filter.category")}
                   <ChevronDown className="ml-1 h-3 w-3" />
                 </Button>
               </PopoverTrigger>
@@ -249,7 +240,7 @@ export default function HorizontalFilters({
             <Popover>
               <PopoverTrigger asChild>
                 <Button variant="outline" size="sm" className="h-8">
-                  Chi tiết
+                  {t("product.filter.detail")}
                   <ChevronDown className="ml-1 h-3 w-3" />
                 </Button>
               </PopoverTrigger>
@@ -281,11 +272,11 @@ export default function HorizontalFilters({
 
 
             {/* Brand Filter */}
-            {pathname != "/brand" && (
+            {pathname.includes("brand", 0) && (
                 <Popover>
                   <PopoverTrigger asChild>
                     <Button variant="outline" size="sm" className="h-8">
-                      Thương hiệu
+                      {t("product.filter.brand")}
                       <ChevronDown className="ml-1 h-3 w-3" />
                     </Button>
                   </PopoverTrigger>
@@ -358,7 +349,7 @@ export default function HorizontalFilters({
                 <div className="space-y-6 pr-4">
                   {/* Categories */}
                   <div className="space-y-3">
-                    <h3 className="text-sm font-medium">Phân loại</h3>
+                    <h3 className="text-sm font-medium">{t("product.filter.category")}</h3>
                     <div className="space-y-2">
                       {categories.map((category) => (
                         <Button
@@ -387,7 +378,7 @@ export default function HorizontalFilters({
 
                   {/*Sub Category*/}
                   <div className="space-y-3">
-                    <h3 className="text-sm font-medium">Chi tiết</h3>
+                    <h3 className="text-sm font-medium">{t("product.filter.detail")}</h3>
                     <div className="space-y-2">
                       {subCategories.map((subCate) => (
                           <Button
@@ -415,10 +406,10 @@ export default function HorizontalFilters({
                   <Separator />
 
                   {/* Brands */}
-                  {pathname != "/brand" && (
+                  {pathname.includes("brand") && (
                       <div>
                         <div className="space-y-3">
-                          <h3 className="text-sm font-medium">Thương hiệu</h3>
+                          <h3 className="text-sm font-medium">{t("product.filter.brand")}</h3>
                           <div className="space-y-2">
                             {brands.map((brand) => (
                                 <Button

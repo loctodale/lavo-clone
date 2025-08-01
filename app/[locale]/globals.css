@@ -1,7 +1,9 @@
+@source "../../app/[locale]/**/*.{js,ts,jsx,tsx,mdx}";
+@source "../../components/**/*.{js,ts,jsx,tsx,mdx}";
+@source "../../lib/**/*.{js,ts,jsx,tsx,mdx}";
 @import "tailwindcss";
 @import "tw-animate-css";
-@import 'tailwind-scrollbar-hide/v4';
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap'); */
+/* @import 'styles.css'; */
 @custom-variant dark (&:is(.dark *));
 @utility no-scrollbar {
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;

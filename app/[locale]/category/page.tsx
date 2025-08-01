@@ -14,12 +14,13 @@ import {
 import {mockCategory} from "@/service/mock.category";
 import HorizontalFilters, {FilterState} from "@/components/blocks/category-filters/horizontal-filters";
 import {mockCoverCategory} from "@/service/mock.cover-category";
+import {useTranslation} from "react-i18next";
 function BreadCrumbCategory({name}:{name: string}) {
     return (
         <Breadcrumb className={"w-full p-2 text-[1rem] bg-[#f3f3f4] z-10"}>
             <BreadcrumbList className={"px-4 sm:px-6 lg:px-20 max-w-screen-xl mx-auto text-[#172345]"}>
                 <BreadcrumbItem>
-                    <BreadcrumbLink className={"font-[400]"} href="/">Trang chủ</BreadcrumbLink>
+                    <BreadcrumbLink className={"font-[400]"} href="/public">Trang chủ</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -37,6 +38,7 @@ const Page = () => {
         brands: [],
         sortBy: "featured",
     });
+    const {t} = useTranslation();
     const searchParams = useSearchParams();
     let categoryName = searchParams.get("category_name");
     let brandName = searchParams.get("brand");
@@ -82,14 +84,13 @@ const Page = () => {
         }
         setProduct(productList);
     }, [brandName, filters]);
-
     return (
         <section className="pt-[11vh]">
             {/*<BreadCrumbBrand brandName={brandName} />*/}
             <div className="py-4">
                 <div className="flex flex-col items-center justify-center pb-6 text-center md:mx-[30vw]">
                     <h2 className="text-[#172345] font-bold text-[24px] sm:text-[28px] md:text-[36px] xl:text-[40px] uppercase">
-                        Sản phẩm
+                        {t("product.name")}
                     </h2>
 
                 </div>

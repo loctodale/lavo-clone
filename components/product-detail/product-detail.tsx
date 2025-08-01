@@ -1,8 +1,10 @@
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import {Product} from "@/types/product";
+import {useTranslation} from "react-i18next";
 
 export default function ProductDetail({product}: {product: Product }) {
+    const {t} = useTranslation()
     return (
         <div className="grid gap-6 lg:gap-12 max-w-7xl mx-auto px-4 py-6">
             <div className="grid md:grid-cols-2 gap-6 items-start">
@@ -35,7 +37,7 @@ export default function ProductDetail({product}: {product: Product }) {
                         </div>
                         <div className="grid gap-2">
                             <Label htmlFor="size" className="text-lg font-bold">
-                                Mô tả
+                                {t("product.desc")}:
                             </Label>
                             <p className={"font-[400] text-[1rem] text-gray-700"}>
                                 {product.description}
@@ -43,11 +45,11 @@ export default function ProductDetail({product}: {product: Product }) {
                         </div>
                         <div className="grid gap-2">
                             <Label htmlFor="quantity" className="text-lg font-bold ">
-                                Dung tích: <span className={"font-[400] text-[1rem] text-gray-700"}>{product.size} ml</span>
+                                {t("product.size")}: <span className={"font-[400] text-[1rem] text-gray-700"}>{product.size} ml</span>
                             </Label>
                         </div>
                         <div className={"grid gap-2"}>
-                            <Label className="text-lg font-bold ">Hướng dẫn sử dụng:</Label>
+                            <Label className="text-lg font-bold ">{t("product.howToUse")}:</Label>
                             {
                                 product.howToUse.map((item, index) => (
                                     <p className={"font-[400] text-[1rem] text-gray-700"} key={index}>- {item}</p>
@@ -57,7 +59,7 @@ export default function ProductDetail({product}: {product: Product }) {
                         {
                             product.note?.trim() != null && (
                                 <div className={"grid gap-2"}>
-                                    <Label className={"font-bold text-lg"}>Lưu ý: </Label>
+                                    <Label className={"font-bold text-lg"}>{t("product.note")}: </Label>
                                     <p className={"font-[400] text-[1rem] text-gray-700"}>{product.note}</p>
                                 </div>
                             )

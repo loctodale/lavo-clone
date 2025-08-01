@@ -1,0 +1,165 @@
+{
+  "about": {
+    "banner": {
+      "description": "Cao Dat Trading Company Limited was established on September 5, 2012, with over 10 years of experience, as the exclusive importer and distributor of professional hair cosmetic brands from Europe and Asia in Vietnam. We not only provide products but also offer comprehensive hair care solutions, helping salons, hair stylists, and consumers have the best experience.",
+      "name": "About us"
+    },
+    "brand": {
+      "button": "Detail",
+      "items": {
+        "/assets/branding/2": {
+          "png": {
+            "title": "Japanese quality, comprehensive and safe hair care.",
+            "0": "Japanese quality, comprehensive and safe hair care.",
+            "1": "Comprehensive hair care: Products such as shampoo, conditioner, dye, and styling foam from ZDNB are designed to provide essential nutrients, helping hair to be soft, shiny, and healthy while reducing damage.",
+            "2": "Safe for hair and scalp: The product formula often contains low or no ammonia levels, minimizing the risk of scalp irritation and hair damage."
+          }
+        },
+        "/assets/branding/3": {
+          "png": {
+            "title": "KARSILK (Italy) – High-end hair cosmetics line, bringing a classy experience to the salon.",
+            "0": "High-quality ingredients: KARSILK products contain ultra-fine keratin extract, which helps replenish natural keratin for hair, repair hair structure, and restore elasticity.",
+            "1": "Heat resistance: The product has the ability to protect hair from the effects of high temperatures from dryers and straighteners, preventing further damage to the hair.",
+            "2": "KARSILK (Italy) – A premium hair cosmetics line that offers a luxurious experience for salons."
+          }
+        },
+        "/assets/branding/4": {
+          "png": {
+            "title": "Aurane (France) – Sophistication in each product, suitable for professional salons.",
+            "0": "French origin, a place famous for its tradition of beauty and high-quality cosmetics",
+            "1": "Specialized in product lines for professional hair salons",
+            "2": "Combining modern science and natural ingredients",
+            "3": "Luxurious, sophisticated design reflecting the brand's prestige",
+            "4": "Trusted by many high-end salons and professional stylists"
+          }
+        },
+        "/assets/branding/5": {
+          "png": {
+            "title": "Slider (Italy) – Advanced hair care technology from Europe, bringing outstanding results.",
+            "0": "Originating from Italy – a country renowned for tradition and innovation in the beauty industry",
+            "1": "Focused on effective treatment and intensive hair care",
+            "2": "Exclusive formula combining science and natural ingredients",
+            "3": "Suitable for professional salons and top stylists"
+          }
+        },
+        "COLORTOUR": "Professional hair dye brand, sharp and long-lasting.",
+        "KARSILK": "Premium hair cosmetics line, providing a luxurious experience for salons.",
+        "png": "Originating from Italy - a country famous for its tradition and innovation in the beauty industry",
+        "SLIDER": "Advanced hair care technology from Europe, delivering outstanding results."
+      },
+      "name": "Brand system"
+    },
+    "development": {
+      "name": "Development History",
+      "2012": "Established CAO DAT Trading Co., Ltd., initially entering the hair cosmetics import and distribution market.",
+      "2015": "Expanded the distribution network, partnering with major salons nationwide.",
+      "2018": "Became the exclusive distributor of several prestigious brands from Europe and Asia.",
+      "2022": "Celebrated the 10th anniversary, marking significant growth and market expansion.",
+      "2024": "Restructured the company with a sustainable development orientation, putting customers at the center."
+    },
+    "core": {
+      "name": "Core Values",
+      "description": "\"Quality Builds Brand – Sustainability Leads to Success\"",
+      "1": {
+        "name": "Sustainable Development",
+        "description": "Building a business not only for profit but also for long-term value for Vietnam's hair industry."
+      },
+      "2": {
+        "name": "Collaboration & Companionship",
+        "description": "Valuing close collaboration with partners, salons, and customers to create shared value."
+      },
+      "3": {
+        "name": "Slogan",
+        "description": "\"Quality Builds Brand – Sustainability Leads to Success\""
+      },
+      "4": {
+        "name": "Creativity & Innovation",
+        "description": "Constantly improving and applying modern technology to meet the growing needs of the market."
+      },
+      "5": {
+        "name": "Quality & Reputation",
+        "description": "Committed to genuine, safe, and effective products."
+      },
+      "6": {
+        "name": "Customer-Centric",
+        "description": "Prioritizing customer benefits and accompanying the growth of salons and hair stylists."
+      }
+    }
+
+  },
+  "footer": {
+    "information": {
+      "address": {
+        "1": "34 DAO DUY ANH, WARD 9",
+        "2": "PHU NHUAN DISTRICT, HO CHI MINH CITY",
+        "name": "Address:"
+      },
+      "email": {
+        "value": "CAODAT.COSMETICS@GMAIL.COM"
+      },
+      "fax": {
+        "name": "Fax:",
+        "value": "028-38424372"
+      },
+      "hotline": {
+        "name": "HOTLINE:",
+        "value": "0919797414"
+      },
+      "name": "Information:",
+      "phone": {
+        "name": "Phone:",
+        "value": "02838424372"
+      }
+    },
+    "social": "Social network",
+    "support": {
+      "input": {
+        "1": "Full Name Contact",
+        "2": "Phone number",
+        "3": "Email"
+      },
+      "name": "Register contact",
+      "register": "Register"
+    }
+  },
+  "nav": {
+    "about": "Introduction",
+    "brand": "Brand",
+    "home": "Home",
+    "product": "Product",
+    "products": {
+      "items": {
+        "gel-wax": {
+          "1": "Hair styling product",
+          "name": "Styling product"
+        },
+        "hair-care": {
+          "1": "Shampoo",
+          "2": "Conditioner",
+          "3": "Essential oil",
+          "name": "Hair care products"
+        },
+        "profression-product": {
+          "1": "Restore damaged hair",
+          "2": "Drinking & Straightening Product",
+          "3": "Dyeing and bleaching products",
+          "name": "Professional product"
+        }
+      }
+    }
+  },
+  "product": {
+    "name": "Products",
+    "filter": {
+      "category": "Category",
+      "detail": "Detail",
+      "brand": "Brand"
+    },
+    "relative": "Relative products",
+    "desc": "Description",
+    "size": "Size",
+    "howToUse": "How to use",
+    "note": "Note",
+    "contact": "contact"
+  }
+}

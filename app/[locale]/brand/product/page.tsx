@@ -8,18 +8,20 @@ import {
     BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
 import {mockCategory} from "@/service/mock.category";
-import {useSearchParams} from "next/navigation";
+import {usePathname, useSearchParams} from "next/navigation";
 import { Product } from '@/types/product';
 import { mockProducts } from '@/service/mock.product';
 import ProductDetail from "@/components/product-detail/product-detail";
 import ProductCard from "@/components/ui/product-card";
 import {CarouselRecommend} from "@/components/ui/carousel-recommend";
+import {mockEnProducts} from "@/service/mock.en.product";
+import {useTranslation} from "react-i18next";
 function BreadCrumbProduct({categoryName, brandName, productName}:{categoryName: string, brandName: string, productName: string}) {
     return (
         <Breadcrumb className={"w-full p-2 text-[1rem] bg-[#f3f3f4] z-10"}>
             <BreadcrumbList className={"px-4 sm:px-6 lg:px-20 max-w-screen-xl mx-auto text-[#172345]"}>
                 <BreadcrumbItem>
-                    <BreadcrumbLink className={"font-[400]"} href="/">Trang chủ</BreadcrumbLink>
+                    <BreadcrumbLink className={"font-[400]"} href="/public">Trang chủ</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -45,22 +47,36 @@ const Page = () => {
     const searchParams = useSearchParams()
     const categoryName = searchParams.get("category_name");
     const brandName = searchParams.get("brand");
-    const productSlug = searchParams.get("product_slug");
-
+    const productSlug
+        = searchParams.get("product_slug");
+    const {t} = useTranslation();
+    const pathname = usePathname();
+    console.log(pathname);
     useEffect(() => {
-        if (!productSlug)
-            return;
-        const product = mockProducts.find(x => x.slug == productSlug);
-        if (!product)
-            return;
-        setProduct(product);
-        const recommendProducts = mockProducts.filter(x => x.brand == brandName);
-        setProducts(recommendProducts);
+        if (pathname == "/en/brand/product") {
+            if (!productSlug)
+                return;
+            const product = mockEnProducts.find(x => x.slug == productSlug);
+            if (!product)
+                return;
+            setProduct(product);
+            const recommendProducts = mockEnProducts.filter(x => x.brand == brandName);
+            setProducts(recommendProducts);
+        } else {
+            if (!productSlug)
+                return;
+            const product = mockProducts.find(x => x.slug == productSlug);
+            if (!product)
+                return;
+            setProduct(product);
+            const recommendProducts = mockProducts.filter(x => x.brand == brandName);
+            setProducts(recommendProducts);
+        }
+
     }, [productSlug, categoryName, brandName]);
     if (!categoryName || !brandName || !productSlug)
         return null;
 
-    console.log(products)
     return product && (
         <section className={"pt-[10vh]"}>
             {/*<div>*/}
@@ -71,7 +87,7 @@ const Page = () => {
             </div>
             <div className={"mx-[3vw]"}>
                 <h3 className="text-xl md:text-2xl font-semibold uppercase leading-snug text-[#172345] mb-4 md:ml-8 text-center md:text-left">
-                    Các sản phẩm liên quan
+                    {t("product.relative")}
                 </h3>
                 <div className={"w-full mb-16 ml-2"}>
                     <CarouselRecommend products={products} from={"/brand"} />

@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import {ProductBrandingCard} from "@/components/about/product-branding/product-branding-card";
+import {useTranslation} from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 interface ProductBranding {
@@ -36,17 +37,11 @@ const itemsProductBranding : ProductBranding[] = [
     title: "Slider (Ý) – Công nghệ chăm sóc tóc tiên tiến từ châu Âu, mang đến hiệu quả vượt trội."
   }
 ]
-const images = [
-  "/assets/branding/2.png",
-  "/assets/branding/3.png",
-  "/assets/branding/4.png",
-  "/assets/branding/5.png",
-];
 
 const ProductBrandingSlide = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
-
+  const {t} = useTranslation();
   useEffect(() => {
     const container = containerRef.current;
     const slider = sliderRef.current;
@@ -80,7 +75,7 @@ const ProductBrandingSlide = () => {
   return (
       <div ref={containerRef} className="w-full overflow-hidden relative h-screen">
         <h2 className="uppercase font-semibold text-2xl sm:text-3xl md:text-4xl text-center mt-6 m-4 text-[#172345]">
-          Hệ thống thương hiệu
+          {t("about.brand.name")}
         </h2>
         <div
             ref={sliderRef}
@@ -100,8 +95,9 @@ const ProductBrandingSlide = () => {
                 />
                 <div className="w-[98vw] md:w-1/2 flex items-center justify-center h-auto md:h-[60vh]">
                   <ProductBrandingCard
-                      title={item.title}
-                      descroption={item.description}
+                      url={item.imgUrl}
+                      title={t(`about.brand.items.${item.imgUrl}.title`)}
+                      description={item.description}
                   />
                 </div>
               </div>

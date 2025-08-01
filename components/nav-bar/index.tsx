@@ -7,6 +7,7 @@ import { SearchItem } from "@/components/nav-bar/search-item";
 import { cn } from "@/lib/utils";
 import { useRouter } from 'next/navigation';
 import MobileNav from "@/components/nav-bar/mobile.nav";
+import LanguageChanger from "@/components/LanguageChanger";
 
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -60,10 +61,6 @@ const NavBar = () => {
 
                     <div className="header-right flex items-center justify-between gap-1">
                         <SearchItem  />
-                        {/*<Image width={20} height={20} src={"/flag-viet-nam.png"} alt={"flag-viet-nam"} />*/}
-                        {/*<Image width={20} height={20} src={"/flag-uk.png"} alt={"uk"} />*/}
-
-                        {/* Mobile Menu Button */}
                         <button
                             className="block md:hidden ml-4"
                             onClick={() => setIsSidebarOpen(true)}
@@ -72,6 +69,7 @@ const NavBar = () => {
                             <Menu size={24} />
                         </button>
                     </div>
+                    <LanguageChanger />
                 </div>
             </div>
 

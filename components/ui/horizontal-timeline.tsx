@@ -4,20 +4,12 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Button } from "@/components/ui/button"
+import {useTranslation} from "react-i18next";
 
 export default function HorizontalTimeline() {
+    const {t} = useTranslation()
     return (
         <div className="relative w-full ">
-            {/*<div className="flex items-center justify-between mb-4 md:mx-16">*/}
-            {/*    <Button variant="ghost" size="icon" className="rounded-full">*/}
-            {/*        <ChevronLeftIcon className="w-5 h-5" />*/}
-            {/*        <span className="sr-only">Previous</span>*/}
-            {/*    </Button>*/}
-            {/*    <Button variant="ghost" size="icon" className="rounded-full">*/}
-            {/*        <ChevronRightIcon className="w-5 h-5" />*/}
-            {/*        <span className="sr-only">Next</span>*/}
-            {/*    </Button>*/}
-            {/*</div>*/}
             <div className="flex flex-col md:flex-row gap-4 overflow-x-auto scroll-smooth scrollbar-hide justify-center">
                 {
                     [
@@ -50,54 +42,11 @@ export default function HorizontalTimeline() {
                                 </div>
                                 <div className="text-sm font-medium pl-2">{item.year}</div>
                             </div>
-                            <h3 className="text-lg font-semibold">{item.text}</h3>
+                            <h3 className="text-lg font-semibold">{t(`about.development.${item.year}`)}</h3>
 
                         </div>
                     ))
                 }
-                {/*<div className="flex-shrink-0 w-64 p-4 rounded-lg bg-card">*/}
-                {/*    <div className="flex items-center gap-2 mb-2">*/}
-                {/*        <div className="aspect-square w-8 bg-primary rounded-full" />*/}
-                {/*        <div className="text-sm font-medium">June 1, 2023</div>*/}
-                {/*    </div>*/}
-                {/*    <h3 className="text-lg font-semibold">Launch of New Product</h3>*/}
-                {/*    <p className="text-sm text-muted-foreground">*/}
-                {/*        We're excited to announce the launch of our latest product, designed to revolutionize the industry.*/}
-                {/*    </p>*/}
-                {/*</div>*/}
-                {/*<div className="flex-shrink-0 w-64 p-4 rounded-lg bg-card">*/}
-                {/*    <div className="flex items-center gap-2 mb-2">*/}
-                {/*        <div className="aspect-square w-8 bg-primary rounded-full" />*/}
-                {/*        <div className="text-sm font-medium">June 15, 2023</div>*/}
-                {/*    </div>*/}
-                {/*    <h3 className="text-lg font-semibold">Company Expansion</h3>*/}
-                {/*    <p className="text-sm text-muted-foreground">*/}
-                {/*        We're thrilled to announce the opening of our new office in the heart of the city, expanding our reach and*/}
-                {/*        capabilities.*/}
-                {/*    </p>*/}
-                {/*</div>*/}
-                {/*<div className="flex-shrink-0 w-64 p-4 rounded-lg bg-card border border-primary">*/}
-                {/*    <div className="flex items-center gap-2 mb-2">*/}
-                {/*        <div className="aspect-square w-8 bg-primary rounded-full" />*/}
-                {/*        <div className="text-sm font-medium">June 30, 2023</div>*/}
-                {/*    </div>*/}
-                {/*    <h3 className="text-lg font-semibold">Quarterly Earnings Report</h3>*/}
-                {/*    <p className="text-sm text-muted-foreground">*/}
-                {/*        Join us as we share our latest financial results and discuss the company's performance over the past*/}
-                {/*        quarter.*/}
-                {/*    </p>*/}
-                {/*</div>*/}
-                {/*<div className="flex-shrink-0 w-64 p-4 rounded-lg bg-card">*/}
-                {/*    <div className="flex items-center gap-2 mb-2">*/}
-                {/*        <div className="aspect-square w-8 bg-primary rounded-full" />*/}
-                {/*        <div className="text-sm font-medium">July 15, 2023</div>*/}
-                {/*    </div>*/}
-                {/*    <h3 className="text-lg font-semibold">New Partnership Announced</h3>*/}
-                {/*    <p className="text-sm text-muted-foreground">*/}
-                {/*        We're excited to share that we've partnered with a leading industry player to bring new opportunities to our*/}
-                {/*        customers.*/}
-                {/*    </p>*/}
-                {/*</div>*/}
             </div>
         </div>
     )

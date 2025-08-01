@@ -1,12 +1,15 @@
+import {useTranslation} from "react-i18next";
+
 export default function CoreValue() {
+    const {t} = useTranslation();
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted flex items-center justify-center ">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-justify">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#172345] uppercase text-center">Giá trị cốt lõi</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#172345] uppercase text-center">{t("about.core.name")}</h2>
                         <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                            "Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành Công"
+                            {t("about.core.description")}
                         </p>
                     </div>
                 </div>
@@ -15,62 +18,54 @@ export default function CoreValue() {
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <RocketIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Phát triển bền vững</h3>
+                        <h3 className="text-xl font-semibold">{t("about.core.1.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            Xây dựng doanh nghiệp không chỉ vì
-                            lợi nhuận mà còn vì giá trị lâu dài cho ngành tóc Việt Nam.
+                            {t("about.core.1.description")}
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 shadow-lg transition-transform duration-300 ease-in-out group hover:-translate-y-2 hover:shadow-xl">
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <HandshakeIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Hợp tác & Đồng hành</h3>
+                        <h3 className="text-xl font-semibold text-nowrap">{t("about.core.2.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            Coi trọng sự hợp tác chặt chẽ với
-                            các đối tác, salon và khách hàng để tạo nên giá trị chung.
+                            {t("about.core.2.description")}
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 shadow-lg transition-transform duration-300 ease-in-out group hover:-translate-y-2 hover:shadow-xl">
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <BoltIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Slogan</h3>
+                        <h3 className="text-xl font-semibold">{t("about.core.3.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            "Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành
-                            Công"
+                            {t("about.core.3.description")}
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 shadow-lg transition-transform duration-300 ease-in-out group hover:-translate-y-2 hover:shadow-xl">
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <LightbulbIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Sáng tạo & Đổi mới</h3>
+                        <h3 className="text-xl font-semibold">{t("about.core.4.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            Không ngừng cải tiến, ứng dụng công
-                            nghệ hiện đại để đáp ứng nhu cầu ngày càng cao của thị
-                            trường.
+                            {t("about.core.4.description")}
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 shadow-lg transition-transform duration-300 ease-in-out group hover:-translate-y-2 hover:shadow-xl">
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <ShieldIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Chất lượng & Uy tín</h3>
+                        <h3 className="text-xl font-semibold">{t("about.core.5.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            Cam kết sản phẩm chính hãng, an
-                            toàn và hiệu quả.
+                            {t("about.core.5.description")}
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-background p-6 shadow-lg transition-transform duration-300 ease-in-out group hover:-translate-y-2 hover:shadow-xl">
                         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
                             <UsersIcon className="w-6 h-6 text-primary-foreground" />
                         </div>
-                        <h3 className="text-xl font-semibold">Khách hàng là trung tâm</h3>
+                        <h3 className="text-xl font-semibold">{t("about.core.6.name")}</h3>
                         <p className="text-muted-foreground text-justify min-h-[10vh]">
-                            Đặt lợi ích của khách hàng lên
-                            hàng đầu, đồng hành cùng sự phát triển của salon và nhà
-                            tạo mẫu tóc.
+                            {t("about.core.6.description")}
                         </p>
                     </div>
                 </div>

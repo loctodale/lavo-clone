@@ -1,0 +1,164 @@
+{
+  "about": {
+    "banner": {
+      "description": "Công Ty TNHH TM CAO ĐẠT được thành lập vào ngày 05/09/2012, với hơn 10 năm kinh nghiệm, là đơn vị nhập khẩu và phân phối độc quyền các thương hiệu mỹ phẩm tóc chuyên nghiệp từ châu Âu và châu Á tại Việt Nam. Chúng tôi không chỉ đơn thuần cung cấp sản phẩm, mà còn mang đến giải pháp chăm sóc tóc toàn diện, giúp các salon, nhà tạo mẫu tóc và người tiêu dùng có trải nghiệm tốt nhất.",
+      "name": "Về chúng tôi"
+    },
+    "brand": {
+      "button": "Chi tiết",
+      "items": {
+        "/assets/branding/2": {
+          "png": {
+            "title": "Chất lượng chuẩn Nhật, chăm sóc tóc toàn diện và an toàn.",
+            "0": "Chất lượng chuẩn Nhật, chăm sóc tóc toàn diện và an toàn.",
+            "1": "Dưỡng tóc toàn diện: Sản phẩm như dầu gội, dầu xả, thuốc nhuộm và bọt tạo kiểu của ZDNB được thiết kế để cung cấp dưỡng chất cần thiết, giúp tóc mềm mượt, bóng khỏe và giảm hư tổn.",
+            "2": "An toàn cho tóc và da đầu: Công thức sản phẩm thường chứa hàm lượng amoniac thấp hoặc không có, giảm thiểu nguy cơ kích ứng da đầu và hư tổn tóc."
+          }
+        },
+        "/assets/branding/3": {
+          "png": {
+            "title": "KARSILK (Ý) – Dòng mỹ phẩm tóc cao cấp, mang đến trải nghiệm đẳng cấp cho salon.",
+            "0": "Thành phần chất lượng cao: Các sản phẩm của KARSILK chứa tinh chất keratin siêu mịn, giúp bổ sung keratin tự nhiên cho tóc, hàn gắn cấu trúc tóc và phục hồi độ đàn hồi.",
+            "1": "Khả năng kháng nhiệt: Sản phẩm có khả năng bảo vệ tóc khỏi tác động của nhiệt độ cao từ máy sấy, máy duỗi, giúp tóc không bị hư tổn thêm.",
+            "2": "KARSILK (Ý) – Dòng mỹ phẩm tóc cao cấp, mang đến trải nghiệm đẳng cấp cho salon."
+          }
+        },
+        "/assets/branding/4": {
+          "png": {
+            "title": "Aurane (Pháp) – Sự tinh tế trong từng sản phẩm, phù hợp cho những salon chuyên nghiệp.",
+            "0": "Nguồn gốc Pháp, nơi nổi tiếng với truyền thống làm đẹp và mỹ phẩm chất lượng cao",
+            "1": "Chuyên biệt về các dòng sản phẩm dành cho salon tóc chuyên nghiệp",
+            "2": "Kết hợp giữa khoa học hiện đại và thành phần tự nhiên",
+            "3": "Thiết kế sang trọng, tinh tế phản ánh đẳng cấp của thương hiệu",
+            "4": "Được nhiều salon cao cấp và stylist chuyên nghiệp tin dùng"
+          }
+        },
+        "/assets/branding/5": {
+          "png": {
+            "title": "Slider (Ý) – Công nghệ chăm sóc tóc tiên tiến từ châu Âu, mang đến hiệu quả vượt trội.",
+            "0": "Xuất xứ từ Ý - một quốc gia nổi tiếng với truyền thống và đổi mới trong lĩnh vực làm đẹp",
+            "1": "Tập trung vào hiệu quả điều trị và chăm sóc chuyên sâu cho tóc",
+            "2": "Công thức độc quyền kết hợp giữa khoa học và thành phần tự nhiên",
+            "3": "Phù hợp với các salon chuyên nghiệp và các stylist hàng đầu"
+          }
+        },
+        "COLORTOUR": "Thương hiệu màu nhuộm chuyên nghiệp, sắc nét và bền lâu.",
+        "KARSILK": "Dòng mỹ phẩm tóc cao cấp, mang đến trải nghiệm đẳng cấp cho salon.",
+        "png": "Xuất xứ từ Ý - một quốc gia nổi tiếng với truyền thống và đổi mới trong lĩnh vực làm đẹp",
+        "SLIDER": "Công nghệ chăm sóc tóc tiên tiến từ châu Âu, mang đến hiệu quả vượt trội."
+      },
+      "name": "Hệ thống thương hiệu"
+    },
+    "development": {
+      "name": "Lịch sử phát triển",
+      "2012": "Thành lập Công Ty TNHH TM CAO ĐẠT, bước đầu tham gia thị trường nhập khẩu và phân phối mỹ phẩm tóc.",
+      "2015": "Mở rộng hệ thống phân phối, hợp tác với nhiều salon lớn trên cả nước.",
+      "2018": "Trở thành nhà phân phối độc quyền của nhiều thương hiệu danh tiếng từ châu Âu và châu Á.",
+      "2022": "Kỷ niệm 10 năm thành lập, đánh dấu sự phát triển mạnh mẽ và mở rộng thị trường.",
+      "2024": "Tái cơ cấu doanh nghiệp với định hướng phát triển bền vững, lấy khách hàng làm trung tâm."
+    },
+    "core": {
+      "name": "Giá trị cốt lõi",
+      "description": "\"Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành Công\"",
+      "1": {
+        "name": "Phát triển bền vững",
+        "description": "Xây dựng doanh nghiệp không chỉ vì lợi nhuận mà còn vì giá trị lâu dài cho ngành tóc Việt Nam."
+      },
+      "2": {
+        "name": "Hợp tác & Đồng hành",
+        "description": "Coi trọng sự hợp tác chặt chẽ với các đối tác, salon và khách hàng để tạo nên giá trị chung."
+      },
+      "3": {
+        "name": "Slogan",
+        "description": "\"Chất Lượng Tạo Nên Thương Hiệu – Bền Vững Dẫn Lối Thành Công\""
+      },
+      "4": {
+        "name": "Sáng tạo & Đổi mới",
+        "description": "Không ngừng cải tiến, ứng dụng công nghệ hiện đại để đáp ứng nhu cầu ngày càng cao của thị trường."
+      },
+      "5": {
+        "name": "Chất lượng & Uy tín",
+        "description": "Cam kết sản phẩm chính hãng, an toàn và hiệu quả."
+      },
+      "6": {
+        "name": "Khách hàng là trung tâm",
+        "description": "Đặt lợi ích của khách hàng lên hàng đầu, đồng hành cùng sự phát triển của salon và nhà tạo mẫu tóc."
+      }
+    }
+  },
+  "footer": {
+    "information": {
+      "address": {
+        "1": "34 ĐÀO DUY ANH, PHƯỜNG 9",
+        "2": "QUẬN PHÚ NHUẬN, TPHCM",
+        "name": "Địa chỉ:"
+      },
+      "email": {
+        "value": "CAODAT.COSMETICS@GMAIL.COM"
+      },
+      "fax": {
+        "name": "Fax:",
+        "value": "028-38424372"
+      },
+      "hotline": {
+        "name": "HOTLINE:",
+        "value": "0919797414"
+      },
+      "name": "Thông tin:",
+      "phone": {
+        "name": "Điện thoại:",
+        "value": "02838424372"
+      }
+    },
+    "social": "Mạng xã hội",
+    "support": {
+      "input": {
+        "1": "Họ và Tên liên hệ",
+        "2": "Số điện thoại",
+        "3": "Email"
+      },
+      "name": "Đăng ký liên hệ",
+      "register": "Đăng ký"
+    }
+  },
+  "nav": {
+    "about": "Giới thiệu",
+    "brand": "Thương hiệu",
+    "home": "Trang chủ",
+    "product": "Sản phẩm",
+    "products": {
+      "items": {
+        "gel-wax": {
+          "1": "Sản phẩm tạo kiểu tóc",
+          "name": "Sản phẩm tạo kiểu"
+        },
+        "hair-care": {
+          "1": "Dầu gội",
+          "2": "Dầu xả",
+          "3": "Tinh dầu",
+          "name": "Sản phẩm chăm tóc"
+        },
+        "profression-product": {
+          "1": "Phục hồi tóc hư tổn",
+          "2": "Sản phẩm uống & duỗi",
+          "3": "Sản phẩm nhuộm và tẩy",
+          "name": "Sản phẩm chuyên nghiệp"
+        }
+      }
+    }
+  },
+  "product": {
+    "name": "Sản phẩm",
+    "filter": {
+      "category": "Phân loại",
+      "detail": "Chi tiết",
+      "brand": "Thương hiệu"
+    },
+    "relative": "Các sản phẩm liên quan",
+    "desc": "Mô tả",
+    "size": "Dung tích",
+    "howToUse": "Hướng dẫn sử dụng",
+    "note": "Lưu ý",
+    "contact": "Liên hệ"
+  }
+}
