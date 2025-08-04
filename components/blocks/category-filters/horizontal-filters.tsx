@@ -156,6 +156,7 @@ export default function HorizontalFilters({
 
     if (activeFilters.length === 0) return null;
 
+    console.log(pathname.includes("brand", 0))
     return (
       <div className="flex flex-wrap justify-center gap-2 mt-3">
         {activeFilters.map((filter, index) => (
@@ -272,7 +273,7 @@ export default function HorizontalFilters({
 
 
             {/* Brand Filter */}
-            {pathname.includes("brand", 0) && (
+            {!pathname.includes("brand", 0) && (
                 <Popover>
                   <PopoverTrigger asChild>
                     <Button variant="outline" size="sm" className="h-8">
@@ -406,7 +407,7 @@ export default function HorizontalFilters({
                   <Separator />
 
                   {/* Brands */}
-                  {pathname.includes("brand") && (
+                  {!pathname.includes("brand") && (
                       <div>
                         <div className="space-y-3">
                           <h3 className="text-sm font-medium">{t("product.filter.brand")}</h3>

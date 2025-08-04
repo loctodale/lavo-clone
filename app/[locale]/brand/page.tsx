@@ -65,7 +65,7 @@ const Page = () => {
 
         setFilters((prev) => ({
             ...prev,
-            brands: brandName ? [brandName] : prev.brands,
+            // brands: brandName ? [brandName] : prev.brands,
         }));
     }, [searchParams]);
     React.useEffect(() => {
