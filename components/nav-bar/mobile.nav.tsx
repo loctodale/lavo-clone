@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { X, ChevronDown, ChevronUp } from "lucide-react";
 import { mockImageTrigger } from "@/service/mock.navigation";
 import { mockCoverCategory } from "@/service/mock.cover-category";
+import {useTranslation} from "react-i18next";
 
 const MobileNav = ({
                        isSidebarOpen,
@@ -22,6 +23,8 @@ const MobileNav = ({
     const toggleSubDropdown = (key: string) => {
         setOpenSubDropdown(prev => (prev === key ? null : key));
     };
+
+    const {t} = useTranslation();
 
     return (
         <>
@@ -48,7 +51,7 @@ const MobileNav = ({
                         className="text-[#172345] font-semibold uppercase py-2 border-b border-gray-100 hover:text-[#fdc254]"
                         onClick={() => setIsSidebarOpen(false)}
                     >
-                        Trang chủ
+                        {t("nav.home")}
                     </a>
 
                     <a
@@ -56,7 +59,7 @@ const MobileNav = ({
                         className="text-[#172345] font-semibold uppercase py-2 border-b border-gray-100 hover:text-[#fdc254]"
                         onClick={() => setIsSidebarOpen(false)}
                     >
-                        Giới thiệu
+                        {t("nav.about")}
                     </a>
 
                     {/* Dropdown: Thương hiệu */}
@@ -65,7 +68,7 @@ const MobileNav = ({
                             onClick={() => toggleDropdown("thuonghieu")}
                             className="w-full flex justify-between items-center text-[#172345] font-semibold uppercase py-2 border-b border-gray-100 hover:text-[#fdc254]"
                         >
-                            Thương hiệu
+                            {t("nav.brand")}
                             {openDropdown === "thuonghieu" ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                         </button>
                         {openDropdown === "thuonghieu" && (
@@ -90,7 +93,7 @@ const MobileNav = ({
                             onClick={() => toggleDropdown("sanpham")}
                             className="w-full flex justify-between items-center text-[#172345] font-semibold uppercase py-2 border-b border-gray-100 hover:text-[#fdc254]"
                         >
-                            Sản phẩm
+                            {t("nav.product")}
                             {openDropdown === "sanpham" ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                         </button>
 
@@ -103,7 +106,7 @@ const MobileNav = ({
                                             onClick={() => toggleSubDropdown(cover.englishName)}
                                             className="w-full flex justify-between items-center py-2 text-sm font-semibold text-[#172345] hover:text-[#fdc254]"
                                         >
-                                            {cover.name}
+                                            {t(`nav.products.items.${cover.englishName}.name`)}
                                             {openSubDropdown === cover.englishName ? (
                                                 <ChevronUp size={14} />
                                             ) : (
@@ -121,7 +124,7 @@ const MobileNav = ({
                                                         className="py-1 text-sm font-medium text-[#172345] hover:text-[#fdc254]"
                                                         onClick={() => setIsSidebarOpen(false)}
                                                     >
-                                                        {sub.name}
+                                                        {t(`nav.products.items.${cover.englishName}.${subIndex+1}`)}
                                                     </a>
                                                 ))}
                                             </div>
