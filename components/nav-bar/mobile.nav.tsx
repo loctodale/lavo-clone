@@ -4,6 +4,7 @@ import { X, ChevronDown, ChevronUp } from "lucide-react";
 import { mockImageTrigger } from "@/service/mock.navigation";
 import { mockCoverCategory } from "@/service/mock.cover-category";
 import {useTranslation} from "react-i18next";
+import LanguageChanger from "@/components/LanguageChanger";
 
 const MobileNav = ({
                        isSidebarOpen,
@@ -142,6 +143,9 @@ const MobileNav = ({
                     >
                         Video
                     </a>
+                </div>
+                <div className={"p-4 px-[5vw]"}>
+                    <LanguageChanger />
                 </div>
             </div>
 

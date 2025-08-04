@@ -69,7 +69,9 @@ const NavBar = () => {
                             <Menu size={24} />
                         </button>
                     </div>
-                    <LanguageChanger />
+                    <div className={"hidden md:block"}>
+                        <LanguageChanger />
+                    </div>
                 </div>
             </div>
 
