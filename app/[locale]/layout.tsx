@@ -1,4 +1,3 @@
-// 'use client';
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
@@ -7,9 +6,13 @@ import {dir} from "i18next";
 import i18nConfig from "@/i18nConfig";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "@/app/i18n";
+import { Metadata } from "next";
 export function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ locale }));
 }
+export const metadata: Metadata = {
+    title: 'Cao Đạt',
+};
 const i18nNamespaces = ['home'];
 export default async function RootLayout(props: {
     children: ReactNode;
