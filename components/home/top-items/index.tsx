@@ -20,7 +20,7 @@ const banners = [
     {
         src: "/assets/banner/aurane.png",
         alt: "Aurane",
-        brand: "aurane",
+        brand: "AURANE",
     },
     {
         src: "/assets/banner/zdnb.jpg",
@@ -30,7 +30,7 @@ const banners = [
     {
         src: "/assets/banner/39.png",
         alt: "Colortour",
-        brand: "Colortour",
+        brand: "COLORTOUR",
     },
 ];
 
