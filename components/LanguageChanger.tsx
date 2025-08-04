@@ -1,10 +1,9 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '@/i18nConfig';
-import { ChangeEvent } from 'react';
+import Image from 'next/image';
 
 export default function LanguageChanger() {
     const { i18n } = useTranslation();
@@ -13,8 +12,8 @@ export default function LanguageChanger() {
     const currentPathname = usePathname();
     const searchParams = useSearchParams();
 
-    const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        const newLocale = e.target.value;
+    const handleToggle = () => {
+        const newLocale = currentLocale === 'vi' ? 'en' : 'vi';
 
         // set cookie for next-i18n-router
         const days = 30;
@@ -40,9 +39,19 @@ export default function LanguageChanger() {
     };
 
     return (
-        <select onChange={handleChange} value={currentLocale}>
-            <option value="en">English</option>
-            <option value="vi">Vietnamese</option>
-        </select>
+        <button
+            onClick={handleToggle}
+            className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-gray-100 transition"
+        >
+            <Image
+                src={currentLocale === 'vi' ? '/vn.png' : '/uk.png'}
+                alt="Language"
+                width={20}
+                height={20}
+            />
+            <span className="text-sm">
+                {currentLocale === 'vi' ? 'Tiếng Việt' : 'English'}
+            </span>
+        </button>
     );
 }
