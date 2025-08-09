@@ -49,7 +49,7 @@ const NavBar = () => {
                 "fixed w-full h-[10vh] border-b border-gray-200 z-20 bg-white transition-transform duration-300",
                 showNav ? "translate-y-0" : "-translate-y-full"
             )}>
-                <div className="flex px-4 md:px-[1rem] mx-[5vw] md:mx-[8vw] xl:mx-[12vw] justify-between items-center">
+                <div className="flex px-4 md:px-[1rem] ml-[5vw] md:ml-[8vw] xl:ml-[12vw] justify-between items-center mr-[4vw]">
                     <div onClick={() => router.push("/")} className="md:absolute logo flex flex-col items-center justify-center h-[10vh] overflow-hidden hover:cursor-pointer">
                         <Image src="/assets/logo.png" alt="logo-holder" width={500} height={500} className={"md:max-w-[10vw] max-w-[10rem]"} />
                     </div>

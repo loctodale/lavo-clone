@@ -15,10 +15,8 @@ const DevelopmentHistory = () => {
                         <h2 className="uppercase w-full text-center font-semibold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] text-[#172345] mb-4 whitespace-nowrap">
                             {t("about.development.name")}
                         </h2>
-                        {/*<DevelopmentTimeline />*/}
-                        <HorizontalTimeline />
+                        <DevelopmentTimeline />
                     </div>
-
                 </div>
             </div>
         </section>

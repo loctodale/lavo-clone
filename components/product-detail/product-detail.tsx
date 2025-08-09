@@ -28,7 +28,7 @@ export default function ProductDetail({product}: {product: Product }) {
                 <div className="grid  items-start">
                     <form className="grid gap-2 ">
                         <div className="grid">
-                            <Label htmlFor="color" className="text-lg font-bold ">
+                            <Label htmlFor="color" className="text-sm font-bold ">
                                 {product.name}
                             </Label>
                             <p className={"text-sm text-gray-500"}>
@@ -36,38 +36,38 @@ export default function ProductDetail({product}: {product: Product }) {
                             </p>
                         </div>
                         <div className="grid gap-2">
-                            <Label htmlFor="size" className="text-lg font-bold">
+                            <Label htmlFor="size" className="text-sm font-bold">
                                 {t("product.desc")}:
                             </Label>
-                            <p className={"font-[400] text-[1rem] text-gray-700"}>
+                            <p className={"font-[400] text-sm text-gray-700"}>
                                 {product.description}
                             </p>
                         </div>
                         <div className="grid gap-2">
-                            <Label htmlFor="quantity" className="text-lg font-bold ">
-                                {t("product.size")}: <span className={"font-[400] text-[1rem] text-gray-700"}>{product.size} ml</span>
+                            <Label htmlFor="quantity" className="text-sm font-bold ">
+                                {t("product.size")}: <span className={"font-[400] text-sm text-gray-700"}>{product.size} ml</span>
                             </Label>
                         </div>
                         <div className={"grid gap-2"}>
-                            <Label className="text-lg font-bold ">{t("product.howToUse")}:</Label>
+                            <Label className="text-sm font-bold ">{t("product.howToUse")}:</Label>
                             {
                                 product.howToUse.map((item, index) => (
-                                    <p className={"font-[400] text-[1rem] text-gray-700"} key={index}>- {item}</p>
+                                    <p className={"font-[400] text-sm text-gray-700"} key={index}>- {item}</p>
                                 ))
                             }
                         </div>
                         {
                             product.note?.trim() != null && (
                                 <div className={"grid gap-2"}>
-                                    <Label className={"font-bold text-lg"}>{t("product.note")}: </Label>
-                                    <p className={"font-[400] text-[1rem] text-gray-700"}>{product.note}</p>
+                                    <Label className={"font-bold text-sm"}>{t("product.note")}: </Label>
+                                    <p className={"font-[400] text-sm text-gray-700"}>{product.note}</p>
                                 </div>
                             )
                         }
                         <div className="flex flex-col gap-2 min-[400px]:flex-row">
                             <Button onClick={event => {
                                 event.preventDefault()
-                            }} className={"w-1/2 h-full rounded-3xl font-bold p-[0.5rem] bg-[#474747]  text-[1rem] hover:bg-[#474747] hover:cursor-pointer"}>{t("product.contact")}</Button>
+                            }} className={"w-1/2 h-full rounded-3xl font-bold p-[0.5rem] bg-[#474747]  text-sm hover:bg-[#474747] hover:cursor-pointer"}>{t("product.contact")}</Button>
                         </div>
                     </form>
                     {/*<Separator />*/}

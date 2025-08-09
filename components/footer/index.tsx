@@ -9,7 +9,7 @@ export default function Footer() {
     const router = useRouter();
     const { t } = useTranslation();
     return (
-        <div className="py-16 bg-black opacity-95 text-white text-base">
+        <div className="py-16 bg-black opacity-95 text-white text-base uppercase">
             <div className="mx-4 px-4 opacity-100">
                 <div className="flex flex-col md:flex-row gap-8 justify-between">
                     {/* Location */}

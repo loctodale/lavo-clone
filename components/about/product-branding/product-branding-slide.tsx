@@ -4,6 +4,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import {ProductBrandingCard} from "@/components/about/product-branding/product-branding-card";
 import {useTranslation} from "react-i18next";
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import {Card, CardContent} from "@/components/ui/card";
 
 gsap.registerPlugin(ScrollTrigger);
 interface ProductBranding {
@@ -79,7 +81,7 @@ const ProductBrandingSlide = () => {
         </h2>
         <div
             ref={sliderRef}
-            className="flex mb-4 h-screen gap-40"
+            className=" mb-4 h-screen gap-40 hidden md:flex"
             style={{ width: `${(itemsProductBranding.length ) * 100}vw` }}
         >
 
