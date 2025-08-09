@@ -25,12 +25,12 @@ const itemsProductBranding : ProductBranding[] = [
     },
     {
         imgUrl: "/assets/branding/4.png",
-        description: ["Nguồn gốc Pháp, nơi nổi tiếng với truyền thống làm đẹp và mỹ phẩm chất lượng cao", "Chuyên biệt về các dòng sản phẩm dành cho salon tóc chuyên nghiệp", "Kết hợp giữa khoa học hiện đại và thành phần tự nhiên", "Thiết kế sang trọng, tinh tế phản ánh đẳng cấp của thương hiệu", "Được nhiều salon cao cấp và stylist chuyên nghiệp tin dùng"],
+        description: ["Nguồn gốc Pháp, nơi nổi tiếng với truyền thống làm đẹp và mỹ phẩm chất lượng cao", "Chuyên biệt về các dòng sản phẩm dành cho salon tóc chuyên nghiệp", "Kết hợp giữa khoa học hiện đại và thành phần tự nhiên"],
         title: "Aurane (Pháp) – Sự tinh tế trong từng sản phẩm, phù hợp cho những salon chuyên nghiệp."
     },
     {
         imgUrl: "/assets/branding/5.png",
-        description: ["Xuất xứ từ Ý - một quốc gia nổi tiếng với truyền thống và đổi mới trong lĩnh vực làm đẹp", "Áp dụng công nghệ nghiên cứu và phát triển hiện đại từ châu Âu", "Tập trung vào hiệu quả điều trị và chăm sóc chuyên sâu cho tóc","Công thức độc quyền kết hợp giữa khoa học và thành phần tự nhiên", "Phù hợp với các salon chuyên nghiệp và các stylist hàng đầu"],
+        description: ["Xuất xứ từ Ý - một quốc gia nổi tiếng với truyền thống và đổi mới trong lĩnh vực làm đẹp", "Áp dụng công nghệ nghiên cứu và phát triển hiện đại từ châu Âu", "Tập trung vào hiệu quả điều trị và chăm sóc chuyên sâu cho tóc","Công thức độc quyền kết hợp giữa khoa học và thành phần tự nhiên"],
         title: "Slider (Ý) – Công nghệ chăm sóc tóc tiên tiến từ châu Âu, mang đến hiệu quả vượt trội."
     }
 ]
@@ -41,17 +41,16 @@ const MobileCarousel = () => {
             <h2 className="uppercase font-semibold text-2xl sm:text-3xl md:text-4xl text-center mt-6 m-4 text-[#172345]">
                 {t("about.brand.name")}
             </h2>
-            <div className={"mb-4 gap-40 flex justify-center md:hidden"}>
-                <Carousel className="w-full max-w-xs">
-                    <CarouselContent>
+            <div className={"mb-4 gap-10 flex flex-col justify-center md:hidden"}>
+                {/*<Carousel className="w-full max-w-xs">*/}
+                {/*    <CarouselContent>*/}
                         {itemsProductBranding.map((item, i) => (
-                            <CarouselItem key={i}>
+                            // <CarouselItem key={i}>
                                 <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex  items-center justify-center p-6">
+                                        <CardContent className="flex items-center justify-center p-6">
                                             <div
                                                 key={i}
-                                                className="w-screen h-[80vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 border-gray-200 border-1 shadow-sm mx-1"
+                                                className="w-[80vw] h-[80vh] flex flex-col md:flex-row items-center justify-center gap-6 px-4 border-gray-200 border-1 shadow-sm mx-1"
                                             >
                                                 <img
                                                     src={item.imgUrl}
@@ -67,14 +66,13 @@ const MobileCarousel = () => {
                                                 </div>
                                             </div>
                                         </CardContent>
-                                    </Card>
                                 </div>
-                            </CarouselItem>
+                            // </CarouselItem>
                         ))}
-                    </CarouselContent>
+                    {/*</CarouselContent>*/}
                     {/*<CarouselPrevious />*/}
                     {/*<CarouselNext />*/}
-                </Carousel>
+                {/*</Carousel>*/}
             </div>
 
         </div>
