@@ -18,7 +18,7 @@ export const mockCategory : Category[] = [
         englishName: "hair-oil-and-serum"
     },
     {
-        name: "Sản phẩm uống & duỗi",
+        name: "Sản phẩm uốn & duỗi",
         englishName: "perm-and-straightening-products"
     },
     {

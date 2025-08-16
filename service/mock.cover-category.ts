@@ -40,7 +40,7 @@ export const mockCoverCategory : CoverCategory[] = [
                 englishName: "hair-mask-and-treatment",
             },
             {
-                name: "Sản phẩm uống & duỗi",
+                name: "Sản phẩm uốn & duỗi",
                 englishName: "perm-and-straightening-products"
             },
             {
