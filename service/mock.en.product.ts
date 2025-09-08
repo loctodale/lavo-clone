@@ -1364,24 +1364,24 @@ export const mockEnProducts : Product[] =
     },
     {
         "name": "Aurane Splendid Color Cream",
-        "fullName": "SPLENDID COLOR CREAM – Hair Dye",
-        "description": "Splendid Color Cream contains ultra-fine pigment particles that ensure accurate, vibrant, prominent, and even hair color.",
+        "fullName": "Splendid Color Cream – Professional Hair Dye",
+        "description": "Aurane Splendid Color Cream is formulated with ultra-fine pigment particles to deliver accurate, vibrant, and even hair color with a natural finish.",
         "advantage": [
-            "Ultra-fine pigment particles ensure accurate, vibrant, and even color",
-            "4D color formulation technology supports smart color blending for natural, vivid, and long-lasting results",
-            "Deep hair protection with Protein & Collagen, reducing damage and keeping hair soft and glossy after dyeing",
-            "Long-lasting, durable color that resists fading and dullness over time"
+            "Ultra-fine pigment particles ensure accurate, vibrant, and even color application",
+            "4D color formulation technology allows smart blending for natural, vivid, and long-lasting results",
+            "Enriched with Protein & Collagen to protect hair, minimize damage, and maintain softness and shine after coloring",
+            "Long-lasting and durable color that resists fading and dullness over time"
         ],
         "howToUse": [
-            "Mix color: Blend dye cream with developer (Oxy) at the appropriate ratio (usually 1:1 or 1:1.5 depending on desired brightness)",
-            "Apply evenly to hair: Divide hair into sections and apply the mixture with a dye brush",
-            "Leave on: Let sit for 30-40 minutes, checking color periodically",
-            "Rinse: Wash thoroughly with water and use conditioner or nourishing product to protect hair and lock in color"
+            "Mixing: Blend the dye cream with developer (Oxy) at the recommended ratio (usually 1:1 or 1:1.5 depending on the desired brightness)",
+            "Application: Section the hair and apply the mixture evenly using a dye brush",
+            "Processing: Leave on for 30–40 minutes, checking the color development periodically",
+            "Rinsing: Rinse thoroughly with water and finish with conditioner or a nourishing treatment to protect hair and lock in color"
         ],
         "note": "",
         "size": 100,
-        "brand": "AURANE",
-        "slug": "kem-nhuộm-tóc-(splendid-color-cream)",
+        "brand": "Aurane",
+        "slug": "splendid-color-cream-hair-dye",
         "category": "hair-coloring-and-bleaching",
         "image": "/assets/products/aurane/23.png"
     },

@@ -1364,8 +1364,8 @@ export const mockProducts : Product[] =
         },
         {
             "name": "Aurane Splendid Color Cream",
-            "fullName": "KEM NHUỘM TÓC (SPLENDID COLOR CREAM)",
-            "description": "Splendid Color Cream contains ultra-fine pigment particles that help hair color appear standard, bright, prominent, and even .",
+            "fullName": "MÀU NHUỘM PHỦ BẠC CHUYÊN NGHIỆP – SPLENDID COLOR & CREAM",
+            "description": "Aurane Splendid Color & Cream là dòng màu nhuộm cao cấp giúp phủ bạc tối đa, giữ màu rực rỡ lâu phai và nuôi dưỡng tóc ngay trong quá trình nhuộm. Công thức giàu Pro-Vitamin B5 và collagen hỗ trợ phục hồi cấu trúc tóc, giảm hư tổn, cho mái tóc mềm mượt, óng ả và khỏe mạnh. Phù hợp sử dụng tại salon hoặc tại nhà.",
             "advantage": [
                 "Hạt sắc tố siêu mịn: Giúp màu lên chuẩn, sáng đẹp, nổi bật và đều màu ",
                 "Công nghệ điều chế màu 4D: Hỗ trợ pha trộn màu thông minh, giúp màu tóc tự nhiên, sống động và bền lâu ",
@@ -1373,12 +1373,12 @@ export const mockProducts : Product[] =
                 "Giữ màu lâu, bền đẹp: Chống phai màu, hạn chế xỉn màu theo thời gian "
             ],
             "howToUse": [
-                "Pha màu: Trộn kem nhuộm với trợ nhuộm (Oxy) theo tỷ lệ thích hợp (thường 1:1 hoặc 1:1.5 tùy vào mức độ sáng mong muốn) ",
-                "Thoa đều lên tóc: Chia tóc thành từng lớp, dùng cọ nhuộm phủ đều sản phẩm ",
-                "Ủ màu: Để trong 30-40 phút, kiểm tra màu theo thời gian thực tế ",
-                "Xả tóc: Gội sạch với nước và sử dụng dầu xả/dưỡng để bảo vệ tóc và giữ màu lâu hơn "
+                "Trộn kem nhuộm và oxy theo tỷ lệ phù hợp.",
+                "Thoa đều hỗn hợp lên tóc, tránh tiếp xúc trực tiếp với da đầu.",
+                "Giữ trên tóc theo thời gian quy định (tùy tình trạng và chất tóc).",
+                "Xả sạch bằng nước ấm, dưỡng tóc bằng dầu xả chuyên sâu để giữ màu bền đẹp."
             ],
-            "note": "",
+            "note": "Nên thử trước trên một phần tóc nhỏ để kiểm tra phản ứng. Sử dụng găng tay khi nhuộm. Không sử dụng cho lông mày hoặc lông mi.",
             "size": 100,
             "brand": "AURANE",
             "slug": "kem-nhuộm-tóc-(splendid-color-cream)",

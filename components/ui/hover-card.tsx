@@ -17,11 +17,11 @@ const HoverCard = ({name, description, image, englishName} : {name: string, desc
     return (
             <Card onClick={() => window.location.href = `/category?categories=${englishName}`} className="md:w-1/3 overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl py-0 my-2">
                 <CardContent className="p-0">
-                    <div className="relative overflow-hidden group-hover:shadow-xl transition-shadow duration-300 h-[60vh]">
+                    <div className="relative overflow-hidden group-hover:shadow-xl transition-shadow duration-300 h-[60vh] ">
                         <img
                             src={image}
                             alt="Card background"
-                            className="w-full h-full transition-transform duration-500 group-hover:scale-110 object-contain"
+                            className="w-3/4 h-full transition-transform duration-500 group-hover:scale-110 object-contain my-20 mx-auto "
                         />
                         {/*<div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/30" />*/}
                         <div className="absolute top-0 mt-4 text-justify w-full">

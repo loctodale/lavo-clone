@@ -7,7 +7,7 @@ const HomeCategory = () => {
        <div className={"md:flex md:justify-between w-full gap-2 px-2 mb-8"}>
            {
                mockCoverCategory.map((category, index) => (
-                   <HoverCard englishName={category.englishName} key={index} name={category.name} description={category.englishName} image={"/assets/top-category/28.png"} />
+                   <HoverCard englishName={category.englishName} key={index} name={category.name} description={category.englishName} image={category.image} />
                ))
            }
        </div>
